@@ -1,5 +1,5 @@
-@import '/assets/css/reset.css';
-@import '/assets/css/common.css';
+@import 'assets/css/reset.css';
+@import 'assets/css/common.css';
 
 .arrow{
   display: flex;
@@ -29,7 +29,7 @@
 .arrow .shape::after{
   width: 16px;
   height: 16px;
-  background: url(/assets/images/ic-arrowUpRight.svg) center no-repeat;
+  background: url(assets/images/ic-arrowUpRight.svg) center no-repeat;
   transform: translate(var(--translate-x), var(--translate-y));
   /* transform: translate(-25px, 25px); */
   transition: transform .3s;
@@ -64,7 +64,7 @@
 .header-inner .link-odense{
   width: 122px;
   height: 24px;
-  background: url(/assets/images/logo-header.svg) no-repeat;
+  background: url(assets/images/logo-header.svg) no-repeat;
 }
 .header-inner .menu-area{
   padding-left: 64px;
@@ -170,7 +170,7 @@
   flex-shrink: 0;
   width: 122px;
   height: 24px;
-  background-image: url(/assets/images/logo-header.svg);
+  background-image: url(assets/images/logo-header.svg);
 }
 .footer-inner .col-left .text-area{
   font-size: 54px;
@@ -209,7 +209,7 @@
   display: block;
   width: 83px;
   height: 18px;
-  background-image: url(/assets/images/logo-animato.svg);
+  background-image: url(assets/images/logo-animato.svg);
 }
 .footer-inner .col-left .sns-area{}
 .footer-inner .col-left .sns-list{
@@ -229,16 +229,16 @@
   transition: 0.3s;
 }
 .footer-inner .col-left .sns-item .ic-facebook{
-  mask:  url('/assets/images/ic-sns01.svg') no-repeat center;
-  -webkit-mask: url('/assets/images/ic-sns01.svg') no-repeat center;
+  mask:  url('assets/images/ic-sns01.svg') no-repeat center;
+  -webkit-mask: url('assets/images/ic-sns01.svg') no-repeat center;
 }
 .footer-inner .col-left .sns-item .ic-linkedin{
-  mask:  url('/assets/images/ic-sns02.svg') no-repeat center;
-  -webkit-mask: url('/assets/images/ic-sns02.svg') no-repeat center;
+  mask:  url('assets/images/ic-sns02.svg') no-repeat center;
+  -webkit-mask: url('assets/images/ic-sns02.svg') no-repeat center;
 }
 .footer-inner .col-left .sns-item .ic-instagram{
-  mask:  url('/assets/images/ic-sns03.svg') no-repeat center;
-  -webkit-mask: url('/assets/images/ic-sns03.svg') no-repeat center;
+  mask:  url('assets/images/ic-sns03.svg') no-repeat center;
+  -webkit-mask: url('assets/images/ic-sns03.svg') no-repeat center;
 }
 .footer-inner .col-left .sns-item [class*="ic-"]:hover{
 }

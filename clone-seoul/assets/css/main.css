@@ -82,7 +82,7 @@ body.popup{
   height: 50px;
   border-radius: 50%;
   background: #fff;
-  background-image: url(/assets/images/sp-ic.png);
+  background-image: url(assets/images/sp-ic.png);
   background-repeat: no-repeat;
 }
 .sc-slide .headline .ic-main{
@@ -165,7 +165,7 @@ body.popup{
 .sc-slide .swiper .btn{
   width: 18px;
   height: 18px;
-  background-image: url(/assets/images/sp-el.png);
+  background-image: url(assets/images/sp-el.png);
   background-repeat: no-repeat;
 }
 .sc-slide .swiper .prev{
@@ -195,7 +195,7 @@ body.popup{
 .sc-slide .swiper .btn-all::before{
   width: 12px;
   height: 12px;
-  background-image: url(/assets/images/ic-bannerAll.png);
+  background-image: url(assets/images/ic-bannerAll.png);
   background-repeat: no-repeat;
   content: '';
 }
@@ -233,7 +233,7 @@ body.popup{
   left: auto;
   width: 350px;
   height: 350px;
-  background-image: url(/assets/images/bg-title.png);
+  background-image: url(assets/images/bg-title.png);
   background-repeat: no-repeat;
   z-index: -1;
   content: '';
@@ -326,7 +326,7 @@ body.popup{
   right: 14px;
   width: 110px;
   height: 30px;
-  background-image: url(/assets/images/btn-mayor.png);
+  background-image: url(assets/images/btn-mayor.png);
 }
 .sc-mayor .group-mayor .link-list{
   display: flex;
@@ -351,25 +351,25 @@ body.popup{
 .sc-mayor .group-mayor .link-manifesto::before{
   width: 77px;
   height: 13px;
-  background-image: url(/assets/images/txt-mayorLink1.png);
+  background-image: url(assets/images/txt-mayorLink1.png);
   content: '';
 }
 .sc-mayor .group-mayor .link-idea::before{
   width: 45px;
   height: 13px;
-  background-image: url(/assets/images/txt-mayorLink2.png);
+  background-image: url(assets/images/txt-mayorLink2.png);
   content: '';
 }
 .sc-mayor .group-mayor .link-mvoting::before{
   width: 22px;
   height: 11px;
-  background-image: url(/assets/images/txt-mayorLink3.png);
+  background-image: url(assets/images/txt-mayorLink3.png);
   content: '';
 }
 .sc-mayor .group-mayor .link-research::before{
   width: 45px;
   height: 12px;
-  background-image: url(/assets/images/txt-mayorLink4.png);
+  background-image: url(assets/images/txt-mayorLink4.png);
   content: '';
 }
 .banner-kakao{
@@ -405,7 +405,7 @@ body.popup{
 .sc-service .link-all::after{
   width: 6px;
   height: 11px;
-  background-image: url(/assets/images/ic-arrow.png);
+  background-image: url(assets/images/ic-arrow.png);
   content: '';
 }
 .sc-service .service-list{
@@ -431,7 +431,7 @@ body.popup{
 .sc-service .ic-service::after{
   width: 60px;
   height: 60px;
-  background-image: url(/assets/images/sp-service.png);
+  background-image: url(assets/images/sp-service.png);
   background-repeat: no-repeat;
   content: '';
 }
@@ -520,7 +520,7 @@ body.popup{
   width: 22px;
   height: 20px;
   border: 1px solid #ddd;
-  background-image: url(/assets/images/sp-el.png);
+  background-image: url(assets/images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -1px -1px;
 }
@@ -614,7 +614,7 @@ body.popup{
   width: 85px;
   height: 85px;
   background-size: 315px 315px;
-  background-image: url(/assets/images/sp-category.png);
+  background-image: url(assets/images/sp-category.png);
   background-repeat: no-repeat;
 }
 .sc-category .ic-category.type-house{
@@ -723,7 +723,7 @@ body.popup{
   width: 12px;
   height: 15px;
   background-size: 300px 300px;
-  background-image: url(/assets/images/sp-el.png);
+  background-image: url(assets/images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -63px -262px;
   content: '';
@@ -801,7 +801,7 @@ body.popup{
 
 .sc-sns{
   position: relative;
-  background: url(/assets/images/bg-sns.gif);
+  background: url(assets/images/bg-sns.gif);
   width: 350px;
   height: 195px;
   padding: 10px 15px;
@@ -824,7 +824,7 @@ body.popup{
   width: 40px;
   height: 40px;
   background-size: 280px 40px;
-  background-image: url(/assets/images/sp-sns.png);
+  background-image: url(assets/images/sp-sns.png);
   background-repeat: no-repeat;
   content: '';
 }
@@ -864,7 +864,7 @@ body.popup{
   width: 12px;
   height: 12px;
   background-size: 300px 300px;
-  background-image: url(/assets/images/sp-el.png);
+  background-image: url(assets/images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -63px -262px;
   content: '';
@@ -894,7 +894,7 @@ body.popup{
   width: 20px;
   height: 20px;
   border: 1px solid #999;
-  background-image: url(/assets/images/sp-el.png);
+  background-image: url(assets/images/sp-el.png);
   background-repeat: no-repeat;
 }
 .banner-slide .btn+.btn{
@@ -989,7 +989,7 @@ body.popup{
 .fix-btn .btn-top{
   width: 34px;
   height: 34px;
-  background-image: url(/assets/images/btn-top.png);
+  background-image: url(assets/images/btn-top.png);
 }
 .fix-btn.show{
   opacity: 1;

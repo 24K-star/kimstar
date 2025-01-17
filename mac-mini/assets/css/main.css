@@ -312,7 +312,7 @@ body{
   left: calc(50% - 79vw);
   width: 158vw;
   height: 116vw;
-  background: url(/assets/images/logo-line.webp);
+  background: url(assets/images/logo-line.webp);
   background-size: cover;
   pointer-events: none;
 }
@@ -362,7 +362,7 @@ body{
   height: 60px;
   /* width: 32px; */
   /* height: 32px; */
-  /* background: url(/assets/images/ic-plus.svg) no-repeat; */
+  /* background: url(assets/images/ic-plus.svg) no-repeat; */
   content: 'x';
 }
 
@@ -717,7 +717,7 @@ body{
 .sc-detail .group-detail .slide-control .btn .arrow::before{
   width: 100%;
   height: 100%;
-  background: url(/assets/images/ic-next.svg);
+  background: url(assets/images/ic-next.svg);
   content: '';
 }
 .sc-detail .group-detail .slide-control .btn-prev .arrow::before{
@@ -966,7 +966,7 @@ body{
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: url(/assets/images/ic-arrow-s.svg) no-repeat;
+  background: url(assets/images/ic-arrow-s.svg) no-repeat;
   background-position: center;
   transition: transform 450ms cubic-bezier(0.51, 0.01, 0.2, 1);
   content: '';
@@ -978,7 +978,7 @@ body{
   transform: translate(-100%, 100%);
   width: 100%;
   height: 100%;
-  background: url(/assets/images/ic-arrow-s.svg) no-repeat;
+  background: url(assets/images/ic-arrow-s.svg) no-repeat;
   background-position: center;
   transition: transform 450ms cubic-bezier(0.51, 0.01, 0.2, 1);
   content: '';
