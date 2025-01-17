@@ -1,5 +1,5 @@
-@import '/assets/css/reset.css';
-@import '/assets/css/common.css';
+@import 'reset.css';
+@import 'common.css';
 
 /* header */
 #header{
@@ -26,7 +26,7 @@
 #header .logo a::before{
   width: 105px;
   height: 27px;
-  background-image: url(assets/images/sp-el.png);
+  background-image: url(../images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -5px -165px;
   content: '';
@@ -86,7 +86,7 @@
   width: 8px;
   height: 5px;
   background-size: cover;
-  background-image: url(assets/images/ic-selector.png);
+  background-image: url(../images/ic-selector.png);
   content: '';
 }
 #header .language-selector{
@@ -118,7 +118,7 @@
 #header .header-group .link-seoul{
   width: 133px;
   height: 51px;
-  background-image: url(assets/images/logo-slogan.png);
+  background-image: url(../images/logo-slogan.png);
 }
 #header .search-area{
   width: 520px;
@@ -145,12 +145,12 @@
   width: 29px;
   height: 16px;
   margin-right: 6px;
-  background-image: url(assets/images/ic-keyboard.png);
+  background-image: url(../images/ic-keyboard.png);
 }
 #header .search-area .btn-submit{
   width: 36px;
   height: 36px;
-  background-image: url(assets/images/sp-el.png);
+  background-image: url(../images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -32px -97px;
 }
@@ -172,7 +172,7 @@
 #header .weather-area .ic-weather.type-cloud{
   width: 58px;
   height: 47px;
-  background-image: url(assets/images/ic-weather01.png);
+  background-image: url(../images/ic-weather01.png);
 }
 
 #header .weather-area .info{
@@ -206,7 +206,7 @@
 #header .header-group .link-brand{
   width: 74px;
   height: 47px;
-  background-image: url(assets/images/logo-brand.png);
+  background-image: url(../images/logo-brand.png);
 }
 #header .banner-top{
   width: 100%;
@@ -258,7 +258,7 @@
 #footer .link-area .link-kakaotalk{
   width: 114px;
   height: 24px;
-  background-image: url(assets/images/sp-sns2.png);
+  background-image: url(../images/sp-sns2.png);
   background-repeat: no-repeat;
   background-position:  0 -30px;
 }
@@ -277,7 +277,7 @@
   display: block;
   width: 108px;
   height: 45px;
-  background-image: url(assets/images/sp-el.png);
+  background-image: url(../images/sp-el.png);
   background-repeat: no-repeat;
   background-position: -180px 0;
 }
@@ -298,7 +298,7 @@
 #footer .row-bottom .link-wah{
   width: 86px;
   height: 59px;
-  background-image: url(assets/images/logo-mark_wah.png);
+  background-image: url(../images/logo-mark_wah.png);
   margin-left: auto;
 }
 

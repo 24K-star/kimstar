@@ -1,5 +1,5 @@
-@import '/assets/css/reset.css';
-@import '/assets/css/common.css';
+@import 'reset.css';
+@import 'common.css';
 
 /* header */
 #header{
@@ -32,7 +32,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: url(assets/images/logo-ebc.svg);
+  background: url(../images/logo-ebc.svg);
   filter: invert(100%);
 }
 
@@ -57,13 +57,13 @@
 .header-inner .menu-item .btn-lang::before{
   width: 24px;
   height: 24px;
-  background: url(assets/images/ic-lang.svg);
+  background: url(../images/ic-lang.svg);
   content: '';
 }
 .header-inner .menu-item .btn-lang::after{
   width: 10px;
   height: 10px;
-  background: url(assets/images/ic-expand.svg);
+  background: url(../images/ic-expand.svg);
   content: '';
 }
 .header-inner .menu-item .lang-list{
@@ -121,6 +121,6 @@
 .footer-inner .logo-area{
   width: 193px;
   height: 42px;
-  background: url(assets/images/logo-footer.png);
+  background: url(../images/logo-footer.png);
   background-size: 192px 42px;
 }

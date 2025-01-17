@@ -1,5 +1,5 @@
-@import '/assets/css/reset.css';
-@import '/assets/css/common.css';
+@import 'reset.css';
+@import 'common.css';
 
 
 /* header */
@@ -47,7 +47,7 @@
 .header-inner .link-Apple::before{
   width: 100%;
   aspect-ratio: 51 / 49;
-  background: url(assets/images/logo.svg) no-repeat;
+  background: url(../images/logo.svg) no-repeat;
   background-size: contain;
   background-position: center; 
   content: '';
@@ -85,7 +85,7 @@
   overflow: hidden;
 }
 #footer .bg{
-  background: url(assets/images/logo.svg) no-repeat;
+  background: url(../images/logo.svg) no-repeat;
   background-size: contain;
   position: absolute;
   top: -93px;

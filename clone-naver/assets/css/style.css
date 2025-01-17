@@ -195,25 +195,25 @@
 }
 
 .sp-bg, .sc-widget .group-link .text::after, .sc-widget .group-link .text::before, .sc-widget .group-vibe .vibe-area .ico-vibe-play::before, .sc-widget .group-vibe .title-area .btn-refresh::after, .sc-widget .group-vibe .title-area .ico-vibe, .sc-widget .group-dictionary .link-search::before, .sc-widget .group-papago .ico-papago::after, .sc-widget .group-papago .ico-papago-text::after, .sc-stock .group-info .stock-item .link-more::after, .sc-stock .group-info .status.type-down .ico-status::before, .sc-stock .group-info .status.type-up .ico-status::before, .sc-stock .group-header [class*=btn-]::before, .sc-weather .group-header .link-forecast::before, .sc-login .link-login::before, .sc-feed .group-feed .btn-next::before, .sc-feed .group-feed .feed-item .badge::before, .sc-news .group-issue .btn-all::after, .component-control .view-area .btn-thumb::before, .component-control .view-area .btn-list::before, .component-control .control-area .btn-next::before, .component-control .control-area .btn-prev::before, #header .util-area [class*=btn-]::before, #header .nav-area [class*=ico-]::before, #header .search-area .btn-auto::before, #header .search-area .btn-keyboard::before, #footer .group-notice .link-all::after {
-  background-image: url(assets/images/sp-bg.png);
+  background-image: url(../images/sp-bg.png);
   background-size: 458px 444px;
   background-repeat: no-repeat;
 }
 
 .sp-bg2, #header .nav-area [class*=ico-]::after {
-  background-image: url(assets/images/sp-bg-new.png);
+  background-image: url(../images/sp-bg-new.png);
   background-size: 463px 444px;
   background-repeat: no-repeat;
 }
 
 .sp-main, .sc-shop .group-commerce [class*=ico-]::after {
-  background-image: url(assets/images/sp-main.png);
+  background-image: url(../images/sp-main.png);
   background-size: 158px 137px;
   background-repeat: no-repeat;
 }
 
 .sp-weather, .sc-weather .group-info .weather-item [class*=ico-]::after, .sc-weather .group-info .weather-icon [class*=ico-]::after {
-  background-image: url(assets/images/sp-weather.png);
+  background-image: url(../images/sp-weather.png);
   background-size: 641px 587px;
   background-repeat: no-repeat;
 }
@@ -703,7 +703,7 @@ body {
   background-position: -164px -260px;
 }
 #header .nav-area .ico-chzzk::after {
-  background-image: url(assets/images/ico-chzzk.png);
+  background-image: url(../images/ico-chzzk.png);
   background-size: contain;
   background-position: 0 2px;
 }

@@ -94,7 +94,7 @@
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: url(assets/images/ic-arrow-s.svg) no-repeat;
+  background: url(../images/ic-arrow-s.svg) no-repeat;
   background-position: center;
   transition: transform 450ms cubic-bezier(0.51, 0.01, 0.2, 1);
   content: '';
@@ -106,7 +106,7 @@
   transform: translate(-100%, 100%);
   width: 100%;
   height: 100%;
-  background: url(assets/images/ic-arrow-s.svg) no-repeat;
+  background: url(../images/ic-arrow-s.svg) no-repeat;
   background-position: center;
   transition: transform 450ms cubic-bezier(0.51, 0.01, 0.2, 1);
   content: '';

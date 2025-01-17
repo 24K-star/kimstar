@@ -170,7 +170,7 @@ strong.headline{
 .flex-card .card-item .info::after{
   width: 40px;
   height: 40px;
-  background: url(assets/images/ic-card-bot.png) no-repeat;
+  background: url(../images/ic-card-bot.png) no-repeat;
   background-size: cover;
   content: '';
 }
@@ -282,7 +282,7 @@ strong.headline{
   left: 50%;
   bottom: 40px;
   transform: translateX(-50%);
-  background: url(assets/images/ic-scroll.svg);
+  background: url(../images/ic-scroll.svg);
   transition: opacity 0.5s;
 }
 .sc-intro .content-inner1 .video-container{
@@ -401,7 +401,7 @@ strong.headline{
 }
 
 .sc-use .content-inner2{
-  background: url(assets/images/img-accent1.jpg) no-repeat 50%;
+  background: url(../images/img-accent1.jpg) no-repeat 50%;
   background-size: cover;
 }
 
@@ -495,19 +495,19 @@ strong.headline{
   content: '';
 }
 .sc-feature .group-core .content-inner1 .prog-item .icon-system::before{
-  background: url(assets/images/ic-prog01.png) no-repeat;
+  background: url(../images/ic-prog01.png) no-repeat;
   background-size: cover;
 }
 .sc-feature .group-core .content-inner1 .prog-item .icon-prov::before{
-  background: url(assets/images/ic-prog02.png) no-repeat;
+  background: url(../images/ic-prog02.png) no-repeat;
   background-size: cover;
 }
 .sc-feature .group-core .content-inner1 .prog-item .icon-nft::before{
-  background: url(assets/images/ic-prog03.png) no-repeat;
+  background: url(../images/ic-prog03.png) no-repeat;
   background-size: cover;
 }
 .sc-feature .group-core .content-inner1 .prog-item .icon-global::before{
-  background: url(assets/images/ic-prog04.png) no-repeat;
+  background: url(../images/ic-prog04.png) no-repeat;
   background-size: cover;
 }
 .sc-feature .group-core .content-inner1 .prog-item .name{
@@ -737,15 +737,15 @@ strong.headline{
   aspect-ratio: 1/1;
 }
 .sc-feature .group-second .content-inner1 .service-area .serv-item .ic-app1{
-  background: url(assets/images/img-app1.png);
+  background: url(../images/img-app1.png);
   background-size: cover;
 }
 .sc-feature .group-second .content-inner1 .service-area .serv-item .ic-app2{
-  background: url(assets/images/img-app2.png);
+  background: url(../images/img-app2.png);
   background-size: cover;
 }
 .sc-feature .group-second .content-inner1 .service-area .serv-item .ic-app3{
-  background: url(assets/images/img-app3.png);
+  background: url(../images/img-app3.png);
   background-size: cover;
 }
 .sc-feature .group-second .content-inner1 .service-area .serv-item .name{
@@ -809,7 +809,7 @@ strong.headline{
   z-index: -1;
   width: 160%;
   height: 160%;
-  background-image: url(assets/images/card-glow.png);
+  background-image: url(../images/card-glow.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: var(--before-opacity, 0);
@@ -835,7 +835,7 @@ strong.headline{
   display: none;
 }
 .sc-vision .content-inner2{
-  background: url(assets/images/img-accent2.jpg) no-repeat 50%;
+  background: url(../images/img-accent2.jpg) no-repeat 50%;
   background-size: cover;
 }
 
@@ -1041,7 +1041,7 @@ strong.headline{
   left: 50%;
   bottom: 40px;
   transform: translateX(-50%);
-  background: url(assets/images/ic-scroll.svg);
+  background: url(../images/ic-scroll.svg);
   opacity: 0;
 }
 
@@ -1198,7 +1198,7 @@ strong.headline{
 .fix-btn .btn-top::after{
   width: 30px;
   height: 35px;
-  background: url(assets/images/ic-top.svg);
+  background: url(../images/ic-top.svg);
   content: '';
 }
 .fix-btn.show{
