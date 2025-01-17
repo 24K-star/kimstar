@@ -1,0 +1,27 @@
+// 모든페이지에 적용되는 코드
+// 초기화
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none;}
+ul {list-style: none;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset {border: 0;}
+
+// 세팅
+html{
+  font-size: 10.5px;
+  line-height: 10.5px;
+}
+
+body{
+  color: #101010;
+  color: var(--color_body);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}

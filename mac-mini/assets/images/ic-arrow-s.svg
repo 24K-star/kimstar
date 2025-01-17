@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" fill="none">
+  <mask id="mask0_9_460" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="46" height="46">
+    <rect width="46" height="46" rx="2" fill="#fff"></rect>
+  </mask>
+  <g mask="url(#mask0_9_460)">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M29.9971 16L30.5685 16L30.9971 16L30.9971 31L29.9971 31L29.9971 17L16.4263 17L16.4263 16L29.9971 16ZM15.9977 30.3146L26.3105 20L27.0177 20.7071L16.7049 31.0216L15.9977 30.3146Z"
+      fill="#fff"></path>
+  </g>
+</svg>

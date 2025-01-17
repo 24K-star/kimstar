@@ -1,0 +1,10 @@
+@import './utils/var';
+@import './utils/mixins';
+
+@import './base/preset';
+@import './base/reset';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/main';

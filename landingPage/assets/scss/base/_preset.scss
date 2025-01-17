@@ -1,0 +1,275 @@
+
+//공통 스타일
+.blind{
+  position: absolute;   
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.split-char{
+  display: inline-block;
+}
+
+//커서 스타일
+.cursor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+
+  width: 12px;
+  height: 12px;
+
+  background: var(--primary-color);
+
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  transition: padding 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out, opacity 0.2s;
+  z-index: 20;
+
+  @include tablet{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .text{
+    font-size: 16px;
+    line-height: 1;
+    color: var(--primary-color);
+    white-space: nowrap;
+
+    pointer-events: none;
+
+    opacity: 0;
+  }
+
+  .video-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.5s;
+    
+    opacity: 0;
+
+    video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+      &.show{
+        opacity: 1;
+      }
+    }
+  }
+
+  &.intro{
+    width: 174px;
+    height: 174px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(150%) blur(10px);
+
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      background: url(../images/circle-arrow.svg) no-repeat center;
+      background-size: 100%;
+      content: '';
+    }
+
+    &::after{
+      width: calc(100% - 24px);
+      height: calc(100% - 24px);
+      background: url(../images/circle.svg) no-repeat center;
+      background-size: 100%;
+      animation: rotate 20s linear infinite;
+      content: '';
+    }
+
+    @include pc{
+      width: 158px;
+      height: 158px;
+    }
+  }
+
+  &.hover{
+    width: auto;
+    height: auto;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(150%) blur(10px);
+
+    @include pc{
+      padding: 18px;
+    }
+
+    .text{
+      opacity: 1;
+    }
+  }
+
+  &.hidden{
+    opacity: 0;
+  }
+
+  &.thumb{
+    background: none;
+
+    .video-container{
+      width: 400px;
+      height: 236px;
+
+      opacity: 1;
+
+      @include pc{
+        width: 270px;
+        height: 160px;
+      }
+    }
+  }
+}
+
+//링크스타일 + 호버
+.link-type1{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  position: relative;
+  padding: 14px 20px 8px 20px;
+  background: var(--primary-color);
+  color: #fff;
+
+  @include pc{
+    padding: 10px 16px 6px 16px;
+  }
+}
+
+.link{
+  display: flex;  
+  position: relative;
+  overflow: hidden;
+
+  &::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: transform .4s .1s;
+    content: attr(data-text);
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  span{
+    transition: transform .4s .1s;
+  }
+
+  &:hover{
+    span{
+      transform: translateY(-100%);
+
+      @include tablet{
+        transform: translateY(0);
+      }
+    }
+
+    &::after{
+      transform: translateY(0);
+    }
+  }
+}
+
+.link-type2{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 36px;
+  border-radius: 100%;
+  background-color: var(--background-color);
+
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+
+  transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  @include pc{
+    padding: 14px 26px;
+    font-size: 18px;
+  }
+
+  @include m{
+    gap: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .text{
+    margin-bottom: -4px;
+  }
+
+  &::after{
+    width: 14px;
+    height: 14px;
+    background: url(../images/ic-arrow-s.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+
+    @include m{
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &:hover{
+    transform: rotate(8deg) scale(0.9);
+
+    @include tablet{
+      transform: rotate(0) scale(1);
+    }
+  }
+}
+
+
+//애니메이션
+@keyframes marquee {
+  0%{ transform: translateX(0%); }
+  100%{ transform: translateX(-100%);}
+}
+
+@keyframes rotate {
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg);}
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(0);
+  }
+}

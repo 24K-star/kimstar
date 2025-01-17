@@ -1,0 +1,145 @@
+//common
+.blind{
+  position: absolute;   
+  width: 1px;height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+//lottie
+[class*=lottie-]{
+  will-change: transform;
+}
+
+
+//mouse-circle
+.custom-cursor{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+
+  .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    box-shadow: 0 0 10px 0 #C8ACF0 inset, 0 0 20px 0 #C8ACF0, 0 0 10px 0 #C8ACF0;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}
+
+//link
+.link-nav{
+  position: relative;
+  white-space: nowrap;
+
+  .line{
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.6s;
+    pointer-events: none;
+
+    svg{
+      max-width: none;
+    }
+  }
+
+  &:hover{
+    background-image: linear-gradient(127deg, #87cce9, #d2a6f5);
+    background-clip: text;
+    color: transparent;
+
+    .line{
+      width: 100%;
+    }
+  }
+}
+
+//frame
+.frame-dark{
+  position: relative;
+  padding: 1px;
+  border-radius: 3.2vw;
+  overflow: hidden;
+  color: #fff;
+
+  &::after{
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    z-index: -1;
+
+    width: 80%;
+    aspect-ratio: 1;
+
+    background-image: radial-gradient(circle, #7389bc, #18171a 68%);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: var(--after-visibility, visible);
+    transform: translateY(50%);
+    transition: opacity .6s, transform .6s;
+
+    content: '';
+  }
+
+  &.position::after{
+    top: -80%;
+  }
+  &.static{
+    &::after{
+      transform: translateY(0);
+      opacity: 1;
+
+      @include tablet{
+        top: -30%;
+        left: -20%;
+        width: 60%;
+      }
+      @include m{
+        top: -20%;
+        left: -30%;
+        width: 60%;
+      }
+    }
+  }
+
+  &:not(.static):hover{
+    &::after{
+      transform: translateY(0);
+      opacity: 1;
+
+      @include tablet{
+        transform: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  .frame-border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+  
+    background-color:#161616;
+    border-radius: 3.2vw;
+  }
+
+}
+
+

@@ -1,0 +1,70 @@
+
+//스타일 초기화
+
+//국문폰트 
+@font-face {
+  font-family: 'PretendardVariable';
+  src: url('../fonts/PretendardVariable.woff2') format('woff2'),
+        url('../fonts/PretendardVariable.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//영문폰트 
+
+//타이틀
+@font-face {
+  font-family: 'Druk Wide';
+  src: url('../fonts/DrukWideBold.woff2') format('woff2'),
+        url('../fonts/DrukWideBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+//본문
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../fonts/PPMori-Regular.woff2') format('woff2'),
+        url('../fonts/PPMori-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PP Mori';
+  src: url('../fonts/PPMori-SemiBold.woff2') format('woff2'),
+        url('../fonts/PPMori-SemiBold.otf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+
+:root { 
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  line-height: 1;
+}
+
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul, ol{list-style: none;}
+
+body{
+  font-family: "PP Mori", "PretendardVariable", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color:  var(--text-color-light);
+  overscroll-behavior: none;
+}

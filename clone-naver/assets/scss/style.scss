@@ -1,0 +1,13 @@
+@import './utils/var';
+
+@import './base/preset';
+@import './base/reset';
+
+@import './layout/footer';
+@import './layout/header';
+
+@import './component/control';
+@import './component/tabList';
+@import './component/dailyBoard';
+
+@import './page/main';

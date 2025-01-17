@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/MotionPathPlugin.min.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="fixed">
+    <div class="background"></div>
+  </div>
+  <div class="cursor">
+    <span class="text"></span>
+    <div class="video-container">
+      <video muted loop poster="/assets/images/img-fitonist-poster.jpg">
+        <source src="assets/videos/fitonist-clip.mp4" type="video/mp4">
+      </video>
+      <video muted loop poster="/assets/images/img-mac-poster.jpg">
+        <source src="assets/videos/mac-mini-clip.mp4" type="video/mp4">
+      </video>
+      <video muted loop poster="/assets/images/img-odense-poster.jpg">
+        <source src="assets/videos/odense-clip.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="header-inner">
+      <h1 class="logo">
+        <a href="/" class="link-home" aria-label="홈페이지로 이동">Portfolio</a>
+      </h1>
+      <nav class="nav-area">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#project" class="link" data-text="Project"><span>Project</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="link" data-text="About"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="link" data-text="Contact"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="container" class="container">
+    <section id="intro" class="sc-intro">
+      <h2 class="blind">2024 웹퍼블리셔 포트폴리오</h2>
+      <div class="sticky-wrapper">
+        <div class="sticky">
+          <div class="bg"></div>
+        </div>
+      </div>
+      <div class="rotator">
+        <div class="bg"></div>
+        <div class="text-area">
+          <div class="headline">
+            <div class="item">
+              <strong class="text">Progressive</strong>
+            </div>
+            <div class="item">
+              <strong class="text">Web</strong>
+              <div class="gradient" aria-hidden="true">
+                <div class="video-container">
+                  <video autoplay muted loop playsinline preload="auto" poster="/assets/images/img-intro.jpg">
+                    <source src="assets/videos/intro.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="orbit">
+                  <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 50, 0A 50, 50 0 1, 1 49.999, 0Z" fill="none" stroke="black" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                  </svg>
+                  <span class="shape"></span>
+                </div>
+              </div>
+            </div>
+            <div class="item"><strong class="text">Publisher</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="sc-project">
+      <h2 class="blind">프로젝트 소개</h2>
+      <section class="group-main">
+        <h3 class="blind">메인 프로젝트</h3>
+        <div class="rotator">
+          <div class="head-area heading">
+            <span class="sub">About Main</span>
+            <strong class="headline">
+              Projects
+            </strong>
+          </div>
+        </div>
+        <div class="content-area">
+          <div class="sticky">
+            <ul class="main-list">
+              <li class="main-item">
+                <div class="rotator">
+                  <div class="info">
+                    <div class="title-wrap">
+                      <h4 class="title">Fitonist</h4>
+                      <ul class="tech-list">
+                        <li class="tech-item">#Responsive</li>
+                        <li class="tech-item">#SCSS</li>
+                        <li class="tech-item">#JS</li>
+                        <li class="tech-item">#GSAP</li>
+                        <li class="tech-item">#Lottie</li>
+                      </ul>
+                      <div class="link-wrap">
+                        <div class="link-type1"><a href="" class="link" data-text="View project"><span>View project</span></a></div>
+                        <!-- <div class="link-type1"><a href="" class="link" data-text="View Code"><span>View Code</span></a></div> -->
+                      </div>
+                    </div>
+                    <div class="guideline">
+                      <span class="text">Container</span>
+                      <span class="text number">
+                        <span class="width"></span>
+                        <span class="height"></span>
+                      </span>
+                      <div class="box-solid">
+                        <span class="text">Wrapper</span>
+                        <span class="text number">
+                          <span class="width"></span>
+                          <span class="height"></span>
+                        </span>
+                        <div class="box-dashed">
+                          <span class="text">Content</span>
+                          <span class="text number">
+                            <span class="width"></span>
+                            <span class="height"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rotator">
+                  <div class="content">
+                    <a href="" class="link-project" aria-label="Fitonist 프로젝트 사이트로 이동">
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-fitonist.jpg" alt="Fitonist 사이트 이미지">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="main-item">
+                <div class="rotator">
+                  <div class="info">
+                    <div class="title-wrap">
+                      <h4 class="title">Mac mini</h4>
+                      <ul class="tech-list">
+                        <li class="tech-item">#Responsive</li>
+                        <li class="tech-item">#JS</li>
+                        <li class="tech-item">#GSAP</li>
+                      </ul>
+                      <div class="link-wrap">
+                        <div class="link-type1"><a href="" class="link" data-text="View project"><span>View project</span></a></div>
+                        <!-- <div class="link-type1"><a href="" class="link" data-text="View Code"><span>View Code</span></a></div> -->
+                      </div>
+                    </div>
+                    <div class="guideline">
+                      <span class="text">Container</span>
+                      <span class="text number">
+                        <span class="width"></span>
+                        <span class="height"></span>
+                      </span>
+                      <div class="box-solid">
+                        <span class="text">Wrapper</span>
+                        <span class="text number">
+                          <span class="width"></span>
+                          <span class="height"></span>
+                        </span>
+                        <div class="box-dashed">
+                          <span class="text">Content</span>
+                          <span class="text number">
+                            <span class="width"></span>
+                            <span class="height"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rotator">
+                  <div class="content">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-mac-mini.jpg" alt="Mac-mini 프로젝트 이미지">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="main-item">
+                <div class="rotator">
+                  <div class="info">
+                    <div class="title-wrap">
+                      <h4 class="title">Odense</h4>
+                      <ul class="tech-list">
+                        <li class="tech-item">#Responsive</li>
+                        <li class="tech-item">#JS</li>
+                        <li class="tech-item">#GSAP</li>
+                        <li class="tech-item">#Lottie</li>
+                      </ul>
+                      <div class="link-wrap">
+                        <div class="link-type1"><a href="" class="link" data-text="View project"><span>View project</span></a></div>
+                        <!-- <div class="link-type1"><a href="" class="link" data-text="View Code"><span>View Code</span></a></div> -->
+                      </div>
+                    </div>
+                    <div class="guideline">
+                      <span class="text">Container</span>
+                      <span class="text number">
+                        <span class="width"></span>
+                        <span class="height"></span>
+                      </span>
+                      <div class="box-solid">
+                        <span class="text">Wrapper</span>
+                        <span class="text number">
+                          <span class="width"></span>
+                          <span class="height"></span>
+                        </span>
+                        <div class="box-dashed">
+                          <span class="text">Content</span>
+                          <span class="text number">
+                            <span class="width"></span>
+                            <span class="height"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rotator">
+                  <div class="content">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-odense.jpg" alt="odense 프로젝트 이미지">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="group-side">
+        <h3 class="blind">사이드 프로젝트</h3>
+        <div class="sticky-wrapper">
+          <div class="sticky">
+            <div class="rotator">
+              <div class="head-area heading">
+                <span class="sub">About Other</span>
+                <strong class="headline">
+                  Side projects
+                </strong>
+              </div>
+              <div class="swiper content-area">
+                <ul class="swiper-wrapper side-list horizontal">
+                  <li class="swiper-slide side-item">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="info">
+                        <h4 class="title">Enterprise Blockchain</h4>
+                        <ul class="tech-list">
+                          <li class="tech-item">#Adaptive</li>
+                          <li class="tech-item">#JS</li>
+                          <li class="tech-item">#GSAP</li>
+                        </ul>
+                        <div class="frame">
+                          <img src="assets/images/img-enter-detail.jpg" alt="Enterprise Blockchain 프로젝트 사이트 이미지">
+                        </div>
+                      </div>
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-enter.jpg" alt="Enterprise Blockchain 이미지">
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide side-item">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="info">
+                        <h4 class="title">andar</h4>
+                        <ul class="tech-list">
+                          <li class="tech-item">#Adaptive</li>
+                          <li class="tech-item">#Mobile</li>
+                          <li class="tech-item">#Cafe24</li>
+                        </ul>
+                        <div class="frame">
+                          <img src="assets/images/img-andar-detail.jpg" alt="andar 프로젝트 사이트 이미지">
+                        </div>
+                      </div>
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-andar.jpg" alt="andar 이미지">
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide side-item">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="info">
+                        <h4 class="title">Seoul Metropolitan Government</h4>
+                        <ul class="tech-list">
+                          <li class="tech-item">#Adaptive</li>
+                          <li class="tech-item">#접근성</li>
+                        </ul>
+                        <div class="frame">
+                          <img src="assets/images/img-seoul-detail.jpg" alt="서울시청 프로젝트 사이트 이미지">
+                        </div>
+                      </div>
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-seoul.png" alt="서울특별시 브랜드 이미지">
+                      </div>
+                    </a>
+                  </li>
+                  <li class="swiper-slide side-item">
+                    <a href="" class="link-project" aria-label="프로젝트 사이트로 이동">
+                      <div class="info">
+                        <h4 class="title">Naver</h4>
+                        <ul class="tech-list">
+                          <li class="tech-item">#Adaptive</li>
+                          <li class="tech-item">#접근성</li>
+                        </ul>
+                        <div class="frame">
+                          <img src="assets/images/img-naver-detail.jpg" alt="Naver 프로젝트 사이트 이미지">
+                        </div>
+                      </div>
+                      <div class="img-container">
+                        <img class="animate-scale" src="assets/images/img-naver.jpg" alt="Naver 이미지">
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="about" class="sc-about">
+      <h2 class="blind">소개</h2>
+      <div class="head-area heading">
+        <span class="sub">About Me</span>
+        <strong class="headline">
+          Keywords
+        </strong>
+      </div>
+      <div class="content-area">
+        <div class="col-left">
+          <p class="desc">
+            안녕하세요. 웹 퍼블리셔 <em>김별</em>입니다.<br/>
+            웹 표준과 접근성을 고려한 사용자 중심 웹사이트 구축을 지향하며,
+            반응형 디자인, 웹 성능 개선, SEO에 관심을 가지고
+            이를 지속적으로 발전시키기 위해 노력하고 있습니다.
+          </p>
+        </div>
+        <div class="col-right">
+          <ul class="con-list">
+            <li class="con-item">
+              <span class="number">01</span>
+              <strong class="title">Solid Foundation</strong>
+              <p class="desc">
+                기본기가 탄탄한 웹 퍼블리셔입니다.<br/> 
+                HTML, CSS, JavaScript의 기본기를 바탕으로, <em>시맨틱 마크업</em>과 <em>웹 표준</em>을 준수하여 견고하고 유지 보수 가능한 웹사이트를 구축합니다.
+              </p>
+            </li>
+            <li class="con-item">
+              <span class="number">02</span>
+              <strong class="title">User-Focused</strong>
+              <p class="desc">
+                사용자 경험을 최우선으로 고려합니다.<br/>
+                <em>ARIA</em>와 같은 접근성 기술을 활용하여 스크린 리더 지원을 강화하고,
+                Grid & Flex 레이아웃과 미디어 쿼리를 활용하여 <em>반응형 디자인</em>을 구현합니다.
+              </p>
+            </li>
+            <li class="con-item">
+              <span class="number">03</span>
+              <strong class="title">Meticulous</strong>
+              <p class="desc">
+                세부 사항까지 신경 써서 작업합니다.<br/>
+                작업을 진행할 때 작은 부분까지 신경을 쓰며, <em>실수를 최소화</em>하려 노력합니다. 
+                안정적인 결과물을 만들어내는 것을 중요하게 생각합니다.
+              </p>
+            </li>
+            <li class="con-item">
+              <span class="number">04</span>
+              <strong class="title">Progressive</strong>
+              <p class="desc">
+                지속적으로 발전하는 웹 퍼블리셔입니다.<br/>
+                <em>최신 웹 기술</em>에 관심을 가지고 활용하려고 하며, <em>지속적인 학습</em>을 통해 변화하는 트렌드에 맞추기 위해 노력합니다.
+              </p>
+            </li>
+          </ul>
+          <span class="lines">
+            <span class="line-h"></span>
+            <span class="line-h"></span>
+          </span>
+        </div>
+      </div>
+      <div class="marquee-wrapper" aria-hidden="true">
+        <div class="marquee">
+          <div class="wrap">
+            <span class="item">get in touch</span>
+            <span class="item">kim byeol</span>
+            <span class="item">get in touch</span>
+            <span class="item">kim byeol</span>
+          </div>
+          <div class="wrap">
+            <span class="item">get in touch</span>
+            <span class="item">kim byeol</span>
+            <span class="item">get in touch</span>
+            <span class="item">kim byeol</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <h2 class="blind">푸터</h2>
+      <div class="sticky-wrapper">
+        <div class="sticky">
+          <div class="bg"></div>
+          <div class="inner">
+            <div class="contact">
+              <div class="low-top">
+                <div class="wrap">
+                  <div class="title">
+                    <span>contact</span>
+                  </div>
+                  <div class="content">
+                    <a href="mailto:byul6623@gmail.com" class="link" data-text="byul6623@gmail.com"><span>byul6623@gmail.com</span></a>
+                    <a href="tel:+821023445124" class="link" data-text="+82 10-2344-5124"><span>+82 10 2344 5124</span></a>
+                  </div>
+                </div>
+                <div class="wrap">
+                  <div class="title">
+                    <span>links</span>
+                  </div>
+                  <div class="content">
+                    <a href="/" class="link" data-text="github"><span>github</span></a>
+                    <a href="/" class="link" data-text="velog"><span>velog</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="low-bottom">
+                <div class="resume">
+                  <a href="/" class="link-resume link-type2"><span class="text">Resume</span></a>
+                    <!-- <a href="/" class="link" data-text="Click here to view my Resume"><span>Click here to view my Resume</span></a> -->
+                </div>
+                <div class="copy">
+                  <small>© Kim Byeol All Rights Reserved, 2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.daily-board{
+  padding: 0 18px;
+  .group-header{
+    position: relative;
+    display: flex;
+    gap: 7px;
+    padding: 6px 0;
+    line-height: 40px;
+
+    .header-title{
+      color: #080808;
+      color: var(--color_title);
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .header-aside{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: auto;
+      color: #606060;
+      color: var(--color_caption2);
+      font-size: 1.3rem;
+    }
+  }
+  .group-info{
+    display: flex;
+    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--color_border_in);
+
+    [class*="col-"]{
+      flex: 1;
+      min-width: 0;
+    }
+  }
+}

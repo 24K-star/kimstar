@@ -1,0 +1,54 @@
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  
+  color: var(--difference-color);
+  mix-blend-mode: difference;
+}
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+
+  @include m{
+    padding: 16px;
+  }
+
+  .logo{
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+
+    @include pc{
+      font-size: 20px;
+    }
+    @include m{
+      font-size: 16px;
+    }
+  }
+
+  .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @include pc{
+      gap: 48px;
+    }
+    @include tablet{
+      font-size: 16px;
+      gap: 36px;
+    }
+    @include m{
+      display: none;
+    }
+  }
+
+}

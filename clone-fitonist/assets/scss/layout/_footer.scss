@@ -1,0 +1,233 @@
+#footer{}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  padding: max(64px, 5.6vw) 11vw;
+  gap: 32px;
+
+  .col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .footer-frame{
+      border-radius: max(18px, 1.7vw);
+
+      &::after{
+        top: -60%;
+        left: -15%;
+        width: 30%;
+
+        @include tablet{
+          left: -8%;
+          width: 16%;
+        }
+        @include m{
+          left: -9%;
+          width: 24%;
+        }
+      }
+
+      .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: max-content;
+        padding: 1.7vw;
+        padding: max(18px, 1.7vw);
+        border-radius: max(18px, 1.7vw);
+        
+        .logo{
+          width: max(50px, 3.8vw);
+          aspect-ratio: 1/1;
+          background: url(../images/logo-app.svg) no-repeat;
+          flex-shrink: 0;
+        }
+    
+        p{
+          padding: 0 6vw 0 2.2vw;
+          font-weight: 300;
+          font-size: clamp(18px, 2vw, 24px);
+          line-height: 1.5;
+          white-space: nowrap;
+        }
+    
+        .btn-area{
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+
+    .copy{
+      padding-left: 38px;
+      font-size: clamp(16px, 1.4vw, 20px);
+      line-height: 1.5;
+      color: #939398;
+
+      a{
+        color: #fff;
+      }
+
+      @include pc{
+        padding-left: 0;
+      }
+    }
+
+  }
+
+  .col-right{
+    .link-list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      gap: 32px 32px;
+
+      width: 28vw;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #939398;
+    }
+
+    .link-item{
+      &:nth-child(1){
+        svg{
+          width: 134px;
+        }
+      }
+      &:nth-child(2){
+        svg{
+          width: 155px;
+        }
+      }
+      &:nth-child(3){
+        svg{
+          width: 86px;
+        }
+      }
+      &:nth-child(4){
+        svg{
+          width: 130px;
+        }
+      }
+      &:nth-child(5){
+        svg{
+          width: 66px;
+        }
+      }
+      &:nth-child(7){
+        svg{
+          width: 101px;
+        }
+      }
+    }
+
+    .grid-span{
+      display: flex;
+      align-items: center;
+      grid-row: span 2;
+    }
+    
+
+    .btn-area{
+      display: flex;
+      gap: 10px;
+      
+      [class*="link-"]{
+        &::before{
+          position: relative;
+          z-index: 2;
+          width: 27px;
+          height: 27px;
+          transition: background-image 0.6s;
+          content: '';
+
+          @include tablet{
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+
+      .link-tiktok{
+        &::before{
+          background: url(../images/ic-tiktok-wh.svg) no-repeat center / contain;
+        }
+        &:hover::before{
+          background: url(../images/ic-tiktok.svg) no-repeat center / contain;
+        }
+      }
+      .link-youtube{
+        &::before{
+          background: url(../images/ic-youtube-wh.svg) no-repeat center / contain;
+        }
+        &:hover::before{
+          background: url(../images/ic-youtube.svg) no-repeat center / contain;
+        }
+      }
+      .link-instagram{
+        &::before{
+          background: url(../images/ic-insta-wh.svg) no-repeat center / contain;
+        }
+        &:hover::before{
+          background: url(../images/ic-insta.svg) no-repeat center / contain;
+        }
+      }
+    }
+  }
+
+  @include tablet{
+    flex-direction: column-reverse;
+  }
+  @include m{
+    overflow: hidden;
+    padding: max(30px ,10.8vw);
+
+    .col-left{
+      width: fit-content;
+
+      .footer-frame{
+        width: 100%;
+        border-radius:12px;
+  
+        .wrapper{
+          width: 100%;
+          padding: 12px;
+          border-radius:12px;
+
+          .logo{
+            width: 30px;
+          }
+      
+          p{
+            flex-shrink: 1;
+            font-size: max(14px, 2.7vw);
+            white-space: unset;
+          }
+      
+          .btn-area{
+            gap: 6px;
+          }
+        }
+      }
+  
+      .copy{
+  
+        a{
+        }
+      }
+  
+    }
+    .col-right{
+      .link-list{
+        row-gap: 26px;
+        column-gap: max(20px, 8vw);
+        font-size: max(16px, 3.3vw);
+        font-weight: 600;
+
+      }
+    }
+  }
+}

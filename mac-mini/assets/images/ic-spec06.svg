@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<svg xmlns="http://www.w3.org/2000/svg" class="as-svgicon" aria-hidden="true" role="img" viewBox="0 0 35 35">
+  <g>
+    <rect width="35" height="35" fill="none"></rect>
+    <path d="M26.5,13a4.5,4.5,0,0,1,0,9H8.5a4.5,4.5,0,0,1,0-9h18m0-1H8.5a5.5,5.5,0,0,0,0,11h18a5.5,5.5,0,0,0,0-11Zm.5,5.5h0a.5.5,0,0,0-.5-.5H8.5a.5.5,0,0,0-.5.5H8a.5.5,0,0,0,.5.5h18A.5.5,0,0,0,27,17.5Z"></path>
+  </g>
+</svg>

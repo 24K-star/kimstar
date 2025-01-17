@@ -1,0 +1,140 @@
+.footer{
+  position: relative;
+  color: var(--text-color-dark);
+  
+
+  .sticky-wrapper{
+    position: relative;
+    height: 140vh;
+    margin-top: -100vh;
+
+    @include m{
+      height: auto;
+      margin-top: 0;
+    }
+  }
+  
+  .sticky{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    @include m{
+      position: relative;
+      height: auto;
+    }
+
+    .bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+
+      z-index: -1;
+
+      @include m{
+        z-index: 0;
+      }
+    }
+    .inner{
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      height: 100%;
+
+      @include m{
+        position: relative;
+        z-index: 5;
+      }
+    }
+
+
+    .contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      width: 100%;
+      height: 40vh;
+      padding: 1vh 24px 24px;
+  
+      font-size: 16px;
+      letter-spacing: 0;
+
+      @include m{
+        gap: 56px;
+        height: auto;
+        padding: 48px 16px 24px;
+      }
+  
+      .low-top{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @include m{
+          gap: 56px;
+        }
+      }
+  
+      .wrap{
+        display: flex;
+        white-space: nowrap;
+
+        @include m{
+          flex-direction: column;
+          gap: 16px;
+        }
+      }
+  
+      .title{
+        width: clamp(120px, 7.6vw, 146px);
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+  
+        a{
+          pointer-events: auto;
+        }
+      }
+  
+      .low-bottom{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        @include m{
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 56px;
+        }
+      }
+
+      .resume{
+        padding: 24px;
+        margin: -24px;
+
+        @include m{
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .copy{
+        text-transform: uppercase;
+        opacity: 0.6;
+
+        @include m{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

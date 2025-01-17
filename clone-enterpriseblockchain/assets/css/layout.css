@@ -1,0 +1,126 @@
+@import '/assets/css/reset.css';
+@import '/assets/css/common.css';
+
+/* header */
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  color: #fff;
+  transform: translateY(-100%);
+  transition: filter .5s, transform .3s;
+}
+#header.show{
+  transform: translateY(0);
+}
+#header.dark{
+  filter: invert(100%);
+}
+
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+.header-inner .logo{
+  padding: 17px 0;
+}
+.header-inner .link-ebc{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(/assets/images/logo-ebc.svg);
+  filter: invert(100%);
+}
+
+.header-inner .menu-area{}
+.header-inner .menu-list{
+  display: flex;
+  align-items: center;
+}
+.header-inner .menu-item{
+  position: relative;
+  font-weight: 600;
+}
+.header-inner .menu-item .link{
+  padding: 23px 25px;
+}
+.header-inner .menu-item .btn-lang{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0 18px 25px;
+}
+.header-inner .menu-item .btn-lang::before{
+  width: 24px;
+  height: 24px;
+  background: url(/assets/images/ic-lang.svg);
+  content: '';
+}
+.header-inner .menu-item .btn-lang::after{
+  width: 10px;
+  height: 10px;
+  background: url(/assets/images/ic-expand.svg);
+  content: '';
+}
+.header-inner .menu-item .lang-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 53px;
+  right: 1px;
+  padding: 7px 12px;
+  
+  background-color: #000;
+  border: 1px solid #5a5a5a;
+  border-radius: 6px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.header-inner .menu-item .lang-list.show{
+  opacity: 1;
+  visibility: visible;
+}
+.header-inner .menu-item .lang-item.active a{
+  opacity: 1;
+}
+.header-inner .menu-item .lang-item a{
+  opacity: .2;
+}
+
+
+/* footer */
+#footer{
+  background: #000;
+  position: relative;
+  color: #fff;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 58px 72px;
+}
+.footer-inner .text-area{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+.footer-inner .text-area small{
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.footer-inner .logo-area{
+  width: 193px;
+  height: 42px;
+  background: url(/assets/images/logo-footer.png);
+  background-size: 192px 42px;
+}

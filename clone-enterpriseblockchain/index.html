@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header id="header">
+    <div class="header-inner">
+      <h1 class="logo">
+        <a href="/" class="link-ebc">
+          <span class="blind">엔터프라이즈블록체인 로고</span>
+        </a>
+      </h1>
+      <nav class="menu-area">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="" class="link">시나리오보기</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="link">제휴문의</a>
+          </li>
+          <li class="menu-item">
+            <button class="btn-lang" aria-expanded="false" aria-haspopup="listbox" aria-controls="lang-list">
+              KR
+              <span class="blind">언어 선택 펼치기</span>
+            </button>
+            <ul id="lang-list" class="lang-list" role="listbox">
+              <li class="lang-item active" role="presentation" aria-selected="true">
+                <a href="" role="option">KR</a>
+              </li>
+              <li class="lang-item" role="presentation" aria-selected="false">
+                <a href="/" role="option">EN</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="container">
+    <section class="sc-intro">
+      <h2 class="blind">DATA ID 소개</h2>
+      <div class="content-inner1">
+        <div class="sticky-content">
+          <div class="video-container">
+            <video autoplay loop muted poster="/assets/images/img-intro-poster-pc.jpg">
+              <source src="https://www.enterpriseblockchain.io/assets/video/Archivo-VariableFont_Medium_C_PC.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="text-area">
+            <p class="desc">
+              DATA ID는 나만의<br/>데이터 아이덴티티입니다.
+            </p>
+            <p class="desc">
+              이용자 개인이 데이터 소유권을 갖고<br/>
+              언제 어디서든 나를 증명하는<br/>
+              데이터 패스포트이자
+            </p>
+            <p class="desc">
+              다양한 서비스 이용을 가능하게 하는<br/>
+              패스워드리스 접속 방식입니다.
+            </p>
+            <p class="desc">
+              증명하기 어려운 개인의 창작 활동과 프리랜서 경험을 보호하고<br/>
+              신뢰할 만한 자산으로 측정하기 위해서는 어떻게 관리해야 할까요?
+            </p>
+            <span class="ic-scroll">
+              <span class="blind">밑으로 스크롤</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner2">
+        <div class="sticky-content">
+          <div class="img-area">
+            <div class="img-container">
+              <img src="assets/images/img-intro01.jpg" alt>
+            </div>
+            <div class="img-container">
+              <img src="assets/images/img-intro02.jpg" alt>
+            </div>
+            <div class="img-container">
+              <img src="assets/images/img-intro03.jpg" alt>
+            </div>
+          </div>
+          <div class="text-area">
+            <div class="desc">
+              <p class="text">기록하고</p>
+              <p class="text">증명하고</p>
+              <p class="text">성장하기</p>
+            </div>
+            <p class="desc">
+              엔터프라이즈블록체인은 블록체인 네트워크<br/>
+              DATA ID를 활용해 그 문제를 해결하고 새로운 방식을<br/>
+              제안하고자 합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sc-use">
+      <h2 class="blind">DATA ID 활용 범위</h2>
+      <div class="content-inner1 content-wrap flex-type1">
+        <strong class="headline">
+          긱 워커<br/>
+          개인사업자<br/>
+          크리에이터
+        </strong>
+        <p class="desc">
+          파트타임 단기업무, 부업, 프리랜서 활동.<br/>
+          그 어떤 것도 상관없어요.<br/>
+          분산되어 있던 소득과 거래 이력부터 자격, 창작물 등의<br/>
+          재능 상세를 담은 포트폴리오까지.<br/>
+          나의 이력과 재능을 증명할 정보를 모두 담을 수 있어요.
+        </p>
+      </div>
+      <div class="content-inner2 accent-type1">
+        <div class="text-area">
+          <div class="desc">
+            <p class="text">가치를</p>
+            <p class="text">증명하고 싶다면</p>
+            <p class="text">누구든지.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner3 content-wrap">
+        <div class="col-left">
+          <strong class="headline">
+            당신의<br/>
+            다양한 재능을<br/>
+            DATA ID에.
+          </strong>
+        </div>
+        <div class="col-right">
+          <ul class="case-list">
+            <li class="case-item">
+              <img src="/assets/images/img-use02.jpg" alt>
+              <p class="desc">플라워 클래스를 운영하는 정호영 씨도</p>
+            </li>
+            <li class="case-item">
+              <img src="/assets/images/img-use03.jpg" alt>
+              <p class="desc">카페를 운영하는 김은혜 씨도</p>
+            </li>
+            <li class="case-item">
+              <img src="/assets/images/img-use04.jpg" alt>
+              <p class="desc">프리랜서 개발자 송보름 씨도</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sc-feature">
+      <h2 class="blind">DATA ID의 기능</h2>
+      <div class="group-core">
+        <h3 class="blind">DATA ID의 핵심기능</h3>
+        <div class="content-inner1 flex-type2">
+
+          <div class="sticky-content">
+            <div class="horizontal">
+              <strong class="headline">
+                불가능을<br/>
+                DATA ID로<br/>
+                가능하게.
+              </strong>
+              <ol class="prog-list">
+                <li class="prog-item">
+                  <span class="icon-system"></span>
+                  <p class="name">
+                    기축데이터, 금융,<br/>
+                    사회 전반 시스템 부재
+                  </p>
+                </li>
+                <li class="prog-item">
+                  <span class="icon-prov"></span>
+                  <p class="name">
+                    개인의 소득 증빙, 재능<br/>
+                    증명 필요
+                  </p>
+                </li>
+                <li class="prog-item">
+                  <span class="icon-nft"></span>
+                  <p class="name">
+                    DATA ID 통해 재능 자산<br/>
+                    소유권 증명
+                  </p>
+                </li>
+                <li class="prog-item">
+                  <span class="icon-global"></span>
+                  <p class="name">
+                    커리어 성장,<br/>
+                    금융 혜택으로 연결
+                  </p>
+                </li>
+              </ol>
+              <div class="graphic-area">
+                <div class="img-container">
+                  <img src="assets/images/img-graphic.png" alt>
+                  <div class="text-area">
+                    <div class="text-wrap">
+                      <em>증명</em>
+                      <span>DATA ID</span>
+                    </div>
+                    <div class="text-wrap">
+                      <em>기록</em>
+                      <span>기축데이터</span>
+                    </div>
+                    <div class="text-wrap">
+                      <em>성장</em>
+                      <span>커리어, 금융</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <small class="desc-sub">
+              DATA ID는 나만의 데이터 아이덴티티입니다<br/>
+              이용자 개인이 데이터 소유권을 갖고 언제 어디서든 나를 증명하는 데이터 패스포트이자 다양한 서비스 이용을 가능케하는 패스워드리스 접속 방식입니다.
+            </small>
+          </div>
+
+        </div>
+        <div class="content-inner2 content-wrap flex-type1">
+          <strong class="headline">
+            쉽고 간편하게<br/>
+            DATA ID로 정보를<br/>
+            보관하고<br/>
+            언제 어디서든<br/>
+            증명해보세요.
+          </strong>
+          <p class="desc">
+            DATA ID는 개인의 능력 인증서 같은 역할을 해요.<br/>
+            블록체인에 기록된 덕분에 신뢰할 수 있고,<br/>
+            즉시 확인 가능하고, 유연해진 데이터는,<br/>
+            개인의 재능 자산에 대한 소유권 증명을 가능하게 합니다.
+          </p>
+        </div>
+        <div class="content-inner3">
+          <div class="bg-block">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+          <p class="desc">DATA ID는 당신을 기록하고 증명하며, 당신의 성장을 도울 수 있어요.</p>
+        </div>
+        <div class="content-inner4 flex-type2">
+          <div class="sticky-wrapper">
+            <div class="sticky-content">
+              <div class="horizontal">
+                <strong class="headline">
+                  안전하고<br/>
+                  대체불가능한<br/>
+                  DATA ID.
+                </strong>
+                <ul class="card-list flex-card">
+                  <li class="card-item">
+                    <div class="head">
+                      <em class="title">CREATOR</em>
+                    </div>
+                    <div class="bg"></div>
+                    <div class="content">
+                      <div class="img-container">
+                        <img src="assets/images/img-code1.png" alt>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <span class="name">ASSET</span>
+                    </div>
+                  </li>
+                  <li class="card-item">
+                    <div class="head">
+                      <em class="title">GIG<br/>WORKER</em>
+                    </div>
+                    <div class="bg"></div>
+                    <div class="content">
+                      <div class="img-container">
+                        <img src="assets/images/img-code2.png" alt>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <span class="name">CONTRACT</span>
+                    </div>
+                  </li>
+                  <li class="card-item">
+                    <div class="head">
+                      <em class="title">SELF<br/>EMPLOYED</em>
+                    </div>
+                    <div class="bg"></div>
+                    <div class="content">
+                      <div class="img-container">
+                        <img src="assets/images/img-code3.png" alt>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <span class="name">CERTIFICATE</span>
+                    </div>
+                  </li>
+                  <li class="card-item card-type1">
+                    <div class="bg"></div>
+                    <div class="icon">
+                      <img class="unlock" src="assets/images/img-lock.png" alt>
+                      <img class="lock" src="assets/images/img-lock2.png" alt>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group-second">
+        <h3 class="blind">DATA ID의 부가기능</h3>
+        <div class="content-inner1 content-wrap">
+          <div class="col-left">
+            <div class="card-item card-type1 hidden-a">
+              <span class="text">DATA ID</span>
+            </div>
+          </div>
+          <div class="col-right">
+            <strong class="headline">
+              더 나은 일거리와 재능 거래,<br/>
+              금융 서비스 이용까지.<br/>
+              모든 게 가능해져요.
+            </strong>
+            <p class="desc">
+              DATA ID는 또 다른 기회와 가치를 연결합니다. DATA ID를 통해 나에게 맞는 일을 쉽고
+              빠르게 찾을 수 있고, 금융 서비스 이용이 가능해집니다. 창작물의 권리를 지키고, 그 재능을
+              판매해 수익을 나누는 선순환의 구조도 만들 수 있습니다.
+            </p>
+            <ul class="poss-list">
+              <li class="poss-item">
+                <div class="card-item card-type1">
+                  <span class="text">TALENT</span>
+                  <span class="text">MARKETPLACE</span>
+                </div>
+                <p class="name">DATA ID 기반 지역 일거리 매칭 서비스</p>
+              </li>
+              <li class="poss-item">
+                <div class="card-item card-type1">
+                  <span class="text">GIG FINANCE</span>
+                </div>
+                <p class="name">긱 이코노미 최적화 디지털 금융 솔루션</p>
+              </li>
+              <li class="poss-item">
+                <div class="card-item card-type1">
+                  <span class="text">TALENT</span>
+                  <span class="text">ASSETIZATION</span>
+                </div>
+                <p class="name">크리에이터 재능 자산화 및 가치 창출</p>
+              </li>
+            </ul>
+            <div class="service-area">
+              <h4>운영중인 서비스</h4>
+              <ul class="serv-list">
+                <li class="serv-item">
+                  <a href="" class="ic-app1">
+                    <span class="blind">요긱 앱로고</span>
+                  </a>
+                  <p class="name">
+                    일거리 매칭 서비스<br/>
+                    요긱(Yogig)
+                  </p>
+                </li>
+                <li class="serv-item">
+                  <span href="" class="ic-app2">
+                    <span class="blind">어랏 앱로고</span>
+                  </span>
+                  <p class="name">
+                    크리에이터<br/>
+                    커뮤니티 마켓<br/>
+                    어랏(Alot)
+                  </p>
+                </li>
+                <li class="serv-item">
+                  <span href="" class="ic-app3">
+                    <span class="blind">어랏 앱로고</span>
+                  </span>
+                  <p class="name">
+                    글로벌 재능 매칭<br/>
+                    플랫폼<br/>
+                    JOOB
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-inner2 flex-type2">
+          <div class="sticky-content">
+            <div class="horizontal">
+              <ul class="card-list flex-card">
+                <li class="card-item card-type1 hidden-a">
+                  <span class="text">DATA ID</span>
+                </li>
+                <li class="card-item">
+                  <div class="head">
+                    <em class="title">CREATOR</em>
+                  </div>
+                  <div class="bg">
+                    <img src="assets/images/img-card1.png" alt>
+                  </div>
+                  <div class="content">
+                    <p class="desc">크리에이터들이 만들어 낸 다양한 창작물과 재능을 자산화, 토큰화 할 수 있는 기반을 만들어요.</p>
+                  </div>
+                  <div class="info">
+                    <div class="profile">
+                      <span class="blind">프로필</span>
+                      <span class="pro-name">model_top</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="head">
+                    <em class="title">GIG<br/>WORKER</em>
+                  </div>
+                  <div class="bg">
+                    <img src="assets/images/img-card2.png" alt>
+                  </div>
+                  <div class="content">
+                    <p class="desc">블록체인 기반의 거래 구조 덕분에 긱 워커의 재능과 경력, 평판을 투명하게 거래하고 흩어진 이력을 관리할 수 있어요.</p>
+                  </div>
+                  <div class="info">
+                    <div class="profile">
+                      <span class="blind">프로필</span>
+                      <span class="pro-name">elon.M</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="head">
+                    <em class="title">SELF<br/>EMPLOYED</em>
+                  </div>
+                  <div class="bg">
+                    <img src="assets/images/img-card3.png" alt>
+                  </div>
+                  <div class="content">
+                    <p class="desc">개인사업자의 소득과 거래 이력, 경험과 전문성을 쉽게 증명할 수 있어서 금융 상품을 이용하기도 더 쉬워져요.</p>
+                  </div>
+                  <div class="info">
+                    <div class="profile">
+                      <span class="blind">프로필</span>
+                      <span class="pro-name">cafe22</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-inner3 content-wrap">
+          <div class="sticky-content">
+            <div class="col-left">
+              <div class="card-item card-type1 hidden-a">
+                <span class="text">DATA ID</span>
+              </div>
+            </div>
+            <div class="col-right">
+              <p class="desc">
+                누구든<br/>
+                무엇이든
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sc-vision">
+      <h2 class="blind">DATA ID의 비전</h2>
+      <div class="content-inner1 content-wrap flex-type1">
+        <strong class="headline">
+          재능 자산을 기축으로<br/>
+          시장은 변화하고<br/>
+          있어요.
+        </strong>
+        <p class="desc">
+          과거에는 국가와 기관에 대한 신뢰를 바탕으로 법정 화폐나<br/>
+          증권을 거래했다면, 오늘날에는 탈중앙화가 빠르게 이루어져<br/>
+          암호화폐와 NFT같은 가상자산 금융 채널이 늘고 있죠.<br/>
+          최근에는 긱 워커와 크리에이터의 숫자와 소득이 증가하며<br/>
+          국내외 기업들이 빅데이터를 활용해 이들과 새로운 금융 서비스를<br/>
+          발전시키겠다고 선언하는 사례가 늘고 있어요.
+        </p>
+      </div>
+      <div class="content-inner2 accent-type1">
+        <div class="text-area">
+          <div class="desc">
+            <p class="text">글로벌 블록체인</p>
+            <p class="text">네트워크를 기반으로</p>
+            <p class="text">시작하는 도약.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-inner3 flex-type2">
+        <div class="sticky-content">
+          <div class="horizontal">
+            <strong class="headline">
+              전통 금융에서<br/>
+              미래 금융으로.
+            </strong>
+            <ul class="card-list flex-card">
+              <li class="card-item">
+                <div class="head">
+                  <em class="title">전통자산</em>
+                  <span class="caption">기축자산</span>
+                </div>
+                <div class="content">
+                  <ul class="cate-list">
+                    <li class="cate-item">
+                      <span class="cate">상품</span>
+                      <span class="item">금융상품, 서비스</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">자산</span>
+                      <span class="item">FIAT, 유가증권</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">신뢰</span>
+                      <span class="item">국가, 기관 등 중앙체계에 대한 신뢰</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info">
+                  <span class="name">핀테크 등 B2C 서비스</span>
+                </div>
+              </li>
+              <li class="card-item">
+                <div class="head">
+                  <em class="title">가상자산</em>
+                </div>
+                <div class="content">
+                  <ul class="cate-list">
+                    <li class="cate-item">
+                      <span class="cate">상품</span>
+                      <span class="item">거래소, DeFi</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">자산</span>
+                      <span class="item">Digital Currency</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">신뢰</span>
+                      <span class="item">블록체인</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info">
+                  <span class="name">월렛 등 B2C 서비스</span>
+                </div>
+              </li>
+              <li class="card-item">
+                <div class="head">
+                  <em class="title">재능자산</em>
+                  <span class="caption">기축자산</span>
+                </div>
+                <div class="bg">
+                  <img src="assets/images/img-card4.png" alt>
+                </div>
+                <div class="content">
+                  <ul class="cate-list">
+                    <li class="cate-item">
+                      <span class="cate">상품</span>
+                      <span class="item">Gig Finance + Talent Assetization</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">자산</span>
+                      <span class="item">DATA ID + P3</span>
+                    </li>
+                    <li class="cate-item">
+                      <span class="cate">신뢰</span>
+                      <span class="item">블록체인 DATA ID 네트워크</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info">
+                  <span class="name">Talent Marketplace</span>
+                </div>
+              </li>
+            </ul>
+            <div class="last-text">
+              <p class="desc">
+                엔터프라이즈블록체인이 글로벌<br/>
+                블록체인 네트워크 DATA ID를 통해<br/>
+                만들어갈 긱 이코노미와 크리에이터<br/>
+                이코노미 생태계를 기대해주세요.
+              </p>
+            </div>
+          </div>
+          <div class="scroll-area">
+            <span class="ic-scroll">
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+              <span class="ic-arrow"></span>
+            </span>
+            <div class="name">
+              <span class="tradition">전통금융</span>
+              <span class="future">미래금융</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sc-case">
+      <div class="content-inner1">
+        <div class="content-wrapper">
+          <div class="text-area">
+            <h2 class="headline">
+              크리에이터<br/>
+              최소라 님의<br/>
+              DATA ID
+            </h2>
+            <p class="desc">
+              이렇게 기록하고, 증명하고,<br/>
+              성장할 수 있어요.
+            </p>
+          </div>
+          <div class="img-container">
+            <img src="assets/images/img-case1.jpg" alt>
+          </div>
+          <span class="ic-scroll">
+            <span class="blind">밑으로 스크롤</span>
+          </span>
+        </div>
+      </div>
+      <div class="content-inner2 flex-type2">
+        <div class="sticky-content">
+          <div class="horizontal">
+            <strong class="headline">
+              슬기롭게<br/>
+              사용하는 법.
+            </strong>
+            <ul class="card-list flex-card">
+              <li class="card-item">
+                <div class="head">
+                  <em class="title">
+                    CHOI<br/>
+                    SORA
+                  </em>
+                </div>
+                <div class="bg">
+                  <img src="assets/images/img-card5.png" alt>
+                </div>
+                <div class="content">
+                  <p class="desc">
+                    베이커리 레시피를 창작하고 유튜브와<br/>
+                    쿠킹 클래스를 운영하는 크리에이터 최소라 님은<br/>
+                    쿠킹 클래스 수강 이력, 레시피 사용 이력을<br/>
+                    DATA ID에 기록해 관리하고 있어요.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="profile">
+                    <span class="blind">프로필</span>
+                    <span class="pro-name">baker_sora</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card-item">
+                <div class="head-non">
+                  <em class="title">
+                    CERTIFICATE<br/>
+                    DATA ID
+                  </em>
+                </div>
+                <div class="content">
+                  <div class="desc">
+                    <p>
+                      아카데미 수료증과 자격증, 학위 증명서 등<br/>
+                      여러 취득 내용을 모두 기록할 수 있어요.
+                    </p>
+                    <div class="sub">
+                      <p>- 르꼬르동블루 제과 수료</p>
+                      <p>- 나카무라 조리제과 수료</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="profile">
+                    <span class="blind">프로필</span>
+                    <span class="pro-name">baker_sora</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card-item">
+                <div class="head-non">
+                  <em class="title">
+                    ASSET<br/>
+                    DATA ID
+                  </em>
+                </div>
+                <div class="content">
+                  <div class="desc">
+                    <p>
+                      개발한 오리지널 레시피를 등록해두면 레시피에<br/>
+                      대한 권리를 지키기 쉬워져요.
+                    </p>
+                    <div class="sub">
+                      <p>- 최소라 쿠키 레시피</p>
+                      <p>- 최소라 마카롱 레시피</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="profile">
+                    <span class="blind">프로필</span>
+                    <span class="pro-name">baker_sora</span>
+                  </div>
+                </div>
+              </li>
+              <li class="card-item">
+                <div class="head-non">
+                  <em class="title">
+                    CONTRACT<br/>
+                    DATA ID
+                  </em>
+                </div>
+                <div class="content">
+                  <div class="desc">
+                    <p>
+                      누군가 내 레시피를 개량해서 다른 레시피를<br/>
+                      개발하기 원한다면, 상대방과 스마트 계약을<br/>
+                      체결할 수 있어요.
+                    </p>
+                    <div class="sub">
+                      <p>- 최소라 쿠키 레시피_오곡버전_나카페</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="profile">
+                    <span class="blind">프로필</span>
+                    <span class="pro-name">baker_sora</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="last-text">
+              <p class="desc">
+                이력과 거래 내역이 모두<br/>
+                DATA ID로 생성되고,<br/>
+                스마트 계약으로 재능을<br/>
+                손쉽게 자산화 할 수 있어요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sc-ground">
+      <div class="content-inner1 content-wrap">
+        <h2 class="headline">오픈 이노베이션 그라운드</h2>
+        <p class="desc">
+          글로벌 블록체인 네트워크 DATA ID를 통해<br/>
+          EBC가 만들어갈 오픈 이노베이션 그라운드에<br/>
+          참여하세요.
+        </p>
+        <div class="btn-area">
+          <button class="btn-download">회사소개서 다운로드</button>
+          <a href="" class="link">제휴문의</a>
+          <a href="" class="link">채용문의</a>
+        </div>
+      </div>
+    </section>
+    <aside class="banner-marquee">
+      <div class="marquee-wrapper">
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+        <div class="marquee-item">
+          <span class="text">
+            <span>JOIN</span>
+            <i>us</i>
+          </span>
+        </div>
+      </div>
+    </aside>
+    <div class="fix-btn">
+      <button class="btn-top">
+        <span class="blind">상단으로</span>
+      </button>
+    </div>
+  </main>
+  <footer id="footer">
+    <h2 class="blind">엔터프라이즈블록체인 푸터</h2>
+    <div class="footer-inner">
+      <div class="text-area">
+        <address class="addr">서울특별시 강남구 테헤란로 424, 19층 (주)엔터프라이즈블록체인</address>
+        <small>Copyright © Enterprise Blockchain co., ltd. All rights reserved.</small>
+      </div>
+      <div class="logo-area">
+        <span class="blind">엔터프라이즈블록체인 로고</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

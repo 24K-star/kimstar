@@ -1,0 +1,305 @@
+@import '/assets/css/reset.css';
+@import '/assets/css/common.css';
+
+/* header */
+#header{
+  position: relative;
+}
+
+#header .header-inner{
+  width: 1152px;
+  margin: 0 auto;
+}
+
+#header .gnb{
+  display: flex;
+  align-items: center;
+}
+#header .logo{
+  margin-right: 62px;
+}
+#header .logo a{
+  display: flex;
+  padding-bottom: 5px;
+  /* padding-bottom: 12px; */
+}
+#header .logo a::before{
+  width: 105px;
+  height: 27px;
+  background-image: url(/assets/images/sp-el.png);
+  background-repeat: no-repeat;
+  background-position: -5px -165px;
+  content: '';
+}
+
+#header .nav-area{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+
+}
+
+#header .menu-list{
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#header .menu-item{
+  line-height: 48px;
+}
+
+#header .util-list{
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+#header .util-item{
+  line-height: 48px;
+}
+
+#header .menu-item a:hover, 
+#header .util-item a:hover{
+  color: #2292e9;
+}
+
+#header .header-group{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+}
+
+#header .language-area{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header .language-area::after{
+  position: absolute;
+  top: 50%;
+  right: 34px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 5px;
+  background-size: cover;
+  background-image: url(/assets/images/ic-selector.png);
+  content: '';
+}
+#header .language-selector{
+  width: 80px;
+  height: 21px;
+  padding-left: 2px;
+
+  border-color: #afcfea;
+  color: #1E6CB3;
+  font-size: 12px;
+  line-height: 21px;
+  appearance: none;
+}
+
+#header .language-area .btn-submit{
+  width: 30px;
+  height: 21px;
+  background-color: #1E6CB3;
+  color: #fff;
+  font-size: 11px;
+}
+
+#header .header-group .col-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 770px;
+}
+#header .header-group .link-seoul{
+  width: 133px;
+  height: 51px;
+  background-image: url(/assets/images/logo-slogan.png);
+}
+#header .search-area{
+  width: 520px;
+  height: 42px;
+  border: 3px solid #2292e9;
+}
+#header .search-area fieldset{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 0;
+}
+#header .search-area .input-text{
+  flex: 1;
+  height: 100%;
+  border: 0;
+  padding: 0 10px;
+  color: #767676;
+}
+#header .search-area .input-text::placeholder{
+  color: #2392e9;
+}
+#header .search-area .btn-keyboard{
+  width: 29px;
+  height: 16px;
+  margin-right: 6px;
+  background-image: url(/assets/images/ic-keyboard.png);
+}
+#header .search-area .btn-submit{
+  width: 36px;
+  height: 36px;
+  background-image: url(/assets/images/sp-el.png);
+  background-repeat: no-repeat;
+  background-position: -32px -97px;
+}
+
+#header .header-group .col-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+}
+#header .header-group .weather-area{
+  display: flex;
+  align-items: center;
+}
+#header .weather-area .ic-weather{
+  display: block;
+}
+
+#header .weather-area .ic-weather.type-cloud{
+  width: 58px;
+  height: 47px;
+  background-image: url(/assets/images/ic-weather01.png);
+}
+
+#header .weather-area .info{
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  line-height: 1;
+}
+#header .weather-area .temperature{
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+#header .weather-area .weather{
+  font-size: 16px;
+  letter-spacing: -0.1em;
+}
+#header .weather-area .link-dust{
+  display: flex;
+  gap: 4px;
+}
+#header .weather-area .dust{
+  font-size: 13px;
+  letter-spacing: -1.5px;
+}
+#header .weather-area .status.good{
+  color: #0D6EFD;
+  font-size: 14px;
+  padding-left: 2px;
+}
+#header .header-group .link-brand{
+  width: 74px;
+  height: 47px;
+  background-image: url(/assets/images/logo-brand.png);
+}
+#header .banner-top{
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+#header .banner-top img{
+  /* width: 100%; */
+  min-width: 1152px;
+  height: 90px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+
+/* footer */
+#footer{}
+#footer .footer-inner{
+  width: 1152px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #636363;
+}
+#footer .link-area{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+#footer .link-area em{
+  color: #000;
+}
+
+#footer .link-area .link-list{
+  display: flex;
+  align-items: center;
+}
+#footer .link-area .link-item{
+  display: flex;
+  align-items: center;
+}
+#footer .link-area .link-item + .link-item::before{
+  width: 1px;
+  height: 14px;
+  background-color: #dcdcdc;
+  margin: 0 10px;
+  content: '';
+}
+#footer .link-area .link-kakaotalk{
+  width: 114px;
+  height: 24px;
+  background-image: url(/assets/images/sp-sns2.png);
+  background-repeat: no-repeat;
+  background-position:  0 -30px;
+}
+
+#footer .row-bottom{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  line-height: 1;
+}
+#footer .row-bottom .inquiry-area{
+  padding-bottom: 8px;
+}
+#footer .row-bottom .inquiry{
+  display: block;
+  width: 108px;
+  height: 45px;
+  background-image: url(/assets/images/sp-el.png);
+  background-repeat: no-repeat;
+  background-position: -180px 0;
+}
+
+#footer .row-bottom .footer-group{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#footer .row-bottom .addr-area{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#footer .row-bottom small{
+  font-size: 11px;
+}
+#footer .row-bottom .link-wah{
+  width: 86px;
+  height: 59px;
+  background-image: url(/assets/images/logo-mark_wah.png);
+  margin-left: auto;
+}
+
+
