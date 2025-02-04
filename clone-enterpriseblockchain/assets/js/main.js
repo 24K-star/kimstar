@@ -331,9 +331,9 @@ animaCard1.to(".sc-feature .group-core .content-inner4 .horizontal", {
   });
 
 
-// gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
-// gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
-// gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 0 });
+gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
+gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
+gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 0 });
 
 
 const animaCard2 = gsap.timeline({
@@ -344,18 +344,12 @@ const animaCard2 = gsap.timeline({
     scrub: 0,
     // markers: true,
     onEnter: () => {
-      // $(".sc-feature .group-core .content-inner4 .flex-card").addClass('hidden');
-      // $(".sc-feature .group-second .content-inner1 .card-type1").removeClass('hidden');
-
-      // gsap.set(".sc-feature .group-core .content-inner4 .flex-card", { autoAlpha: 0 });
-      // gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-core .content-inner4 .flex-card", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 1 });
     },
     onLeaveBack: () => {
-      // $(".sc-feature .group-core .content-inner4 .flex-card").removeClass('hidden');
-      // $(".sc-feature .group-second .content-inner1 .card-type1").addClass('hidden');
-
-      // gsap.set(".sc-feature .group-core .content-inner4 .flex-card", { autoAlpha: 1 });
-      // gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-core .content-inner4 .flex-card", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
     },
   }
 });
@@ -371,12 +365,12 @@ const animaCard3 = gsap.timeline({
     // markers: true,
     onEnter: () => {
       $(".sc-feature .group-second .content-inner2 .bg").addClass('blur');
-      // gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
-      // gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 1 });
     },
     onLeaveBack: () => {
-      // gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 1 });
-      // gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-second .content-inner1 .card-type1", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
     }
   }
 });
@@ -412,12 +406,12 @@ const animaCard4 = gsap.timeline({
     scrub: 0,
     // markers: true,
     onEnter: () => {
-      // gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
-      // gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 1 });
     },
     onLeaveBack: () => {
-      // gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 1 });
-      // gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 0 });
+      gsap.set(".sc-feature .group-second .content-inner2 .card-type1", { autoAlpha: 1 });
+      gsap.set(".sc-feature .group-second .content-inner3 .card-type1", { autoAlpha: 0 });
     }
   }
 });
