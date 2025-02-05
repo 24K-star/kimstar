@@ -57,6 +57,7 @@ strong.headline {
   width: max-content;
   height: 100%;
   padding-left: 100px;
+  will-change: transform;
 }
 .flex-type2 .headline {
   flex-shrink: 0;
@@ -88,6 +89,7 @@ strong.headline {
   border-radius: 20px;
   padding: 34px;
   overflow: hidden;
+  will-change: transform, opacity;
 }
 
 .flex-card .card-item [class*="head-"] {
@@ -282,6 +284,7 @@ strong.headline {
   transform: translateX(-50%);
   background: url(../images/ic-scroll.svg);
   transition: opacity 0.5s;
+  will-change: opacity;
 }
 .sc-intro .content-inner1 .video-container {
   position: absolute;
@@ -315,6 +318,7 @@ strong.headline {
   line-height: 1.35;
   white-space: nowrap;
   opacity: 0;
+  will-change: opacity;
 }
 .sc-intro .content-inner1 .text-area .desc:nth-child(4) {
   font-size: 24px;
@@ -379,11 +383,13 @@ strong.headline {
   line-height: 1.67;
   white-space: nowrap;
   opacity: 0;
+  will-change: opacity;
 }
 .sc-intro .content-inner2 .text-area .desc .text {
   font-size: 100px;
   font-weight: 700;
   line-height: 1.2;
+  will-change: transform;
 }
 
 .sc-use {
@@ -406,6 +412,9 @@ strong.headline {
   background-size: cover;
 }
 
+.sc-use .content-inner2 .desc .text {
+  will-change: transform;
+}
 .sc-use .content-inner2 .desc .text:nth-child(1) {
   transform: translateX(-172%);
 }
@@ -596,6 +605,7 @@ strong.headline {
 }
 .sc-feature .group-core .content-inner3 .bg-block .item {
   flex: 1;
+  will-change: transform;
 }
 .sc-feature .group-core .content-inner3 .bg-block .item:nth-child(1) {
   background-color: #e657af;
@@ -616,8 +626,8 @@ strong.headline {
   line-height: 1.25;
   font-weight: 700;
   white-space: nowrap;
-
   opacity: 0;
+  will-change: transform;
 }
 
 .sc-feature .group-core .content-inner4 .card-item:not(.card-type1) {
@@ -634,6 +644,7 @@ strong.headline {
   align-items: center;
   position: relative;
   width: 100%;
+  will-change: opacity;
 }
 .sc-feature .group-core .content-inner4 .card-item .icon img {
   position: absolute;
@@ -677,6 +688,7 @@ strong.headline {
   font-size: 40px;
   line-height: 1.25;
   font-weight: 700;
+  will-change: transform, opacity;
 }
 .sc-feature .group-second .content-inner1 .col-left .card-item .text {
   opacity: 0;
@@ -830,6 +842,7 @@ strong.headline {
   font-weight: 700;
   line-height: 1.28;
   opacity: 0;
+  will-change: opacity;
 }
 
 .sc-vision {
@@ -842,6 +855,9 @@ strong.headline {
   background-size: cover;
 }
 
+.sc-vision .content-inner2 .desc .text {
+  will-change: transform;
+}
 .sc-vision .content-inner2 .desc .text:nth-child(1) {
   transform: translateX(-114%);
 }
@@ -996,6 +1012,7 @@ strong.headline {
 .sc-vision .content-inner3 .scroll-area .future {
   opacity: 0;
   visibility: hidden;
+  will-change: opacity;
 }
 
 .sc-case {
@@ -1022,6 +1039,7 @@ strong.headline {
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
+  will-change: opacity;
 }
 .sc-case .content-inner1 .headline {
   font-size: 60px;
@@ -1051,6 +1069,7 @@ strong.headline {
   transform: translateX(-50%);
   background: url(../images/ic-scroll.svg);
   opacity: 0;
+  will-change: opacity;
 }
 
 .sc-case .content-inner2 {
@@ -1200,6 +1219,7 @@ strong.headline {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+  will-change: opacity;
 }
 .fix-btn .btn-top {
   display: flex;
