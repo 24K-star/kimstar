@@ -63,8 +63,6 @@ const mainSlide = new Swiper('.sc-visual .swiper', {
   },
 });
 
-
-
 // header color
 let headerHeight
 let animateHeader = gsap.timeline({
@@ -82,14 +80,16 @@ let animateHeader = gsap.timeline({
 
 animateHeader.to(".header-inner.dark", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+  // onComplete: function () {
+  //   $(".header-inner.dark").removeAttr("aria-hidden inert");
+  //   $(".header-inner.white").attr({ "aria-hidden": "true", "inert": "" });
+  // }
 })
   .fromTo(".header-inner.white", {
     "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   }, {
     "clip-path": "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
   }, "<");
-
-
 
 let animateHeader2 = gsap.timeline({
   scrollTrigger: {
@@ -106,6 +106,10 @@ let animateHeader2 = gsap.timeline({
 
 animateHeader2.to(".header-inner.dark", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+  // onComplete: function () {
+  //   $(".header-inner.white").removeAttr("aria-hidden inert");
+  //   $(".header-inner.dark").attr({ "aria-hidden": "true", "inert": "" });
+  // }
 })
   .fromTo(".header-inner.white", {
     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
@@ -123,7 +127,7 @@ gsap.set(".header-inner.dark", {
 gsap.set(".header-inner.white", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
-
+$(".header-inner.dark").attr({ "aria-hidden": "true", "inert": "" });
 
 
 // visual

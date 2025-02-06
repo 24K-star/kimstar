@@ -1,35 +1,18 @@
-/* 국문 */
-@font-face {
-  font-family: 'PretendardVariable';
-  src: url('../fonts/PretendardVariable.woff2') format('woff2'),
-        url('../fonts/PretendardVariable.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* 영문 */
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../fonts/HelveticaNeueLight.woff') format('woff');
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueLight.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
-
-/* 영문 display */
 @font-face {
-  font-family: 'Mastro';
-  src: url('../fonts/Mastro-Display-Book.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Mastro';
-  src: url('../fonts/Mastro-Display-Book-Italic.woff') format('woff');
-  font-weight: 700;
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueLightItalic.woff2") format("woff2");
+  font-weight: 400;
   font-style: italic;
 }
 
-:root { 
+:root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -44,23 +27,52 @@
   /* --primary-color-text: #76877d; */
   --primary-color-border: #b5a89f80;
   /* --primary-color-border: #82a6b180; */
-
-  --primary-color-bg: #E4DDD4;
+  --primary-color-bg: #e4ddd4;
   --text-color: #383331;
-  --secondary-font: "Mastro", serif;
 }
 
-*{margin:0;padding:0;font:inherit;color:inherit;}
-*, :after, :before {box-sizing:border-box;}
-html, body {height:100%;}
-img, picture, video, canvas, svg {display: block;max-width:100%;}
-button {background:none;border:0;cursor:pointer;}
-a {text-decoration:none}
-table {border-collapse:collapse;border-spacing:0}
-ul, ol{list-style: none;}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
 
-body{
-  font-family: "Helvetica Neue", "PretendardVariable", sans-serif;
+body {
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -68,4 +80,3 @@ body{
   overscroll-behavior: none;
   overflow-x: hidden;
 }
-
