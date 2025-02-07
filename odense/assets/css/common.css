@@ -1,13 +1,50 @@
-.blind{
-  position: absolute;   
-  width: 1px;height: 1px;
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   margin: -1px;
 }
 
-.content-inner{
+.content-inner {
   max-width: 1554px;
   padding: 0 32px;
   margin: 0 auto;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.arrow .shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: #171c36;
+  overflow: hidden;
+  transform: scale(0.25);
+  transition: transform 0.3s;
+  --translate-x: -25px;
+  --translate-y: 25px;
+  --opacity: 1;
+}
+.arrow.btn-type1 .shape {
+  background: #fff;
+}
+.arrow .shape::after {
+  width: 16px;
+  height: 16px;
+  background: url(../images/ic-arrowUpRight.svg) center no-repeat;
+  transform: translate(var(--translate-x), var(--translate-y));
+  /* transform: translate(-25px, 25px); */
+  transition: transform 0.3s;
+  opacity: var(--opacity);
+  content: "";
 }

@@ -53,9 +53,11 @@ const mainSlide = new Swiper('.sc-visual .swiper', {
   },
   allowTouchMove: false,
   pagination: {
-    el: '.sc-visual .swiper .swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
+    el: '.sc-visual .swiper .swiper-pagination', // 페이지네이션이 들어갈 요소
+    clickable: true, // 클릭 가능 여부
+    renderBullet: function (index, className) { // 각 페이지네이션 버튼의 HTML 구조를 커스텀
+      // index : 페이지네이션 버튼의 index
+      // className : Swiper가 자동으로 할당하는 클래스명
       return '<span class="' + className + '">' +
         '<span class="swiper-pagination-label">' + labels[index] + '</span>' +
         '</span>';
@@ -127,8 +129,6 @@ gsap.set(".header-inner.dark", {
 gsap.set(".header-inner.white", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
-$(".header-inner.dark").attr({ "aria-hidden": "true", "inert": "" });
-
 
 // visual
 const animaVisual = gsap.timeline({

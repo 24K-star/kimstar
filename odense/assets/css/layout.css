@@ -1,42 +1,6 @@
 @import "reset.css";
 @import "common.css";
 
-.arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-.arrow .shape {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  background: #171c36;
-  overflow: hidden;
-  transform: scale(0.25);
-  transition: transform 0.3s;
-  --translate-x: -25px;
-  --translate-y: 25px;
-  --opacity: 1;
-}
-.arrow.btn-type1 .shape {
-  background: #fff;
-}
-.arrow .shape::after {
-  width: 16px;
-  height: 16px;
-  background: url(../images/ic-arrowUpRight.svg) center no-repeat;
-  transform: translate(var(--translate-x), var(--translate-y));
-  /* transform: translate(-25px, 25px); */
-  transition: transform 0.3s;
-  opacity: var(--opacity);
-  content: "";
-}
-
 /* header */
 
 #header {
@@ -55,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 42px 64px;
+  padding: 38px 64px;
 }
 .header-inner .logo {
   display: flex;
@@ -88,7 +52,9 @@
 .header-inner .menu-item:last-child {
   margin-left: auto;
 }
-
+.header-inner .shape {
+  margin-bottom: 4px;
+}
 .header-inner .btn-menu {
   display: none;
   align-items: center;
@@ -109,7 +75,6 @@
   transition: transform 0.3s;
   --opacity: 1;
 }
-
 .header-inner.dark {
   background-color: var(--primary-color-bg);
   clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -245,11 +210,13 @@
 .footer-inner .col-left .sns-item [class*="ic-"]:hover {
 }
 
-.footer-inner .col-left .addr {
+.footer-inner .col-left .addr,
+.footer-inner .col-left small {
   letter-spacing: -0.02em;
   font-weight: 400;
   line-height: 110%;
 }
+
 .footer-inner .col-right {
   position: relative;
   width: 50%;
