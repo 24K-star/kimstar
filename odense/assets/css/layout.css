@@ -140,13 +140,11 @@
 .footer-inner .col-left .text-area {
   font-size: 54px;
   line-height: 1.1;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 .footer-inner .col-left .addr-area {
   display: flex;
   flex-direction: column;
-  letter-spacing: -0.02em;
   font-size: 28px;
   line-height: 1.2;
 }
@@ -212,7 +210,6 @@
 
 .footer-inner .col-left .addr,
 .footer-inner .col-left small {
-  letter-spacing: -0.02em;
   font-weight: 400;
   line-height: 110%;
 }
@@ -244,7 +241,6 @@
 .footer-inner .col-right .addr-area .link-map {
   align-items: center;
   gap: 24px;
-  letter-spacing: -0.02em;
   line-height: 1.1;
   font-size: 18px;
 }
@@ -252,7 +248,6 @@
 .footer-inner .col-right .addr-area strong {
   color: var(--primary-color-text);
   font-size: 80px;
-  letter-spacing: -0.04em;
   line-height: 105%;
   font-weight: 400;
 }

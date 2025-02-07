@@ -125,8 +125,6 @@ body {
   pointer-events: auto;
 }
 .sc-visual .content .headline {
-  letter-spacing: -0.02em;
-  /* font-family: var(--secondary-font); */
   font-size: 104px;
   line-height: 96%;
   font-weight: 400;
@@ -167,7 +165,6 @@ body {
   margin-top: -46vh;
 }
 .sc-project .headline {
-  letter-spacing: -0.02em;
   font-size: 86px;
   line-height: 1.05;
   text-transform: uppercase;
@@ -175,7 +172,6 @@ body {
 .sc-project .head .desc {
   padding: 48px 0 96px;
   text-align: right;
-  letter-spacing: -0.016em;
   font-size: 28px;
   line-height: 1.3;
 }
@@ -255,10 +251,8 @@ body {
 .sc-project .group-cate .link-cate .text {
   font-size: 44px;
   line-height: 110%;
-  letter-spacing: -0.02em;
 }
 .sc-project .group-cate .link-cate .sup {
-  letter-spacing: -0.02em;
   font-size: 24px;
   line-height: 110%;
   align-self: flex-start;
@@ -482,7 +476,6 @@ body {
   height: 100%;
   font-size: 32px;
   line-height: 1.2;
-  letter-spacing: -0.02em;
 }
 .sc-principle .col-left .text-area .mask-page {
   display: flex;
@@ -499,7 +492,6 @@ body {
 .sc-principle .col-left .text-area .number {
   font-size: 24px;
   line-height: 24px;
-  letter-spacing: -0.02em;
 }
 
 .sc-principle .col-right {
@@ -542,7 +534,6 @@ body {
 }
 .sc-principle .col-right .content .text {
   font-size: 24px;
-  letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--primary-color-text);
   opacity: 0;
@@ -608,14 +599,12 @@ body {
   content: "";
 }
 .sc-achieve .horizontal .fig-item .figure {
-  letter-spacing: -0.04em;
   font-size: 200px;
   line-height: 0.5;
   font-weight: 400;
   padding-top: 0.18em;
 }
 .sc-achieve .horizontal .fig-item .desc {
-  letter-spacing: -0.02em;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -641,8 +630,6 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-
-  letter-spacing: -0.016em;
   font-size: 28px;
   line-height: 1.3;
 }
@@ -659,7 +646,6 @@ body {
   margin-top: 176px;
 }
 .sc-achieve .group-board .heading {
-  letter-spacing: -0.02em;
   font-size: 14px;
   line-height: 120%;
   padding: 0 0 32px 48px;
@@ -682,7 +668,6 @@ body {
   align-items: center;
   gap: 32px;
   font-size: 32px;
-  letter-spacing: -0.02em;
   line-height: 1.2;
   padding: 0 48px 0 40px;
 }
@@ -717,7 +702,6 @@ body {
   top: 116px;
 }
 .sc-recruit .headline {
-  letter-spacing: -0.02em;
   font-size: 80px;
   line-height: 1.15;
   text-align: center;
