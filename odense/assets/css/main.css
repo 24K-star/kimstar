@@ -217,7 +217,7 @@ body {
   position: relative;
   border: 1px solid var(--primary-color-border);
   border-radius: 99px;
-  padding: 16px 32px 10px 32px;
+  padding: 16px 32px 10px;
   color: var(--primary-color-text);
   transition: color 0.3s, border-color 0.3s;
 }
