@@ -196,14 +196,14 @@ body {
   gap: 16px;
 }
 .sc-project .group-cate .marquee-wrapper:nth-child(1) .wrap {
-  animation: marquee 40s linear infinite;
+  animation: marquee 20s linear infinite;
   padding-right: 16px;
 }
 .sc-project .group-cate .marquee-wrapper:nth-child(2) {
   justify-content: flex-end;
 }
 .sc-project .group-cate .marquee-wrapper:nth-child(2) .wrap {
-  animation: marquee-rev 40s linear infinite;
+  animation: marquee-rev 20s linear infinite;
   padding-left: 16px;
 }
 
@@ -260,23 +260,6 @@ body {
 .sc-project .group-cate .link-cate:hover {
   color: var(--primary-color);
   border-color: var(--primary-color);
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes marquee-rev {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 .sc-project .group-detail {
@@ -705,4 +688,21 @@ body {
   font-size: 80px;
   line-height: 1.15;
   text-align: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee-rev {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
