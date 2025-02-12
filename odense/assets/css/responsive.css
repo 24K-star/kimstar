@@ -33,7 +33,6 @@
 /* 태블릿 (1024px 이하) */
 @media (max-width: 1024px) {
   #header {
-    height: 80px;
   }
   .header-inner {
     padding: 24px 32px;
