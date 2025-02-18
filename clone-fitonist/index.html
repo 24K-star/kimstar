@@ -1,190 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitonist</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitonist</title>
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
-    <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
     <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-  <div class="custom-cursor">
-    <div class="circle"></div>
-  </div>
-  <!-- header -->
-
-  <header id="header">
-    <div class="header-inner">
-      <h1 class="logo">
-        <a href="" class="link-home">
-          <span class="blind">Fitonist 로고</span>
-        </a>
-      </h1> 
-      <nav class="nav-area">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="" class="link-nav">
-              Workout plans
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 104 5" fill="none">
-                  <path d="M1 2.40328C6.61864 2.81974 21 4.5 40.0604 2.81974C71.8745 0.015184 79.2288 1.41048 103 2.81974" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="link-nav">
-              Pricing
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 3" fill="none">
-                  <path d="M1 1.40305C3.64407 1.81951 10.3559 2.25414 19.3814 1.81951C34.4069 1.09595 37.8136 0.410231 49 1.81951" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="link-nav">
-              Contact us
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 83 3" fill="none">
-                  <path d="M1 1.40305C5.46186 1.81951 16.7881 2.25414 32.0185 1.81951C57.3741 1.09595 63.1229 0.410231 82 1.81951" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="btn-area">
-        <a href="" class="down-appstore btn-type1" aria-label="앱스토어로 이동">
-          <span class="blind">앱스토어</span>
-          <span class="dot-1 white"></span>
-          <span class="dot-2 white"></span>
-          <span class="dot-3 white"></span>
-          <span class="dot-4 white"></span>
-          <span class="dot-5 white"></span>
-          <span class="dot-6 white"></span>
-          <span class="dot-7 white"></span>
-        </a>
-        <a href="" class="down-google btn-type1" aria-label="구글플레이로 이동">
-          <span class="blind">구글플레이</span>
-          <span class="dot-1 white"></span>
-          <span class="dot-2 white"></span>
-          <span class="dot-3 white"></span>
-          <span class="dot-4 white"></span>
-          <span class="dot-5 white"></span>
-          <span class="dot-6 white"></span>
-          <span class="dot-7 white"></span>
-        </a>
-        <button class="btn-menu" aria-label="메뉴 열기" aria-expanded="false" role="button">
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </div>     
+  </head>
+  <body>
+    <!-- cursor -->
+    <div class="custom-cursor">
+      <div class="circle"></div>
     </div>
-    <div class="menu">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="" data-text="Workout plans">
-            Workout plans
+    <!-- header -->
+    <header id="header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="" class="link-home">
+            <span class="blind">Fitonist 로고</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="" data-text="Pricing">
-            Pricing
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="" data-text="Contact us">
-            Contact us
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- main -->
-
-  <main id="container">
-
-    <!-- sc-intro -->
-
-    <section class="sc-intro">
-      <h2 class="blind">Fitonist 앱 소개</h2>
-      <div class="sticky-content">
-        <div class="content-wrapper">
-          <div class="bg"></div>
-          <div class="group-download">
-            <div class="head-area">
-              <strong class="headline">Start workout today</strong>
-              <div class="link-area">
-                <a href="" class="down-appstore btn-type2 white">
-                  App Store
-                  <span class="blind">구글플레이</span>
-                  <span class="dot-1 white"></span>
-                  <span class="dot-2 white"></span>
-                  <span class="dot-3 white"></span>
-                  <span class="dot-4 white"></span>
-                  <span class="dot-5 white"></span>
-                  <span class="dot-6 white"></span>
-                  <span class="dot-7 white"></span>
-                </a>
-                <a href="" class="down-google btn-type2 white">
-                  Google Play
-                  <span class="blind">구글플레이</span>
-                  <span class="dot-1 white"></span>
-                  <span class="dot-2 white"></span>
-                  <span class="dot-3 white"></span>
-                  <span class="dot-4 white"></span>
-                  <span class="dot-5 white"></span>
-                  <span class="dot-6 white"></span>
-                  <span class="dot-7 white"></span>
-                </a>
-              </div>
-            </div>
-            <div class="img-area">
-              <div class="mobile">
-                  <img src="assets/images/img-mobile1.webp" alt="fitonist 앱 화면" 
-                  sizes="(max-width: 600px) 36vw, 24vw"
-                  srcset="assets/images/img-mobile1-500.webp 500w, assets/images/img-mobile1-720.webp 720w">
-                <div class="lottie-wrap">
-                  <div class="lottie-1"></div>
+        </h1>
+        <nav class="nav-area">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">
+                Workout plans
+                <div class="line" aria-hidden="true">
+                  <svg width="100%" height="100%" viewBox="0 0 104 5" fill="none">
+                    <path
+                      d="M1 2.40328C6.61864 2.81974 21 4.5 40.0604 2.81974C71.8745 0.015184 79.2288 1.41048 103 2.81974"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
                 </div>
-              </div>
-              <span class="bg-object object-1"></span>
-              <span class="bg-object object-2"></span>
-              <span class="app-object object-1"></span>
-              <span class="app-object object-2"></span>
-            </div>
-          </div>
-          <div class="group-intro">
-            <span class="icon"></span>
-            <p class="desc">Get the most accurate workout <br/> for your goals and modify it</p>
-            <span class="sub">Tailored Fitness Plans Just for You</span>
-          </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">
+                Pricing
+                <div class="line" aria-hidden="true">
+                  <svg width="100%" height="100%" viewBox="0 0 50 3" fill="none">
+                    <path
+                      d="M1 1.40305C3.64407 1.81951 10.3559 2.25414 19.3814 1.81951C34.4069 1.09595 37.8136 0.410231 49 1.81951"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">
+                Contact us
+                <div class="line" aria-hidden="true">
+                  <svg width="100%" height="100%" viewBox="0 0 83 3" fill="none">
+                    <path
+                      d="M1 1.40305C5.46186 1.81951 16.7881 2.25414 32.0185 1.81951C57.3741 1.09595 63.1229 0.410231 82 1.81951"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btn-area">
+          <a href="" class="down-appstore btn-type1" aria-label="앱스토어로 이동">
+            <span class="blind">앱스토어</span>
+            <span class="dot-1 white" aria-hidden="true"></span>
+            <span class="dot-2 white" aria-hidden="true"></span>
+            <span class="dot-3 white" aria-hidden="true"></span>
+            <span class="dot-4 white" aria-hidden="true"></span>
+            <span class="dot-5 white" aria-hidden="true"></span>
+            <span class="dot-6 white" aria-hidden="true"></span>
+            <span class="dot-7 white" aria-hidden="true"></span>
+          </a>
+          <a href="" class="down-google btn-type1" aria-label="구글플레이로 이동">
+            <span class="blind">구글플레이</span>
+            <span class="dot-1 white" aria-hidden="true"></span>
+            <span class="dot-2 white" aria-hidden="true"></span>
+            <span class="dot-3 white" aria-hidden="true"></span>
+            <span class="dot-4 white" aria-hidden="true"></span>
+            <span class="dot-5 white" aria-hidden="true"></span>
+            <span class="dot-6 white" aria-hidden="true"></span>
+            <span class="dot-7 white" aria-hidden="true"></span>
+          </a>
+          <button
+            class="btn-menu"
+            aria-label="메뉴 열기"
+            aria-expanded="false"
+            aria-controls="fullscreen-nav">
+            <span class="line" aria-hidden="true"></span>
+            <span class="line" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
-    </section>
+      <div id="fullscreen-nav" class="menu" role="navigation" aria-hidden="true">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" data-text="Workout plans">Workout plans</a>
+          </li>
+          <li class="nav-item">
+            <a href="" data-text="Pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="" data-text="Contact us">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <!-- sc-feature -->
+    <!-- main -->
+    <main id="container">
+      <!-- sc-intro -->
+      <section class="sc-intro">
+        <h2 class="blind">Fitonist 앱 소개</h2>
+        <div class="sticky-content">
+          <div class="content-wrapper">
+            <div class="bg" aria-hidden="true"></div>
+            <div class="group-download">
+              <div class="head-area">
+                <strong class="headline">Start workout today</strong>
+                <div class="link-area">
+                  <a href="" class="down-appstore btn-type2 white">
+                    App Store
+                    <span class="blind">앱스토어</span>
+                    <span class="dot-1 white" aria-hidden="true"></span>
+                    <span class="dot-2 white" aria-hidden="true"></span>
+                    <span class="dot-3 white" aria-hidden="true"></span>
+                    <span class="dot-4 white" aria-hidden="true"></span>
+                    <span class="dot-5 white" aria-hidden="true"></span>
+                    <span class="dot-6 white" aria-hidden="true"></span>
+                    <span class="dot-7 white" aria-hidden="true"></span>
+                  </a>
+                  <a href="" class="down-google btn-type2 white">
+                    Google Play
+                    <span class="blind">구글플레이</span>
+                    <span class="dot-1 white" aria-hidden="true"></span>
+                    <span class="dot-2 white" aria-hidden="true"></span>
+                    <span class="dot-3 white" aria-hidden="true"></span>
+                    <span class="dot-4 white" aria-hidden="true"></span>
+                    <span class="dot-5 white" aria-hidden="true"></span>
+                    <span class="dot-6 white" aria-hidden="true"></span>
+                    <span class="dot-7 white" aria-hidden="true"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="img-area">
+                <div class="mobile">
+                  <img
+                    src="assets/images/img-mobile.webp"
+                    alt="fitonist 앱 화면"
+                    fetchpriority="high"
+                    decoding="async"
+                    sizes="(max-width: 600px) 36vw, 24vw"
+                    srcset="
+                      assets/images/img-mobile1-500.webp 500w,
+                      assets/images/img-mobile1-720.webp 720w
+                    " />
+                  <div class="lottie-wrap">
+                    <div class="lottie-1"></div>
+                  </div>
+                </div>
+                <span class="bg-object object-1" aria-hidden="true"></span>
+                <span class="bg-object object-2" aria-hidden="true"></span>
+                <span class="app-object object-1" aria-hidden="true"></span>
+                <span class="app-object object-2" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="group-intro">
+              <span class="icon"></span>
+              <p class="desc">
+                Get the most accurate workout
+                <br />
+                for your goals and modify it
+              </p>
+              <span class="sub">Tailored Fitness Plans Just for You</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="sc-feature">
-      <h2 class="blind">앱 주요 기능</h2>
+      <!-- sc-feature -->
+
+      <section class="sc-feature">
+        <h2 class="blind">앱 주요 기능</h2>
         <div class="group-main">
           <div class="sticky-wrapper">
             <div class="sticky-content">
               <div class="col-left">
-                <div class="bg-light"></div>
+                <div class="bg-light" aria-hidden="true"></div>
                 <ul class="feat-list">
                   <li class="feat-item">
                     <span class="sub">Achieve Your Goals</span>
@@ -199,7 +214,7 @@
                     <p class="desc">
                       <span class="text">Explore 500+</span>
                       <span class="text">of different</span>
-                      <span class="text">exersises</span>
+                      <span class="text">exercises</span>
                     </p>
                   </li>
                 </ul>
@@ -212,75 +227,75 @@
             </div>
           </div>
         </div>
-      <div class="group-detail">
-        <section class="goal-area">
-          <div class="title-container">
-            <div class="sticky-wrapper">
-              <div class="sticky-content">
-                <div class="content-wrapper">
-                  <h3 class="title">Define your goal</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="list-container">
-            <div class="sticky-wrapper">
-              <div class="sticky-content">
-                <div class="content-wrapper">
-                  <div class="list-head">
-                    <div class="lottie-wrap">
-                      <div class="lottie-3"></div>
-                    </div>
+        <div class="group-detail">
+          <section class="goal-area">
+            <div class="title-container">
+              <div class="sticky-wrapper">
+                <div class="sticky-content">
+                  <div class="content-wrapper">
+                    <h3 class="title">Define your goal</h3>
                   </div>
-                  <ul class="goal-list">
-                    <li class="goal-item">
-                      <span class="toggle">
-                        <span class="point" aria-hidden="true">Increase</span>
-                        <span class="common">Increase</span>
-                      </span>
-                      <span>&nbsp;muscle size</span>
-                    </li>
-                    <li class="goal-item">
-                      <span class="toggle">
-                        <span class="point" aria-hidden="true">Lose</span>
-                        <span class="common">Lose</span>
-                      </span>
-                      <span>&nbsp;weight</span>
-                    </li>
-                    <li class="goal-item">
-                      <span class="toggle">
-                        <span class="point" aria-hidden="true">Track</span>
-                        <span class="common">Track</span>
-                      </span>
-                      <span>&nbsp;results</span>
-                    </li>
-                    <li class="goal-item">
-                      <span class="toggle">
-                        <span class="point" aria-hidden="true">Stay</span>
-                        <span class="common">Stay</span>
-                      </span>
-                      <span>&nbsp;motivated</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="style-area">
-          <div class="sticky-wrapper">
-            <div class="sticky-content">
-              <div class="title-container">
-                <div class="title-wrap">
-                  <span class="sub">What your preffered workout style?</span>
-                  <h3 class="title">
-                    <span class="text">Choose</span>
-                    <span class="text">your style</span>
-                    <span class="badge-1">Home</span>
-                    <span class="badge-2">Outdoor</span>
-                  </h3>
+            <div class="list-container">
+              <div class="sticky-wrapper">
+                <div class="sticky-content">
+                  <div class="content-wrapper">
+                    <div class="list-head">
+                      <div class="lottie-wrap">
+                        <div class="lottie-3"></div>
+                      </div>
+                    </div>
+                    <ul class="goal-list">
+                      <li class="goal-item">
+                        <span class="toggle">
+                          <span class="point" aria-hidden="true">Increase</span>
+                          <span class="common">Increase</span>
+                        </span>
+                        <span>&nbsp;muscle size</span>
+                      </li>
+                      <li class="goal-item">
+                        <span class="toggle">
+                          <span class="point" aria-hidden="true">Lose</span>
+                          <span class="common">Lose</span>
+                        </span>
+                        <span>&nbsp;weight</span>
+                      </li>
+                      <li class="goal-item">
+                        <span class="toggle">
+                          <span class="point" aria-hidden="true">Track</span>
+                          <span class="common">Track</span>
+                        </span>
+                        <span>&nbsp;results</span>
+                      </li>
+                      <li class="goal-item">
+                        <span class="toggle">
+                          <span class="point" aria-hidden="true">Stay</span>
+                          <span class="common">Stay</span>
+                        </span>
+                        <span>&nbsp;motivated</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+            </div>
+          </section>
+          <section class="style-area">
+            <div class="sticky-wrapper">
+              <div class="sticky-content">
+                <div class="title-container">
+                  <div class="title-wrap">
+                    <span class="sub">What your preffered workout style?</span>
+                    <h3 class="title">
+                      <span class="text">Choose</span>
+                      <span class="text">your style</span>
+                      <span class="badge-1">Home</span>
+                      <span class="badge-2">Outdoor</span>
+                    </h3>
+                  </div>
+                </div>
                 <div class="content-wrapper">
                   <div class="col-left">
                     <div class="content">
@@ -295,53 +310,71 @@
                           <li class="style-item">
                             <strong class="name">Outdoor workout</strong>
                             <p class="desc">
-                              Elevate your fitness experience and embrace<br/>
-                              the vitality of the great outdoors with<br/>
-                              invigorating outdoor workouts, where every<br/>
-                              session becomes a breath of fresh air for your<br/>
+                              Elevate your fitness experience and embrace
+                              <br />
+                              the vitality of the great outdoors with
+                              <br />
+                              invigorating outdoor workouts, where every
+                              <br />
+                              session becomes a breath of fresh air for your
+                              <br />
                               body and mind.
                             </p>
                           </li>
                           <li class="style-item">
                             <strong class="name">Gym workout</strong>
                             <p class="desc">
-                              Transform your body and amplify your<br/>
-                              strength with our state-of-the-art gym<br/>
-                              workouts, where every workout is a step<br/>
+                              Transform your body and amplify your
+                              <br />
+                              strength with our state-of-the-art gym
+                              <br />
+                              workouts, where every workout is a step
+                              <br />
                               closer to your fitness goals.
                             </p>
                           </li>
                           <li class="style-item">
                             <strong class="name">Home workout</strong>
                             <p class="desc">
-                              Achieve your fitness goals from the comfort<br/>
-                              of your home with our dynamic and<br/>
-                              convenient home workout programs,<br/>
-                              making wellness accessible whenever and<br/>
+                              Achieve your fitness goals from the comfort
+                              <br />
+                              of your home with our dynamic and
+                              <br />
+                              convenient home workout programs,
+                              <br />
+                              making wellness accessible whenever and
+                              <br />
                               wherever you are.
                             </p>
                           </li>
                           <li class="style-item">
                             <strong class="name">Cross workout</strong>
                             <p class="desc">
-                              Unleash your full potential with our cross-<br/>
-                              workout sessions, blending strength, agility,<br/>
-                              and endurance training for a transformative<br/>
+                              Unleash your full potential with our cross-
+                              <br />
+                              workout sessions, blending strength, agility,
+                              <br />
+                              and endurance training for a transformative
+                              <br />
                               fitness experience like never before.
                             </p>
                           </li>
                         </ul>
                       </div>
-                      <div class="swiper">
+                      <div class="swiper" aria-hidden="true">
                         <ul class="swiper-wrapper style-list">
                           <li class="swiper-slide style-item">
                             <div class="list-head"><span class="ic-outdoor"></span></div>
                             <strong class="name">Outdoor workout</strong>
                             <p class="desc">
-                              Elevate your fitness experience and embrace<br/>
-                              the vitality of the great outdoors with<br/>
-                              invigorating outdoor workouts, where every<br/>
-                              session becomes a breath of fresh air for your<br/>
+                              Elevate your fitness experience and embrace
+                              <br />
+                              the vitality of the great outdoors with
+                              <br />
+                              invigorating outdoor workouts, where every
+                              <br />
+                              session becomes a breath of fresh air for your
+                              <br />
                               body and mind.
                             </p>
                           </li>
@@ -349,9 +382,12 @@
                             <div class="list-head"><span class="ic-gym"></span></div>
                             <strong class="name">Gym workout</strong>
                             <p class="desc">
-                              Transform your body and amplify your<br/>
-                              strength with our state-of-the-art gym<br/>
-                              workouts, where every workout is a step<br/>
+                              Transform your body and amplify your
+                              <br />
+                              strength with our state-of-the-art gym
+                              <br />
+                              workouts, where every workout is a step
+                              <br />
                               closer to your fitness goals.
                             </p>
                           </li>
@@ -359,10 +395,14 @@
                             <div class="list-head"><span class="ic-home"></span></div>
                             <strong class="name">Home workout</strong>
                             <p class="desc">
-                              Achieve your fitness goals from the comfort<br/>
-                              of your home with our dynamic and<br/>
-                              convenient home workout programs,<br/>
-                              making wellness accessible whenever and<br/>
+                              Achieve your fitness goals from the comfort
+                              <br />
+                              of your home with our dynamic and
+                              <br />
+                              convenient home workout programs,
+                              <br />
+                              making wellness accessible whenever and
+                              <br />
                               wherever you are.
                             </p>
                           </li>
@@ -370,9 +410,12 @@
                             <div class="list-head"><span class="ic-cross"></span></div>
                             <strong class="name">Cross workout</strong>
                             <p class="desc">
-                              Unleash your full potential with our cross-<br/>
-                              workout sessions, blending strength, agility,<br/>
-                              and endurance training for a transformative<br/>
+                              Unleash your full potential with our cross-
+                              <br />
+                              workout sessions, blending strength, agility,
+                              <br />
+                              and endurance training for a transformative
+                              <br />
                               fitness experience like never before.
                             </p>
                           </li>
@@ -385,633 +428,701 @@
                       <ul class="card-list">
                         <li class="card-item">
                           <div class="video-frame">
-                            <video autoplay="" muted="" loop="" playsinline="" loading="lazy">
-                              <source src="assets/videos/vd-card1.mp4">
+                            <video autoplay muted loop playsinline loading="lazy">
+                              <source src="assets/videos/vd-card1.mp4" type="video/mp4" />
                             </video>
                           </div>
                         </li>
                         <li class="card-item">
                           <div class="video-frame">
-                            <video autoplay="" muted="" loop="" playsinline="" loading="lazy">
-                              <source src="assets/videos/vd-card2.mp4">
+                            <video autoplay muted loop playsinline loading="lazy">
+                              <source src="assets/videos/vd-card2.mp4" type="video/mp4" />
                             </video>
                           </div>
                         </li>
                         <li class="card-item">
                           <div class="video-frame">
-                            <video autoplay="" muted="" loop="" playsinline="" loading="lazy">
-                              <source src="assets/videos/vd-card3.mp4">
+                            <video autoplay muted loop playsinline loading="lazy">
+                              <source src="assets/videos/vd-card3.mp4" type="video/mp4" />
                             </video>
                           </div>
                         </li>
                         <li class="card-item">
                           <div class="video-frame">
-                            <video autoplay="" muted="" loop="" playsinline="" loading="lazy">
-                              <source src="assets/videos/vd-card4.mp4">
+                            <video autoplay muted loop playsinline loading="lazy">
+                              <source src="assets/videos/vd-card4.mp4" type="video/mp4" />
                             </video>
                           </div>
                         </li>
-                        <li class="card-item" aria-hidden="true">
-                        </li>
+                        <li class="card-item" aria-hidden="true"></li>
                       </ul>
                     </div>
                   </div>
                 </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <section class="sc-addition">
-      <h2 class="blind">추가 유용한 기능</h2>
-      <div class="group-progress">
-        <div class="content-wrapper">
-          <div class="wrapper frame-dark position">
-            <div class="frame-border">
-              <div class="lottie-wrap">
-                <div class="lottie-4"></div>
               </div>
-              <p class="blind">
-                Track how you<br/>
-                progressing
-              </p>
             </div>
-          </div>
-          <div class="wrapper frame-dark">
-            <div class="frame-border">
-              <div class="lottie-wrap">
-                <div class="lottie-5"></div>
+          </section>
+        </div>
+      </section>
+      <section class="sc-addition">
+        <h2 class="blind">추가 유용한 기능</h2>
+        <div class="group-progress">
+          <div class="content-wrapper">
+            <div class="wrapper frame-dark position">
+              <div class="frame-border">
+                <div class="lottie-wrap">
+                  <div class="lottie-4"></div>
+                </div>
+                <p class="blind">
+                  Track how you
+                  <br />
+                  progressing
+                </p>
               </div>
-              <p class="desc">
-                Keep up with your<br/>
-                best results
-              </p>
             </div>
-          </div>
-          <div class="wrapper frame-dark">
-            <div class="frame-border">
-              <div class="lottie-wrap">
-                <div class="lottie-6"></div>
+            <div class="wrapper frame-dark">
+              <div class="frame-border">
+                <div class="lottie-wrap">
+                  <div class="lottie-5"></div>
+                </div>
+                <p class="desc">
+                  Keep up with your
+                  <br />
+                  best results
+                </p>
               </div>
-              <p class="desc">
-                Challenge yourself<br/>
-                with achievements
-              </p>
+            </div>
+            <div class="wrapper frame-dark">
+              <div class="frame-border">
+                <div class="lottie-wrap">
+                  <div class="lottie-6"></div>
+                </div>
+                <p class="desc">
+                  Challenge yourself
+                  <br />
+                  with achievements
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="group-watch">
-        <div class="content-wrapper">
-          <div class="text-wrap">
-            <span class="bg-object"></span>
-            <p class="sub">Synchronized with</p>
-            <strong class="point">Apple Watch</strong>
-          </div>
-          <div class="img-wrap">
-            <div class="watch-1" data-y="-90" >
-              <img src="assets/images/img-watch1.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 27vw" srcset="assets/images/img-watch1.webp 500w, assets/images/img-watch1.webp 798w" alt>
+        <div class="group-watch">
+          <div class="content-wrapper">
+            <div class="text-wrap">
+              <span class="bg-object" aria-hidden="true"></span>
+              <p class="sub">Synchronized with</p>
+              <strong class="point">Apple Watch</strong>
             </div>
-            <div class="watch-2">
-              <img src="assets/images/img-watch2.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch2.webp 500w, assets/images/img-watch2.webp 549w" alt>
-            </div>
-            <div class="watch-3">
-              <img src="assets/images/img-watch3.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch3.webp 500w, assets/images/img-watch3.webp 544w" alt>
-            </div>
-            <div class="watch-4">
-              <img src="assets/images/img-watch4.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch4.webp 500w, assets/images/img-watch4.webp 798w" alt>
-            </div>
-            <div class="watch-5" data-y="-140">
-              <img src="assets/images/img-watch5.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch5.webp 500w, assets/images/img-watch5.webp 536w" alt>
-            </div>
-            <div class="watch-6" data-y="-140">
-              <img src="assets/images/img-watch6.webp"loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch6.webp 500w, assets/images/img-watch6.webp 549w" alt>
-            </div>
-            <div class="watch-7">
-              <img src="assets/images/img-watch7.webp" loading="lazy" alt>
-            </div>
-            <div class="watch-8" data-y="-80">
-              <img src="assets/images/img-watch8.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch8.webp 500w, assets/images/img-watch8.webp 549w" alt>
-            </div>
-            <div class="watch-9">
-              <img src="assets/images/img-watch9.webp" loading="lazy" sizes="(max-width: 600px) 36vw, 20vw" srcset="assets/images/img-watch9.webp 500w, assets/images/img-watch9.webp 549w" alt>
+            <div class="img-wrap">
+              <div class="watch-1" data-y="-90">
+                <img
+                  src="assets/images/img-watch1.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 27vw"
+                  srcset="assets/images/img-watch1.webp 500w, assets/images/img-watch1.webp 798w"
+                  alt />
+              </div>
+              <div class="watch-2">
+                <img
+                  src="assets/images/img-watch2.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch2.webp 500w, assets/images/img-watch2.webp 549w"
+                  alt />
+              </div>
+              <div class="watch-3">
+                <img
+                  src="assets/images/img-watch3.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch3.webp 500w, assets/images/img-watch3.webp 544w"
+                  alt />
+              </div>
+              <div class="watch-4">
+                <img
+                  src="assets/images/img-watch4.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch4.webp 500w, assets/images/img-watch4.webp 798w"
+                  alt />
+              </div>
+              <div class="watch-5" data-y="-140">
+                <img
+                  src="assets/images/img-watch5.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch5.webp 500w, assets/images/img-watch5.webp 536w"
+                  alt />
+              </div>
+              <div class="watch-6" data-y="-140">
+                <img
+                  src="assets/images/img-watch6.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch6.webp 500w, assets/images/img-watch6.webp 549w"
+                  alt />
+              </div>
+              <div class="watch-7">
+                <img src="assets/images/img-watch7.webp" loading="lazy" alt />
+              </div>
+              <div class="watch-8" data-y="-80">
+                <img
+                  src="assets/images/img-watch8.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch8.webp 500w, assets/images/img-watch8.webp 549w"
+                  alt />
+              </div>
+              <div class="watch-9">
+                <img
+                  src="assets/images/img-watch9.webp"
+                  loading="lazy"
+                  sizes="(max-width: 600px) 36vw, 20vw"
+                  srcset="assets/images/img-watch9.webp 500w, assets/images/img-watch9.webp 549w"
+                  alt />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- sc-review -->
+      <!-- sc-review -->
 
-    <section class="sc-review">
-      <div class="content-wrapper">
+      <section class="sc-review">
+        <div class="content-wrapper">
+          <div class="head">
+            <h2 class="title">Rating & Reviews</h2>
+            <p class="headline">What people are saying</p>
+          </div>
+          <div class="content">
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="slide-card-1">
+                    <div class="profile">
+                      <div class="profile-img"></div>
+                      <div class="profile-info">
+                        <span class="name">Mary Roach</span>
+                        <span class="nickname">mary0617</span>
+                      </div>
+                    </div>
+                    <div class="rating" aria-label="5 out of 5 stars">
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                    </div>
+                    <div class="review">
+                      <p>
+                        The interface is intuitive and the exercises are well-chosen. A super app
+                        for those who want to train effectively and with pleasure!
+                      </p>
+                      <div class="time">
+                        <time datetime="2023-11-12">12 Nov, 2023</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="slide-card-2">
+                    <div class="profile">
+                      <div class="profile-img"></div>
+                      <div class="profile-info">
+                        <span class="name">Emily Lowe</span>
+                        <span class="nickname">emile_lo</span>
+                      </div>
+                    </div>
+                    <div class="rating" aria-label="4 out of 5 stars">
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-empty" aria-hidden="true"></span>
+                    </div>
+                    <div class="review">
+                      <p>
+                        Great app! The workouts are varied and effective, never boring. I feel
+                        stronger and more energetic.
+                      </p>
+                      <div class="time">
+                        <time datetime="2024-01-09">09 Jan, 2024</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="slide-card-3 white">
+                    <div class="profile">
+                      <div class="profile-img"></div>
+                      <div class="profile-info">
+                        <span class="name">Nicholas Robson</span>
+                        <span class="nickname">nic67</span>
+                      </div>
+                    </div>
+                    <div class="rating" aria-label="5 out of 5 stars">
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                    </div>
+                    <div class="review">
+                      <p>
+                        Easy and simple to use. The workout programs are easy to follow and results
+                        are visible in just a couple of weeks!
+                      </p>
+                      <div class="time">
+                        <time datetime="2024-03-20">20 Mar, 2024</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="slide-card-4">
+                    <div class="profile">
+                      <div class="profile-img"></div>
+                      <div class="profile-info">
+                        <span class="name">Ellis Tomlinson</span>
+                        <span class="nickname">ellis_tomlinson</span>
+                      </div>
+                    </div>
+                    <div class="rating" aria-label="5 out of 5 stars">
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                    </div>
+                    <div class="review">
+                      <p>
+                        Ideal for people of any skill level. I was able to start from scratch and
+                        gradually increase the load. Very pleased with the results and the process!
+                      </p>
+                      <div class="time">
+                        <time datetime="2024-04-11">11 Apr, 2024</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="slide-card-5">
+                    <div class="profile">
+                      <div class="profile-img"></div>
+                      <div class="profile-info">
+                        <span class="name">Frances Guinyard</span>
+                        <span class="nickname">Fran_18</span>
+                      </div>
+                    </div>
+                    <div class="rating" aria-label="4 out of 5 stars">
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-fill" aria-hidden="true"></span>
+                      <span class="star-empty" aria-hidden="true"></span>
+                    </div>
+                    <div class="review">
+                      <p>
+                        Every workout is a small triumph!. Thanks to him, I was able to quickly get
+                        back into shape after a long break.
+                      </p>
+                      <div class="time">
+                        <time datetime="2024-07-08">08 Jul, 2024</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-control">
+                <button class="btn-prev btn-type1" aria-label="이전 리뷰">
+                  <span class="dot-1 white" aria-hidden="true"></span>
+                  <span class="dot-2 white" aria-hidden="true"></span>
+                  <span class="dot-3 white" aria-hidden="true"></span>
+                  <span class="dot-4 white" aria-hidden="true"></span>
+                  <span class="dot-5 white" aria-hidden="true"></span>
+                  <span class="dot-6 white" aria-hidden="true"></span>
+                  <span class="dot-7 white" aria-hidden="true"></span>
+                </button>
+                <button class="btn-next btn-type1" aria-label="다음 리뷰">
+                  <span class="dot-1 white" aria-hidden="true"></span>
+                  <span class="dot-2 white" aria-hidden="true"></span>
+                  <span class="dot-3 white" aria-hidden="true"></span>
+                  <span class="dot-4 white" aria-hidden="true"></span>
+                  <span class="dot-5 white" aria-hidden="true"></span>
+                  <span class="dot-6 white" aria-hidden="true"></span>
+                  <span class="dot-7 white" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sc-plan -->
+
+      <section class="sc-plan">
+        <h2 class="blind">플랜 소개</h2>
         <div class="head">
-          <h2 class="title">Rating & Reviews</h2>
-          <p class="headline">What people are saying</p>
+          <span class="ic-unlock" aria-hidden="true"></span>
+          <p class="headline">Unlock all benefits</p>
         </div>
         <div class="content">
           <div class="swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <div class="slide-card-1">
-                  <div class="profile">
-                    <div class="profile-img"></div>
-                    <div class="profile-info">
-                      <span class="name">Mary Roach</span>
-                      <span class="nickname">mary0617</span>
+            <ul class="swiper-wrapper plan-list">
+              <li class="swiper-slide plan-item">
+                <div class="frame-dark">
+                  <div class="wrapper frame-border">
+                    <div class="top">
+                      <span class="name">Free Trial</span>
                     </div>
-                  </div>
-                  <div class="rating" aria-label="5 out of 5 stars">
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                  </div>
-                  <div class="review">
-                    <p>
-                      The interface is intuitive and the exercises are well-chosen. A super app for those who want to train effectively and with pleasure!
-                    </p>
-                    <div class="time">
-                      <time datetime="2023-11-12">12 Nov, 2023</time>
+                    <div class="body">
+                      <div class="plan-price">
+                        <div class="main">
+                          <strong class="price">$0</strong>
+                        </div>
+                        <div class="sub">
+                          <p class="">Unlimited num of workouts</p>
+                        </div>
+                      </div>
+                      <div class="plan-desc">
+                        <p class="text">Get unlimited workouts anytime you want</p>
+                        <p class="text">Track your progress and stay motivated</p>
+                        <p class="text">Analyze youperformance</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="slide-card-2">
-                  <div class="profile">
-                    <div class="profile-img"></div>
-                    <div class="profile-info">
-                      <span class="name">Emily Lowe</span>
-                      <span class="nickname">emile_lo</span>
-                    </div>
-                  </div>
-                  <div class="rating" aria-label="4 out of 5 stars">
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-empty"></span>
-                  </div>
-                  <div class="review">
-                    <p>
-                      Great app! The workouts are varied and effective, never boring. I feel stronger and more energetic.
-                    </p>
-                    <div class="time">
-                      <time datetime="2024-01-09">09 Jan, 2024</time>
+                    <div class="bottom">
+                      <a href="" class="down-appstore btn-type2 purple">
+                        App Store
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
+                      <a href="" class="down-google btn-type2 purple">
+                        Google Play
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide">
-                <div class="slide-card-3 white">
-                  <div class="profile">
-                    <div class="profile-img"></div>
-                    <div class="profile-info">
-                      <span class="name">Nicholas Robson</span>
-                      <span class="nickname">nic67</span>
+              <li class="swiper-slide plan-item">
+                <div class="frame-dark">
+                  <div class="wrapper frame-border">
+                    <div class="top">
+                      <span class="name">Monthly</span>
                     </div>
-                  </div>
-                  <div class="rating" aria-label="5 out of 5 stars">
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                  </div>
-                  <div class="review">
-                    <p>
-                      Easy and simple to use. The workout programs are easy to follow and results are visible in just a couple of weeks!
-                    </p>
-                    <div class="time">
-                      <time datetime="2024-03-20">20 Mar, 2024</time>
+                    <div class="body">
+                      <div class="plan-price">
+                        <div class="main">
+                          <strong class="price">$14.99</strong>
+                          <span class="sup">/per month</span>
+                        </div>
+                        <div class="sub">
+                          <p class="">/per 1 month</p>
+                        </div>
+                      </div>
+                      <div class="plan-desc">
+                        <p class="text">Get unlimited workouts anytime you want</p>
+                        <p class="text">Track your progress and stay motivated</p>
+                        <p class="text">Analyze youperformance</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="slide-card-4">
-                  <div class="profile">
-                    <div class="profile-img"></div>
-                    <div class="profile-info">
-                      <span class="name">Ellis Tomlinson</span>
-                      <span class="nickname">ellis_tomlinson</span>
-                    </div>
-                  </div>
-                  <div class="rating" aria-label="5 out of 5 stars">
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                  </div>
-                  <div class="review">
-                    <p>
-                      Ideal for people of any skill level. I was able to start from scratch and gradually increase the load. Very pleased with the results and the process!
-                    </p>
-                    <div class="time">
-                      <time datetime="2024-04-11">11 Apr, 2024</time>
+                    <div class="bottom">
+                      <a href="" class="down-appstore btn-type2 purple">
+                        App Store
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
+                      <a href="" class="down-google btn-type2 purple">
+                        Google Play
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide">
-                <div class="slide-card-5">
-                  <div class="profile">
-                    <div class="profile-img"></div>
-                    <div class="profile-info">
-                      <span class="name">Frances Guinyard</span>
-                      <span class="nickname">Fran_18</span>
+              <li class="swiper-slide plan-item">
+                <div class="frame-dark">
+                  <div class="wrapper frame-border">
+                    <div class="top">
+                      <span class="name">Annual</span>
                     </div>
-                  </div>
-                  <div class="rating" aria-label="4 out of 5 stars">
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-fill"></span>
-                    <span class="star-empty"></span>
-                  </div>
-                  <div class="review">
-                    <p>
-                      Every workout is a small triumph!. Thanks to him, I was able to quickly get back into shape after a long break.
-                    </p>
-                    <div class="time">
-                      <time datetime="2024-07-08">08 Jul, 2024</time>
+                    <div class="body">
+                      <div class="plan-price">
+                        <div class="main">
+                          <strong class="price">$6.67</strong>
+                          <span class="sup">$95.99/12 month</span>
+                        </div>
+                        <div class="sub">
+                          <p class="">/per 1 month</p>
+                          <div class="badge-off">55% off</div>
+                        </div>
+                      </div>
+                      <div class="plan-desc">
+                        <p class="text">Get unlimited workouts anytime you want</p>
+                        <p class="text">Track your progress and stay motivated</p>
+                        <p class="text">Analyze youperformance</p>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <a href="" class="down-appstore btn-type2 purple">
+                        App Store
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
+                      <a href="" class="down-google btn-type2 purple">
+                        Google Play
+                        <span class="dot-1" aria-hidden="true"></span>
+                        <span class="dot-2" aria-hidden="true"></span>
+                        <span class="dot-3" aria-hidden="true"></span>
+                        <span class="dot-4" aria-hidden="true"></span>
+                        <span class="dot-5" aria-hidden="true"></span>
+                        <span class="dot-6" aria-hidden="true"></span>
+                        <span class="dot-7" aria-hidden="true"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
-            <div class="swiper-control">
-              <button class="btn-prev btn-type1" aria-label="이전 페이지">
-                <span class="dot-1 white"></span>
-                <span class="dot-2 white"></span>
-                <span class="dot-3 white"></span>
-                <span class="dot-4 white"></span>
-                <span class="dot-5 white"></span>
-                <span class="dot-6 white"></span>
-                <span class="dot-7 white"></span>
-              </button>
-              <button class="btn-next btn-type1" aria-label="다음 페이지">
-                <span class="dot-1 white"></span>
-                <span class="dot-2 white"></span>
-                <span class="dot-3 white"></span>
-                <span class="dot-4 white"></span>
-                <span class="dot-5 white"></span>
-                <span class="dot-6 white"></span>
-                <span class="dot-7 white"></span>
-              </button>
+          </div>
+          <div class="main-plan">
+            <div class="frame-dark position static">
+              <div class="wrapper frame-border">
+                <div class="top">
+                  <strong class="headline">
+                    <span class="text">Get unlimited</span>
+                    <span class="text">custom-made</span>
+                    <span class="text">workouts</span>
+                  </strong>
+                </div>
+                <div class="body">
+                  <p class="text">Get unlimited workouts anytime you want</p>
+                  <p class="text">Track your progress and stay motivated</p>
+                  <p class="text">Analyze youperformance</p>
+                </div>
+                <div class="bottom">
+                  <div class="links">
+                    <a href="" class="down-appstore btn-type2 purple">
+                      App Store
+                      <span class="dot-1" aria-hidden="true"></span>
+                      <span class="dot-2" aria-hidden="true"></span>
+                      <span class="dot-3" aria-hidden="true"></span>
+                      <span class="dot-4" aria-hidden="true"></span>
+                      <span class="dot-5" aria-hidden="true"></span>
+                      <span class="dot-6" aria-hidden="true"></span>
+                      <span class="dot-7" aria-hidden="true"></span>
+                    </a>
+                    <a href="" class="down-google btn-type2 purple">
+                      Google Play
+                      <span class="dot-1" aria-hidden="true"></span>
+                      <span class="dot-2" aria-hidden="true"></span>
+                      <span class="dot-3" aria-hidden="true"></span>
+                      <span class="dot-4" aria-hidden="true"></span>
+                      <span class="dot-5" aria-hidden="true"></span>
+                      <span class="dot-6" aria-hidden="true"></span>
+                      <span class="dot-7" aria-hidden="true"></span>
+                    </a>
+                  </div>
+                  <span class="tag">Available for free</span>
+                </div>
+                <div class="img-container">
+                  <img src="assets/images/img-mobile-empty.webp" loading="lazy" sizes="100vw" alt />
+                  <div class="lottie-wrap">
+                    <div class="lottie-7"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- sc-plan -->
+    <!-- footer -->
 
-    <section class="sc-plan">
-      <h2 class="blind">플랜 소개</h2>
-      <div class="head">
-        <span class="ic-unlock"></span>
-        <p class="headline">Unlock all benefits</p>
-      </div>
-      <div class="content">
-        <div class="swiper">
-          <ul class="swiper-wrapper plan-list">
-            <li class="swiper-slide plan-item">
-              <div class="frame-dark">
-                <div class="wrapper frame-border">
-                  <div class="top">
-                    <span class="name">Free Trial</span>
-                  </div>
-                  <div class="body">
-                    <div class="plan-price">
-                      <div class="main">
-                        <strong class="price">$0</strong>
-                      </div>
-                      <div class="sub">
-                        <p class="">Unlimited num of workouts</p>
-                      </div>
-                    </div>
-                    <div class="plan-desc">
-                      <p class="text">Get unlimited workouts anytime you want</p>
-                      <p class="text">Track your progress and stay motivated</p>
-                      <p class="text">Analyze youperformance</p>
-                    </div>
-                  </div>
-                  <div class="bottom">
-                    <a href="" class="down-appstore btn-type2 purple">
-                      App Store
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                    <a href="" class="down-google btn-type2 purple">
-                      Google Play
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                  </div>
+    <footer id="footer">
+      <h2 class="blind">Fitonist 푸터</h2>
+      <div class="footer-inner">
+        <div class="col-left">
+          <div class="footer-frame frame-dark static">
+            <div class="wrapper frame-border">
+              <span class="logo">
+                <span class="blind">Fitonist 앱 로고</span>
+              </span>
+              <p>Start workout today</p>
+              <div class="btn-area">
+                <a href="" class="down-appstore btn-type1 purple" aria-label="앱스토어로 이동">
+                  <span class="blind">앱스토어</span>
+                  <span class="dot-1" aria-hidden="true"></span>
+                  <span class="dot-2" aria-hidden="true"></span>
+                  <span class="dot-3" aria-hidden="true"></span>
+                  <span class="dot-4" aria-hidden="true"></span>
+                  <span class="dot-5" aria-hidden="true"></span>
+                  <span class="dot-6" aria-hidden="true"></span>
+                  <span class="dot-7" aria-hidden="true"></span>
+                </a>
+                <a href="" class="down-google btn-type1 purple" aria-label="구글플레이로 이동">
+                  <span class="blind">구글플레이</span>
+                  <span class="dot-1" aria-hidden="true"></span>
+                  <span class="dot-2" aria-hidden="true"></span>
+                  <span class="dot-3" aria-hidden="true"></span>
+                  <span class="dot-4" aria-hidden="true"></span>
+                  <span class="dot-5" aria-hidden="true"></span>
+                  <span class="dot-6" aria-hidden="true"></span>
+                  <span class="dot-7" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <small class="copy">
+            ©2024 Fitonist. Created by
+            <a href="">Outcrowd</a>
+          </small>
+        </div>
+        <div class="col-right">
+          <ul class="link-list">
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Workout plans
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 104 5" fill="none">
+                    <path
+                      d="M1 2.40328C6.61864 2.81974 21 4.5 40.0604 2.81974C71.8745 0.015184 79.2288 1.41048 103 2.81974"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
                 </div>
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Terms of Service
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 125 5" fill="none">
+                    <path
+                      d="M1 2.9509C7.77542 3.30479 25.2276 5.9661 48.1022 3.30479C87 -1.22072 95.3347 2.10725 124 3.30479"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Exercises
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 71 4" fill="none">
+                    <path
+                      d="M1 2.0239C4.80085 2.37776 14.5294 3.80546 27.4232 2.37777C48.9445 -0.00522924 53.9195 1.18033 70 2.37777"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Privacy Policy
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 106 4" fill="none">
+                    <path
+                      d="M1 2.49851C6.72881 2.85237 21.3922 4.28007 40.8263 2.85238C73.2642 0.46938 80.7627 1.65494 105 2.85237"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Pricing
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 54 3" fill="none">
+                    <path
+                      d="M1 1.57828C3.86441 1.93217 10 2.79189 20.9131 1.93217C37.2556 0.644736 40.8814 0.734631 53 1.93217"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="link-item grid-span">
+              <div class="btn-area">
+                <a href="" class="link-tiktok btn-type1 purple" aria-label="틱톡으로 이동">
+                  <span class="blind">틱톡</span>
+                  <span class="dot-1" aria-hidden="true"></span>
+                  <span class="dot-2" aria-hidden="true"></span>
+                  <span class="dot-3" aria-hidden="true"></span>
+                  <span class="dot-4" aria-hidden="true"></span>
+                  <span class="dot-5" aria-hidden="true"></span>
+                  <span class="dot-6" aria-hidden="true"></span>
+                  <span class="dot-7" aria-hidden="true"></span>
+                </a>
+                <a href="" class="link-youtube btn-type1 purple" aria-label="유튜브로 이동">
+                  <span class="blind">유튜브</span>
+                  <span class="dot-1" aria-hidden="true"></span>
+                  <span class="dot-2" aria-hidden="true"></span>
+                  <span class="dot-3" aria-hidden="true"></span>
+                  <span class="dot-4" aria-hidden="true"></span>
+                  <span class="dot-5" aria-hidden="true"></span>
+                  <span class="dot-6" aria-hidden="true"></span>
+                  <span class="dot-7" aria-hidden="true"></span>
+                </a>
+                <a href="" class="link-instagram btn-type1 purple" aria-label="인스타그램으로 이동">
+                  <span class="blind">인스타그램</span>
+                  <span class="dot-1" aria-hidden="true"></span>
+                  <span class="dot-2" aria-hidden="true"></span>
+                  <span class="dot-3" aria-hidden="true"></span>
+                  <span class="dot-4" aria-hidden="true"></span>
+                  <span class="dot-5" aria-hidden="true"></span>
+                  <span class="dot-6" aria-hidden="true"></span>
+                  <span class="dot-7" aria-hidden="true"></span>
+                </a>
               </div>
             </li>
-            <li class="swiper-slide plan-item">
-              <div class="frame-dark">
-                <div class="wrapper frame-border">
-                  <div class="top">
-                    <span class="name">Monthly</span>
-                  </div>
-                  <div class="body">
-                    <div class="plan-price">
-                      <div class="main">
-                        <strong class="price">$14.99</strong>
-                        <span class="sup">/per month</span>
-                      </div>
-                      <div class="sub">
-                        <p class="">/per 1 month</p>
-                      </div>
-                    </div>
-                    <div class="plan-desc">
-                      <p class="text">Get unlimited workouts anytime you want</p>
-                      <p class="text">Track your progress and stay motivated</p>
-                      <p class="text">Analyze youperformance</p>
-                    </div>
-                  </div>
-                  <div class="bottom">
-                    <a href="" class="down-appstore btn-type2 purple">
-                      App Store
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                    <a href="" class="down-google btn-type2 purple">
-                      Google Play
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                  </div>
+            <li class="link-item">
+              <a href="" class="link-nav">
+                Contact us
+                <div class="line">
+                  <svg width="100%" height="100%" viewBox="0 0 83 4" fill="none">
+                    <path
+                      d="M1 2.32664C5.46186 2.6805 16.8824 4.1082 32.0185 2.6805C57.2827 0.297505 63.1229 1.48307 82 2.6805"
+                      stroke="#88C0FC"
+                      stroke-linecap="round"></path>
+                  </svg>
                 </div>
-              </div>
-            </li>
-            <li class="swiper-slide plan-item">
-              <div class="frame-dark">
-                <div class="wrapper frame-border">
-                  <div class="top">
-                    <span class="name">Annual</span>
-                  </div>
-                  <div class="body">
-                    <div class="plan-price">
-                      <div class="main">
-                        <strong class="price">$6.67</strong>
-                        <span class="sup">$95.99/12 month</span>
-                      </div>
-                      <div class="sub">
-                        <p class="">/per 1 month</p>
-                        <div class="badge-off">55% off</div>
-                      </div>
-                    </div>
-                    <div class="plan-desc">
-                      <p class="text">Get unlimited workouts anytime you want</p>
-                      <p class="text">Track your progress and stay motivated</p>
-                      <p class="text">Analyze youperformance</p>
-                    </div>
-                  </div>
-                  <div class="bottom">
-                    <a href="" class="down-appstore btn-type2 purple">
-                      App Store
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                    <a href="" class="down-google btn-type2 purple">
-                      Google Play
-                      <span class="dot-1"></span>
-                      <span class="dot-2"></span>
-                      <span class="dot-3"></span>
-                      <span class="dot-4"></span>
-                      <span class="dot-5"></span>
-                      <span class="dot-6"></span>
-                      <span class="dot-7"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="main-plan">
-          <div class="frame-dark position static">
-            <div class="wrapper frame-border">
-              <div class="top">
-                <strong class="headline">
-                  <span class="text">Get unlimited</span>
-                  <span class="text">custom-made</span>
-                  <span class="text">workouts</span>
-                </strong>
-              </div>
-              <div class="body">
-                <p class="text">Get unlimited workouts anytime you want</p>
-                <p class="text">Track your progress and stay motivated</p>
-                <p class="text">Analyze youperformance</p>
-              </div>
-              <div class="bottom">
-                <div class="links">
-                  <a href="" class="down-appstore btn-type2 purple">
-                    App Store
-                    <span class="dot-1"></span>
-                    <span class="dot-2"></span>
-                    <span class="dot-3"></span>
-                    <span class="dot-4"></span>
-                    <span class="dot-5"></span>
-                    <span class="dot-6"></span>
-                    <span class="dot-7"></span>
-                  </a>
-                  <a href="" class="down-google btn-type2 purple">
-                    Google Play
-                    <span class="dot-1"></span>
-                    <span class="dot-2"></span>
-                    <span class="dot-3"></span>
-                    <span class="dot-4"></span>
-                    <span class="dot-5"></span>
-                    <span class="dot-6"></span>
-                    <span class="dot-7"></span>
-                  </a>
-                </div>
-                <span class="tag">Available for free</span>
-              </div>
-              <div class="img-container">
-                <img src="assets/images/img-mobile-empty.webp" loading="lazy" sizes="100vw" alt>
-                <div class="lottie-wrap">
-                  <div class="lottie-7"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-  </main>
-
-  <!-- footer -->
-
-  <footer id="footer">
-    <h2 class="blind">Fitonist 푸터</h2>
-    <div class="footer-inner">
-      <div class="col-left">
-        <div class="footer-frame frame-dark static">
-          <div class="wrapper frame-border">
-            <span class="logo">
-              <span class="blind">Fitonist 앱 로고</span>
-            </span>
-            <p>Start workout today</p>
-            <div class="btn-area">
-              <a href="" class="down-appstore btn-type1 purple" aria-label="앱스토어로 이동">
-                <span class="blind">앱스토어</span>
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-                <span class="dot-4"></span>
-                <span class="dot-5"></span>
-                <span class="dot-6"></span>
-                <span class="dot-7"></span>
-              </a>
-              <a href="" class="down-google btn-type1 purple" aria-label="구글플레이로 이동">
-                <span class="blind">구글플레이</span>
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-                <span class="dot-4"></span>
-                <span class="dot-5"></span>
-                <span class="dot-6"></span>
-                <span class="dot-7"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <small class="copy">©2024 Fitonist. Created by <a href="">Outcrowd</a></small>
-      </div>
-      <div class="col-right">
-        <ul class="link-list">
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Workout plans
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 104 5" fill="none">
-                  <path d="M1 2.40328C6.61864 2.81974 21 4.5 40.0604 2.81974C71.8745 0.015184 79.2288 1.41048 103 2.81974" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Terms of Service
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 125 5" fill="none">
-                  <path d="M1 2.9509C7.77542 3.30479 25.2276 5.9661 48.1022 3.30479C87 -1.22072 95.3347 2.10725 124 3.30479" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Exercises
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 71 4" fill="none">
-                  <path d="M1 2.0239C4.80085 2.37776 14.5294 3.80546 27.4232 2.37777C48.9445 -0.00522924 53.9195 1.18033 70 2.37777" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Privacy Policy
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 106 4" fill="none">
-                  <path d="M1 2.49851C6.72881 2.85237 21.3922 4.28007 40.8263 2.85238C73.2642 0.46938 80.7627 1.65494 105 2.85237" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Pricing
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 54 3" fill="none">
-                  <path d="M1 1.57828C3.86441 1.93217 10 2.79189 20.9131 1.93217C37.2556 0.644736 40.8814 0.734631 53 1.93217" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="link-item grid-span">
-            <div class="btn-area">
-              <a href="" class="link-tiktok btn-type1 purple" aria-label="틱톡으로 이동">
-                <span class="blind">틱톡</span>
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-                <span class="dot-4"></span>
-                <span class="dot-5"></span>
-                <span class="dot-6"></span>
-                <span class="dot-7"></span>
-              </a>
-              <a href="" class="link-youtube btn-type1 purple" aria-label="유튜브로 이동">
-                <span class="blind">유튜브</span>
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-                <span class="dot-4"></span>
-                <span class="dot-5"></span>
-                <span class="dot-6"></span>
-                <span class="dot-7"></span>
-              </a>
-              <a href="" class="link-instagram btn-type1 purple" aria-label="인스타그램으로 이동">
-                <span class="blind">인스타그램</span>
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-                <span class="dot-4"></span>
-                <span class="dot-5"></span>
-                <span class="dot-6"></span>
-                <span class="dot-7"></span>
-              </a>
-            </div>
-          </li>
-          <li class="link-item">
-            <a href="" class="link-nav">
-              Contact us
-              <div class="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 83 4" fill="none">
-                  <path d="M1 2.32664C5.46186 2.6805 16.8824 4.1082 32.0185 2.6805C57.2827 0.297505 63.1229 1.48307 82 2.6805" stroke="#88C0FC" stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
