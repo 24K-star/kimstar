@@ -1046,7 +1046,7 @@ body.white .sc-feature .group-detail .goal-area .list-container .content-wrapper
   left: 4.8vw;
   width: calc(100% - 9.6vw);
   height: 100%;
-  background: radial-gradient(327.2% 282.63% at 147.48% 169.77%, #FFB8E0 0%, #C7ABFF 38.89%, #9BCCFF 67.4%, #86FF99 100%);
+  background: radial-gradient(327.2% 282.63% at 147.48% 169.77%, #ffb8e0 0%, #c7abff 38.89%, #9bccff 67.4%, #86ff99 100%);
   border-radius: 60px;
 }
 .sc-intro .content-wrapper .group-download {
@@ -1081,7 +1081,7 @@ body.white .sc-feature .group-detail .goal-area .list-container .content-wrapper
 }
 .sc-intro .content-wrapper .group-download .head-area .headline {
   font-family: "Wix Madefor Display", sans-serif;
-  font-size: clamp(42px, 5.2vw, 100px);
+  font-size: clamp(38px, 5.2vw, 100px);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -1107,6 +1107,14 @@ body.white .sc-feature .group-detail .goal-area .list-container .content-wrapper
 .sc-intro .content-wrapper .group-download .img-area .mobile {
   position: relative;
   z-index: 2;
+}
+.sc-intro .content-wrapper .group-download .img-area .mobile img {
+  width: 24vw;
+}
+@media (max-width: 600px) {
+  .sc-intro .content-wrapper .group-download .img-area .mobile img {
+    width: 50vw;
+  }
 }
 .sc-intro .content-wrapper .group-download .img-area .mobile .lottie-wrap {
   position: absolute;
@@ -2083,34 +2091,42 @@ body.white .sc-feature .group-detail .goal-area .list-container .content-wrapper
   left: 32%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-2 {
+  width: 20vw;
   top: 11%;
   left: 10%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-3 {
+  width: 20vw;
   top: 20%;
   left: 68%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-4 {
+  width: 20vw;
   top: 33%;
   left: 97%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-5 {
+  width: 20vw;
   top: 54%;
   left: 6%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-6 {
+  width: 20vw;
   top: 64%;
   left: 62%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-7 {
+  width: 20vw;
   top: 61%;
   left: 90%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-8 {
+  width: 20vw;
   top: 77%;
   left: 36%;
 }
 .sc-addition .group-watch .content-wrapper .img-wrap .watch-9 {
+  width: 20vw;
   top: 73%;
   left: -14%;
 }
