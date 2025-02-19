@@ -1,13 +1,13 @@
-html{
+html {
   overscroll-behavior: none;
 }
 
-body{
+body {
   background-color: var(--background-color);
   overflow-x: hidden;
 }
 
-.fixed{
+.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,11 +18,11 @@ body{
 
   pointer-events: none;
 
-  .background{
+  .background {
     width: 100%;
     height: 100%;
 
-    &::after{
+    &::after {
       position: absolute;
       top: 0;
       left: 0;
@@ -32,29 +32,32 @@ body{
       background-size: 250px;
       mix-blend-mode: soft-light;
       opacity: 0.07;
-      content: '';
+      content: "";
     }
   }
 }
 
-img,video{
+img,
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.animate-scale{
+.animate-scale {
   transform: scale(1.2);
   filter: blur(30px);
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    filter 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
 
-  &.show{
+  &.show {
     filter: blur(0);
     transform: scale(1);
   }
 }
 
-.headline{
+.headline {
   margin: 0 0 -0.013em -0.04em;
 
   font-family: var(--font-secondary);
@@ -63,74 +66,77 @@ img,video{
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-  @include tablet{
+  @include tablet {
     font-size: 10vw;
   }
-
 }
-.heading{
+.heading {
   display: flex;
   flex-direction: column;
 
-  .sub{
+  .sub {
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 16px;
-    
-    @include tablet{
+
+    @include tablet {
       padding-bottom: 6px;
     }
-    @include m{
+    @include m {
       font-size: 14px;
     }
 
-    &::before{
+    &::before {
       width: 18px;
       height: 1.5px;
       background: var(--primary-color);
       margin-bottom: 2px;
-      content: '';
+      content: "";
     }
   }
-
 }
 
-.container{}
+.sticky {
+  will-change: transform;
+}
 
-.sc-intro{
+.container {
+}
+
+.sc-intro {
   height: 160vh;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 
-  @include m{
+  @include m {
     position: fixed;
     width: 100%;
     height: 100vh;
   }
 
-  &.hidden{
+  &.hidden {
     opacity: 0;
   }
 
-  .sticky-wrapper{
+  .sticky-wrapper {
     height: 300vh;
 
-    @include m{
+    @include m {
       display: none;
     }
 
-    .sticky{
+    .sticky {
       position: sticky;
       top: 0;
       height: 100vh;
 
-      @include m{
+      @include m {
         position: relative;
         height: auto;
       }
     }
 
-    .bg{
+    .bg {
       position: absolute;
       top: 0;
       left: 0;
@@ -139,9 +145,8 @@ img,video{
       background: var(--primary-color);
       z-index: 10;
     }
-
   }
-  .rotator{
+  .rotator {
     display: flex;
     align-items: flex-end;
     position: absolute;
@@ -149,45 +154,82 @@ img,video{
     left: 0;
     width: 100%;
     height: 100%;
-    
-    .bg{
+
+    .bg {
       width: 100%;
       height: 100%;
       background-color: var(--background-color);
       transform-origin: 0% 100%;
+      will-change: transform;
 
-      @include m{
+      @include m {
         display: none;
       }
 
-      &::after{
+      &::after {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: repeating-linear-gradient(0deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 10.7vw),
-            repeating-linear-gradient(90deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 12.5vw);
+        background: repeating-linear-gradient(
+            0deg,
+            rgb(78, 104, 228, 0.1),
+            rgb(78, 104, 228, 0.1) 1px,
+            transparent 1px,
+            transparent 10.7vw
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgb(78, 104, 228, 0.1),
+            rgb(78, 104, 228, 0.1) 1px,
+            transparent 1px,
+            transparent 12.5vw
+          );
         background-size: 12.5vw 10.7vw;
-        background-position: calc(12.5vw - 1px) 70px; 
-        content: '';
+        background-position: calc(12.5vw - 1px) 70px;
+        content: "";
 
-        @include tablet{
-          background: repeating-linear-gradient(0deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 14vw),
-          repeating-linear-gradient(90deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 20vw);
+        @include tablet {
+          background: repeating-linear-gradient(
+              0deg,
+              rgb(78, 104, 228, 0.1),
+              rgb(78, 104, 228, 0.1) 1px,
+              transparent 1px,
+              transparent 14vw
+            ),
+            repeating-linear-gradient(
+              90deg,
+              rgb(78, 104, 228, 0.1),
+              rgb(78, 104, 228, 0.1) 1px,
+              transparent 1px,
+              transparent 20vw
+            );
           background-size: 20vw 14vw;
-          background-position: calc(20vw - 1px) 70px; 
+          background-position: calc(20vw - 1px) 70px;
         }
-        
-        @include m{
-          background: repeating-linear-gradient(0deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 24vw),
-          repeating-linear-gradient(90deg, rgb(78, 104, 228, 0.1), rgb(78, 104, 228, 0.1) 1px, transparent 1px, transparent 33vw);
+
+        @include m {
+          background: repeating-linear-gradient(
+              0deg,
+              rgb(78, 104, 228, 0.1),
+              rgb(78, 104, 228, 0.1) 1px,
+              transparent 1px,
+              transparent 24vw
+            ),
+            repeating-linear-gradient(
+              90deg,
+              rgb(78, 104, 228, 0.1),
+              rgb(78, 104, 228, 0.1) 1px,
+              transparent 1px,
+              transparent 33vw
+            );
           background-size: 33vw 24vw;
-          background-position: calc(33vw - 1px) 70px; 
+          background-position: calc(33vw - 1px) 70px;
         }
       }
     }
-    .text-area{
+    .text-area {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -196,64 +238,64 @@ img,video{
       width: 100%;
       height: 100%;
 
-      color: var(--text-color-dark);;
+      color: var(--text-color-dark);
       text-transform: uppercase;
 
       transform-origin: 0% 100%;
-
+      will-change: transform;
     }
-    .headline{
+    .headline {
       display: flex;
       flex-direction: column;
       gap: 1.2vw;
 
-      margin:0;
+      margin: 0;
       font-size: max(64px, 5.6vw);
       line-height: 1.1;
       color: var(--primary-color);
 
-      @include tablet{
+      @include tablet {
         align-items: stretch;
 
         padding: 0 24px;
         font-size: 8.4vw;
       }
-      @include m{
+      @include m {
         padding: 0 16px;
       }
 
-      .item{
+      .item {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 32px;
-        --scale-value: 1; 
-        --scalex-first: 1; 
-        --scalex-second: 1; 
+        --scale-value: 1;
+        --scalex-first: 1;
+        --scalex-second: 1;
 
-        @include tablet{
+        @include tablet {
           gap: 16px;
         }
-        .text{
+        .text {
           flex-shrink: 0;
           overflow: hidden;
 
-          @include m{
+          @include m {
             color: var(--difference-color);
             mix-blend-mode: difference;
             z-index: 5;
           }
         }
-        .gradient{
+        .gradient {
           position: relative;
           width: 98%;
           height: 5.7vw;
 
-          @include tablet{
+          @include tablet {
             height: 8.4vw;
             margin-bottom: 1.2vw;
           }
-          @include m{
+          @include m {
             position: absolute;
             top: 0;
             left: 0;
@@ -262,17 +304,17 @@ img,video{
             height: 100%;
           }
 
-          .video-container{
+          .video-container {
             width: 100%;
             height: 100%;
             border-radius: 100%;
             overflow: hidden;
 
-            @include m{
+            @include m {
               border-radius: 0;
             }
 
-            &::after{
+            &::after {
               position: absolute;
               top: 0;
               left: 0;
@@ -283,21 +325,21 @@ img,video{
               opacity: 0.5;
               mix-blend-mode: darken;
               z-index: 5;
-              content: '';
+              content: "";
 
-              @include m{
+              @include m {
                 border-radius: 0;
               }
             }
           }
-          .orbit{
+          .orbit {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
 
-            @include m{
+            @include m {
               top: 50%;
               left: 50%;
               width: 94%;
@@ -306,31 +348,31 @@ img,video{
               mix-blend-mode: difference;
             }
 
-            svg{
+            svg {
               overflow: visible;
               transform: rotate(-2deg);
-              path{
+              path {
                 stroke: var(--primary-color);
               }
-              @include m{
+              @include m {
                 transform: rotate(-10deg);
-                path{
+                path {
                   stroke: var(--difference-color);
                   stroke-width: 1;
                 }
               }
             }
-            .shape{
+            .shape {
               position: absolute;
               top: 50%;
               left: 0;
-              
+
               width: 12px;
               aspect-ratio: 1;
               border-radius: 100%;
               background: var(--primary-color);
 
-              @include m{
+              @include m {
                 width: 10px;
                 background: var(--difference-color);
               }
@@ -338,45 +380,45 @@ img,video{
           }
         }
 
-        &:nth-child(1){
-          &::after{
+        &:nth-child(1) {
+          &::after {
             width: 160px;
             height: 2px;
             background: var(--primary-color);
 
             transform: scaleX(var(--scalex-first));
             transform-origin: left center;
-            content: '';
+            content: "";
 
-            @include tablet{
+            @include tablet {
               display: none;
             }
           }
         }
-        &:nth-child(2){
-          @include tablet{
+        &:nth-child(2) {
+          @include tablet {
             flex-direction: column;
           }
-          .text{
+          .text {
             display: flex;
             align-items: center;
             padding-left: 6px;
           }
 
-          .text::after{
+          .text::after {
             width: 4.8vw;
             height: 4.8vw;
             background: url(../images/ic-star2.svg) no-repeat;
             background-size: 100%;
             margin: 0 0 2px 8px;
             transform: scale(var(--scale-value));
-            content: '';
+            content: "";
 
-            @include tablet{
+            @include tablet {
               width: 6.8vw;
               height: 6.8vw;
             }
-            @include m{
+            @include m {
               width: 8.4vw;
               height: 8.4vw;
               background: url(../images/ic-star2-differ.svg) no-repeat;
@@ -384,30 +426,30 @@ img,video{
             }
           }
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           justify-content: flex-end;
 
-          @include tablet{
+          @include tablet {
             justify-content: center;
           }
 
-          .text{
+          .text {
             flex-shrink: 0;
           }
-          &::before{
+          &::before {
             width: 100%;
             height: 2px;
             background: var(--primary-color);
 
             transform: scaleX(var(--scalex-second));
             transform-origin: left center;
-            content: '';
+            content: "";
 
-            @include tablet{
+            @include tablet {
               display: none;
             }
           }
-          &::after{
+          &::after {
             flex-shrink: 0;
             width: 4.6vw;
             height: 4.6vw;
@@ -416,13 +458,13 @@ img,video{
 
             transform: scale(var(--scale-value));
             transform-origin: left bottom;
-            content: '';
+            content: "";
 
-            @include tablet{
+            @include tablet {
               width: 6.6vw;
               height: 6.6vw;
             }
-            @include m{
+            @include m {
               display: none;
             }
           }
@@ -432,29 +474,30 @@ img,video{
   }
 }
 
-.sc-project{
+.sc-project {
   position: relative;
 
-  @include m{
+  @include m {
     padding-top: 100vh;
   }
 
-  .group-main{
-    >.rotator{
+  .group-main {
+    > .rotator {
       transform-origin: 100% 50%;
+      will-change: transform;
     }
-    .head-area{
+    .head-area {
       position: relative;
       padding: 72px 24px 0;
       background-color: var(--background-color);
 
       transform-origin: 0% 50%;
 
-      @include m{
+      @include m {
         padding: 72px 16px 24px;
       }
 
-      &::after{
+      &::after {
         position: absolute;
         top: 99%;
         left: 0;
@@ -463,50 +506,50 @@ img,video{
         height: 100vh;
 
         background-color: var(--background-color);
-        content: '';
+        content: "";
       }
     }
-    .content-area{
+    .content-area {
       height: 300vh;
 
-      @include m{
+      @include m {
         height: auto;
       }
 
-      .sticky{
+      .sticky {
         position: sticky;
         top: 0;
         height: 100vh;
 
-        @include m{
+        @include m {
           position: relative;
           height: auto;
         }
       }
 
-      .main-list{
+      .main-list {
         width: 100%;
         height: 100%;
         pointer-events: none;
       }
 
-      .main-item{
+      .main-item {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
 
-        @include m{
+        @include m {
           position: relative;
         }
 
-        .rotator{
+        .rotator {
           position: relative;
           width: 100%;
           height: 100%;
 
-          @include m{
+          @include m {
             position: absolute;
             top: 0;
             left: 0;
@@ -517,12 +560,12 @@ img,video{
             z-index: 5;
           }
 
-          &:not(:first-child){
+          &:not(:first-child) {
             position: absolute;
             top: clamp(126px, 16%, 154px);
             left: 0;
 
-            @include m{
+            @include m {
               position: relative;
               top: auto;
               left: auto;
@@ -532,7 +575,7 @@ img,video{
           }
         }
 
-        .info{
+        .info {
           width: 100%;
           height: 100%;
           padding: 36px 24px;
@@ -541,8 +584,9 @@ img,video{
 
           transform-origin: 0% 0%;
           pointer-events: auto;
+          will-change: transform;
 
-          @include m{
+          @include m {
             padding: 24px 16px;
 
             background: none;
@@ -551,8 +595,8 @@ img,video{
             overflow: inherit;
             pointer-events: none;
           }
-          
-          .title-wrap{
+
+          .title-wrap {
             display: flex;
             align-items: flex-end;
             gap: 48px;
@@ -560,10 +604,10 @@ img,video{
             position: relative;
             padding-top: clamp(20px, 2.6vh, 24px);
 
-            @include pc{
+            @include pc {
               gap: 32px;
             }
-            @include tablet{
+            @include tablet {
               flex-direction: column;
               align-items: flex-start;
               gap: 16px;
@@ -571,19 +615,19 @@ img,video{
               padding-top: 2vh;
             }
 
-            @include m{
+            @include m {
               padding-top: 0;
               gap: 16px;
             }
           }
 
-          .title{
+          .title {
             font-size: clamp(56px, 4.6vw, 88px);
             font-weight: 700;
             letter-spacing: -0.02em;
             margin: 0 0 -0.28em -0.07em;
 
-            @include m{
+            @include m {
               display: flex;
               align-items: center;
               justify-content: space-between;
@@ -603,63 +647,62 @@ img,video{
             }
           }
 
-          .tech-list{
+          .tech-list {
             display: flex;
             align-items: center;
             gap: 16px;
 
-            @include pc{
+            @include pc {
               gap: 12px;
             }
-            @include m{
+            @include m {
               flex-wrap: wrap;
               gap: 4px;
             }
           }
 
-          .tech-item{
+          .tech-item {
             font-size: 22px;
 
-            @include pc{
+            @include pc {
               font-size: 20px;
             }
-            @include tablet{
+            @include tablet {
               font-size: 18px;
             }
-            @include m{
+            @include m {
               padding: 6px 12px 4px;
               background: rgba(0, 0, 0, 0.1);
               border-radius: 999px;
               font-size: 16px;
             }
-
           }
 
-          .link-wrap{
+          .link-wrap {
             margin-left: auto;
             font-size: 20px;
             letter-spacing: -0.02em;
             text-transform: uppercase;
 
-            @include pc{
+            @include pc {
               font-size: 18px;
             }
-            @include tablet{
+            @include tablet {
               position: absolute;
               top: 50%;
               right: 0;
               transform: translateY(-50%);
             }
-            @include m{
+            @include m {
               display: none;
             }
 
-            .link-type1::before{
+            .link-type1::before {
               background: var(--primary-color);
             }
           }
-        
-          .guideline{
+
+          .guideline {
             position: absolute;
             top: clamp(126px, 16%, 154px);
             left: auto;
@@ -667,49 +710,49 @@ img,video{
             width: calc(100% - 48px);
             height: calc(100% - clamp(126px, 16%, 154px) - 72px);
             padding: 66px;
-            
+
             font-size: 14px;
             text-transform: uppercase;
-            
+
             border: 1px dashed var(--primary-color);
 
-            @include tablet{
+            @include tablet {
               padding: 48px;
             }
-            @include m{
+            @include m {
               display: none;
             }
 
-            .text{
+            .text {
               position: absolute;
               top: 8px;
               left: 8px;
             }
 
-            .number{
+            .number {
               display: flex;
               align-items: center;
 
               left: auto;
               right: 8px;
 
-              .width{
+              .width {
                 display: flex;
                 align-items: center;
-                
-                &::after{
+
+                &::after {
                   width: 10px;
                   height: 10px;
                   background: url(../images/ic-times.svg) no-repeat;
                   background-size: 100%;
 
                   margin: 0 1px 3px;
-                  content: '';
+                  content: "";
                 }
               }
             }
 
-            .box-solid{
+            .box-solid {
               position: relative;
 
               width: 100%;
@@ -719,7 +762,7 @@ img,video{
               border: 1px solid var(--primary-color);
             }
 
-            .box-dashed{
+            .box-dashed {
               position: relative;
               width: 100%;
               height: 100%;
@@ -728,34 +771,35 @@ img,video{
           }
         }
 
-        .content{
+        .content {
           width: 100%;
           height: 100%;
+          will-change: transform;
 
-          .link-project{
+          .link-project {
             display: block;
             width: 100%;
             height: 100%;
             pointer-events: auto;
           }
 
-          .img-container{
+          .img-container {
             position: relative;
             width: 100%;
             height: 100%;
             overflow: hidden;
 
-            @include m{
+            @include m {
               height: 100vh;
 
-              &::after{
+              &::after {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
                 background: rgba(0, 0, 0, 0.1);
-                content: '';
+                content: "";
               }
             }
           }
@@ -764,27 +808,26 @@ img,video{
     }
   }
 
-
-  .group-side{
-    .sticky-wrapper{
+  .group-side {
+    .sticky-wrapper {
       height: 200vh;
 
-      @include m{
+      @include m {
         height: auto;
       }
     }
-    .sticky{
+    .sticky {
       position: sticky;
       top: 0;
       height: 100vh;
 
       overflow: hidden;
       pointer-events: none;
-      @include m{
+      @include m {
         position: relative;
       }
     }
-    .rotator{
+    .rotator {
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -794,63 +837,65 @@ img,video{
 
       transform-origin: 0% 50%;
       pointer-events: auto;
-
+      will-change: transform;
     }
 
-    .head-area{
+    .head-area {
       position: relative;
       padding: 72px 24px 24px;
       background-color: var(--background-color);
 
-      @include m{
+      @include m {
         padding: 72px 16px 24px;
       }
 
-      .headline{
+      .headline {
         font-size: clamp(72px, 6.8vw, 130px);
         margin-left: -0.016em;
 
-        @include tablet{
+        @include tablet {
           font-size: 8.6vw;
           line-height: 1;
         }
 
-        @include m{
+        @include m {
           font-size: 10.6vw;
           line-height: 1;
         }
       }
     }
-    .content-area{
+    .content-area {
       flex: 1;
       width: 100%;
 
-      .side-list{
+      .side-list {
         display: flex;
         width: max-content;
         height: 100%;
         padding-right: 3px;
+        will-change: transform;
       }
-      .side-item{
+      .side-item {
         flex-shrink: 0;
         width: 33.3vw;
         background: var(--layer-color);
+        will-change: transform;
 
-        @include pc{
+        @include pc {
           width: 40vw;
         }
-        @include tablet{
+        @include tablet {
           width: 70vw;
         }
-        @include m{
+        @include m {
           width: 90vw;
         }
 
-        &+.side-item{
+        & + .side-item {
           padding-left: 1px;
         }
       }
-      .link-project{
+      .link-project {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -858,13 +903,13 @@ img,video{
         position: relative;
         width: 100%;
         height: 100%;
-        
-        .info{
+
+        .info {
           display: flex;
           flex-direction: column;
           // gap: 6px;
           justify-content: space-between;
-          
+
           position: absolute;
           top: 0;
           left: 0;
@@ -874,19 +919,18 @@ img,video{
           padding: 36px;
           background: rgba(0, 0, 0, 0.2);
 
-
           color: var(--text-color-dark);
 
           z-index: 5;
 
-          @include pc{
+          @include pc {
             padding: 30px;
           }
-          @include m{
+          @include m {
             padding: 24px 16px;
           }
-          
-          .frame{
+
+          .frame {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -895,55 +939,55 @@ img,video{
             aspect-ratio: 1.7/1;
             overflow: hidden;
 
-            @include tablet{
+            @include tablet {
               display: none;
             }
 
-            img{
+            img {
               transform: translateY(-110%);
               transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             }
           }
         }
-        .title{
+        .title {
           position: relative;
           font-size: 28px;
 
-          @include pc{
+          @include pc {
             font-size: 24px;
           }
-          @include m{
+          @include m {
             font-size: 20px;
           }
         }
-        .tech-list{
+        .tech-list {
           align-self: flex-end;
           display: flex;
           gap: 8px;
 
-          @include pc{
+          @include pc {
             gap: 2px;
           }
-          @include m{
+          @include m {
             flex-direction: column;
             align-items: flex-end;
           }
         }
-        .tech-item{
+        .tech-item {
           font-size: 20px;
           padding: 8px 16px 6px;
           background: rgba(0, 0, 0, 0.1);
           border-radius: 999px;
 
-          @include pc{
+          @include pc {
             font-size: 18px;
           }
-          @include m{
+          @include m {
             font-size: 16px;
             padding: 6px 12px 4px;
           }
         }
-        .img-container{
+        .img-container {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -953,20 +997,19 @@ img,video{
           height: 100%;
 
           overflow: hidden;
-
         }
 
-        &:hover{
-          .animate-scale{
+        &:hover {
+          .animate-scale {
             transform: scale(1.2);
             filter: blur(30px);
-            
-            @include tablet{
+
+            @include tablet {
               transform: scale(1);
               filter: blur(0);
             }
           }
-          .frame img{
+          .frame img {
             transform: translateY(0);
           }
         }
@@ -975,21 +1018,20 @@ img,video{
   }
 }
 
-.sc-about{
-
+.sc-about {
   position: relative;
   z-index: 5;
   background-color: var(--background-color);
   transform-origin: bottom left;
-
-  .head-area{
+  will-change: transform;
+  .head-area {
     padding: 120px 24px 24px;
 
-    @include m{
+    @include m {
       padding: 120px 16px 0;
     }
   }
-  .content-area{
+  .content-area {
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -998,21 +1040,21 @@ img,video{
 
     transform-origin: 0% 0%;
 
-    @include pc{
+    @include pc {
       flex-direction: column;
       gap: 140px;
       padding: 80px 24px;
     }
-    @include m{
+    @include m {
       gap: 80px;
       padding: 80px 16px;
     }
 
-    em{
+    em {
       color: #b935ab;
     }
 
-    .col-left{
+    .col-left {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -1022,68 +1064,68 @@ img,video{
       max-width: 30%;
       max-width: 558px;
 
-      .desc{
+      .desc {
         font-family: "PretendardVariable", sans-serif;
         font-size: 22px;
         line-height: 1.38;
         letter-spacing: -0.034em;
 
-        @include pc{
+        @include pc {
           font-size: 20px;
         }
-        @include m{
+        @include m {
           position: relative;
           font-size: 16px;
         }
       }
-      &::before{
+      &::before {
         font-size: 32px;
         animation: shake 3s ease-in-out infinite;
-        content: '👋';
+        content: "👋";
 
-        @include m{
+        @include m {
           font-size: 24px;
         }
       }
     }
-    .col-right{
+    .col-right {
       position: relative;
       width: 60%;
 
-      @include pc{
+      @include pc {
         align-self: flex-end;
         width: 80%;
       }
-      @include tablet{
+      @include tablet {
         width: 90vw;
       }
 
-      .con-list{
+      .con-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 160px 80px;
-        
-        @include m{
+
+        @include m {
           display: flex;
           flex-direction: column;
           gap: 80px;
         }
       }
-      .con-item{
+      .con-item {
         display: flex;
         flex-direction: column;
         gap: 20px;
 
         max-width: 480px;
 
-        @include pc{
+        @include pc {
           gap: 16px;
         }
-        @include m{
+        @include m {
           gap: 12px;
           position: relative;
 
-          &::after{
+          &::after {
             display: block;
             position: absolute;
             bottom: 0;
@@ -1091,40 +1133,40 @@ img,video{
             width: 100%;
             height: 1px;
             background: var(--primary-color);
-            margin-bottom: -24px;            
-            content: '';
+            margin-bottom: -24px;
+            content: "";
           }
         }
       }
-      .number{
+      .number {
         font-size: 16px;
 
-        @include m{
+        @include m {
           font-size: 14px;
         }
       }
-      .title{
+      .title {
         position: relative;
         font-size: 32px;
 
-        @include pc{
+        @include pc {
           font-size: 28px;
         }
 
-        @include m{
+        @include m {
           font-size: 24px;
         }
       }
-      .desc{
+      .desc {
         font-family: "PretendardVariable", sans-serif;
         font-size: 18px;
         line-height: 1.38;
         letter-spacing: -0.034em;
-        @include m{
+        @include m {
           font-size: 16px;
         }
       }
-      .line-h{
+      .line-h {
         position: absolute;
         top: 50%;
         left: 0;
@@ -1134,10 +1176,10 @@ img,video{
         height: 1px;
         background: var(--primary-color);
 
-        @include m{
+        @include m {
           display: none;
         }
-        &:last-child{
+        &:last-child {
           top: 100%;
           margin-top: 80px;
         }
@@ -1145,7 +1187,7 @@ img,video{
     }
   }
 
-  .marquee-wrapper{
+  .marquee-wrapper {
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -1153,21 +1195,21 @@ img,video{
     padding-bottom: 24px;
     overflow: hidden;
 
-    @include m{
+    @include m {
       height: 40vh;
     }
 
-    .marquee{
+    .marquee {
       display: flex;
       justify-content: flex-start;
       width: 100%;
     }
-    .wrap{
+    .wrap {
       display: flex;
       width: max-content;
       animation: marquee 25s linear infinite;
     }
-    .item{
+    .item {
       display: flex;
       align-items: center;
 
@@ -1177,26 +1219,26 @@ img,video{
       text-transform: uppercase;
       white-space: nowrap;
 
-      @include tablet{
+      @include tablet {
         font-size: 10.2vw;
       }
-      @include m{
+      @include m {
         font-size: 16vw;
       }
 
-      &::before{
+      &::before {
         width: 7.4vw;
         height: 7.4vw;
         background: url(../images/ic-star.svg) no-repeat;
         background-size: 100%;
         margin: 0 4vw;
-        content: '';
+        content: "";
 
-        @include tablet{
+        @include tablet {
           width: 9vw;
           height: 9vw;
         }
-        @include m{
+        @include m {
           width: 12vw;
           height: 12vw;
         }
