@@ -1,5 +1,4 @@
-
-[class*="btn-type"]{
+[class*="btn-type"] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,123 +13,122 @@
   white-space: nowrap;
   transition: color 0.6s, background-color 0.6s, box-shadow 0.6s, border-color 0.6s;
 
-  &.white{
+  &.white {
     border-color: #000;
     color: #000;
 
-    &:hover{
+    &:hover {
       background-color: #fff;
       border-color: transparent;
     }
   }
 
-  &.purple{
-    &:hover{
-      background-color: #C8ACF0;
+  &.purple {
+    &:hover {
+      background-color: #c8acf0;
       color: #000;
     }
   }
 
-  &:hover{
+  &:hover {
     background-color: #fff;
-    box-shadow: 0rem 0rem 2.0832rem 0.7rem rgba(255, 255, 255, 0.3) inset, 0rem 0rem 1.4rem 0.3rem rgba(255, 255, 255, 0.3);
-    
-    & [class*="dot-"]{
+    box-shadow: 0 0 33px 11px rgba(255, 255, 255, 0.3) inset, 0 0 22px 5px rgba(255, 255, 255, 0.3);
+
+    & [class*="dot-"] {
       visibility: visible;
       transform: translate(0, 0) rotate(var(--rotatation));
     }
-    & [class*="dot-"]::after{
+    & [class*="dot-"]::after {
       animation-play-state: running;
     }
   }
-  
 }
 
-.btn-type1{
+.btn-type1 {
   width: 63px;
   height: 63px;
   color: #fff;
-  border-color:  #3e3e3e;
+  border-color: #3e3e3e;
 
-  @include tablet{
+  @include tablet {
     width: 48px;
     height: 48px;
 
-    &::before{
+    &::before {
       width: 24px;
       height: 24px;
     }
   }
-  @include m{
+  @include m {
     width: 40px;
     height: 40px;
 
-    &::before{
+    &::before {
       width: 22px;
       height: 22px;
     }
   }
 }
 
-.btn-type2{
+.btn-type2 {
   gap: 10px;
   padding: 22px 38px;
   transform-origin: 100% 100%;
-  @include tablet{
+  @include tablet {
     padding: 12px 24px;
     font-size: 16px;
   }
-  @include m{
+  @include m {
     gap: 4px;
     padding: 10px 16px;
     font-size: 16px;
   }
 }
 
-[class*="down-"]{
-  &::before{
+[class*="down-"] {
+  &::before {
     position: relative;
     z-index: 2;
     width: 30px;
     height: 30px;
     transition: background-image 0.6s;
-    content: '';
+    content: "";
 
-    @include tablet{
+    @include tablet {
       width: 24px;
       height: 24px;
     }
 
-    @include m{
+    @include m {
       width: 22px;
       height: 22px;
     }
   }
 }
-.down-appstore{
-  &::before{
+.down-appstore {
+  &::before {
     background: url(../images/ic-appstore-wh.svg) no-repeat center / contain;
   }
-  &.white::before{
+  &.white::before {
     background: url(../images/ic-appstore.svg) no-repeat center / contain;
   }
-  &:hover::before{
+  &:hover::before {
     background: url(../images/ic-appstore.svg) no-repeat center / contain;
   }
 }
-.down-google{
-  &::before{
+.down-google {
+  &::before {
     background: url(../images/ic-google-wh.svg) no-repeat center / contain;
   }
-  &.white::before{
+  &.white::before {
     background: url(../images/ic-google.svg) no-repeat center / contain;
   }
-  &:hover::before{
+  &:hover::before {
     background: url(../images/ic-google.svg) no-repeat center / contain;
   }
 }
 
-[class*="btn-type"] [class*="dot-"]{
+[class*="btn-type"] [class*="dot-"] {
   display: flex;
   position: absolute;
   width: var(--size);
@@ -140,23 +138,24 @@
   visibility: hidden;
   pointer-events: none;
 
-  &::after{
+  &::after {
     width: 100%;
     height: 100%;
-    background: #C8ACF0;
+    background: #c8acf0;
     border-radius: 100%;
-    box-shadow: 0rem 0rem 0.42rem 0rem #C8ACF0, 0rem 0rem 0.3rem 0rem #C8ACF0 inset, 0rem 0rem 0.14rem 0.069rem #C8ACF0;
-    animation: moveFirefly var(--speed) infinite, lightFirefly calc(var(--speed) / 2) infinite calc(var(--speed) / 3);
+    box-shadow: 0 0 7px 0 #c8acf0, 0 0 5px 0 #c8acf0 inset, 0 0 2px 1px #c8acf0;
+    animation: moveFirefly var(--speed) infinite,
+      lightFirefly calc(var(--speed) / 2) infinite calc(var(--speed) / 3);
     animation-play-state: paused;
-    content: '';
+    content: "";
   }
-  &.white::after{
+  &.white::after {
     background: #fff;
-    box-shadow: 0rem 0rem 0.42rem 0rem #fff, 0rem 0rem 0.3rem 0rem #fff inset, 0rem 0rem 0.14rem 0.069rem #fff;
+    box-shadow: 0 0 7px 0 #fff, 0 0 5px 0 #fff inset, 0 0 2px 1px #fff;
   }
 }
 
-[class*="btn-type"] .dot-1{
+[class*="btn-type"] .dot-1 {
   --rotatation: 0deg;
   --speed: 14s;
   --size: 8px;
@@ -166,7 +165,7 @@
   left: -21px;
   opacity: 0.7;
 }
-[class*="btn-type"] .dot-2{
+[class*="btn-type"] .dot-2 {
   --rotatation: 122deg;
   --speed: 16s;
   --size: 4px;
@@ -176,7 +175,7 @@
   left: 0;
   opacity: 0.7;
 }
-[class*="btn-type"] .dot-3{
+[class*="btn-type"] .dot-3 {
   --rotatation: 39deg;
   --speed: 20s;
   --size: 5px;
@@ -185,7 +184,7 @@
   top: -10.5px;
   right: 18.5px;
 }
-[class*="btn-type"] .dot-4{
+[class*="btn-type"] .dot-4 {
   --rotatation: 220deg;
   --speed: 18s;
   --size: 2.5px;
@@ -195,7 +194,7 @@
   right: -18px;
   opacity: 0.9;
 }
-[class*="btn-type"] .dot-5{
+[class*="btn-type"] .dot-5 {
   --rotatation: 190deg;
   --speed: 22s;
   --size: 6.5px;
@@ -204,7 +203,7 @@
   bottom: -8px;
   right: -4px;
 }
-[class*="btn-type"] .dot-6{
+[class*="btn-type"] .dot-6 {
   --rotatation: 20deg;
   --speed: 15s;
   --size: 5px;
@@ -214,7 +213,7 @@
   left: 38px;
   opacity: 0.7;
 }
-[class*="btn-type"] .dot-7{
+[class*="btn-type"] .dot-7 {
   --rotatation: 300deg;
   --speed: 19s;
   --size: 4px;
@@ -224,7 +223,7 @@
   left: 57.5px;
 }
 
-@keyframes moveFirefly{
+@keyframes moveFirefly {
   0% {
     transform: translate(0, 0);
   }
@@ -251,7 +250,7 @@
   }
 }
 
-@keyframes lightFirefly{
+@keyframes lightFirefly {
   0% {
     opacity: 1;
   }
