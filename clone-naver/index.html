@@ -1,320 +1,339 @@
 <!DOCTYPE html>
 <html lang="kr" data-dark="false">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
-  <title>NAVER</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <div id="skipNav">
-    <a href="#container">본문내용바로가기</a>
-    <a href="#news">뉴스</a>
-  </div>  
-  <div id="wrap">
-    <header id="header">
-      <div class="header-group">
-        <div class="search-area">
-          <h1 class="logo">
-            <a href="">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
-              <span class="blind">네이버로고</span>
-            </a>
-          </h1>
-          <form action="" method="get" class="search-form">
-            <fieldset class="search-inner">
-              <legend class="blind">검색</legend>
-              <label for="search-input" class="blind">검색어 입력</label>
-              <input type="text" id="search-input" class="input-text">
-              <button class="btn-keyboard" aria-pressed="false">
-                <span class="blind">가상키보드</span>
-              </button>
-              <button class="btn-auto" aria-pressed="false">
-                <span class="blind">자동완성</span>
-              </button>
-              <button class="btn-submit">
-                <svg id="search-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="fill: #03c75a"> <path d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z"></path> </svg>
-                <span class="blind">전송</span>
-              </button>
-            </fieldset>
-          </form>
-        </div>
-        <nav class="nav-area">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-mail"></i>
-                <span class="name">메일</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요" />
+    <title>NAVER</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="skipNav">
+      <a href="#container">본문내용바로가기</a>
+      <a href="#news">뉴스</a>
+    </div>
+    <div id="wrap">
+      <header id="header">
+        <div class="header-group">
+          <div class="search-area">
+            <h1 class="logo">
+              <a href="">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+                </svg>
+                <span class="blind">네이버로고</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-cafe"></i>
-                <span class="name">카페</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-blog"></i>
-                <span class="name">블로그</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-shopping"></i>
-                <span class="name">쇼핑</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-news"></i>
-                <span class="name">뉴스</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-stock"></i>
-                <span class="name">증권</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-real"></i>
-                <span class="name">부동산</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-map"></i>
-                <span class="name">지도</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-webtoon"></i>
-                <span class="name">웹툰</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link">
-                <i class="ico-chzzk"></i>
-                <span class="name">치지직</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="link" role="button" aria-expanded="false">
-                <i class="ico-more"></i>
-                <span class="blind">더보기 펼치기</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="util-area left">
-        <button class="btn-menu" aria-expanded="false" aria-haspopup="menu">
-          <span class="blind">확장메뉴</span>
-        </button>
-        <a href="" class="btn-pay">
-          <span class="blind">네이버페이</span>
-        </a>
-      </div>
-      
-      <div class="util-area right">
-        <button class="btn-talk" aria-expanded="false" aria-haspopup="menu">
-          <span class="blind">네이버톡</span>
-        </button>
-        <button class="btn-alert" aria-expanded="false" aria-haspopup="menu">
-          <span class="blind">알림혜택</span>
-        </button>
-        <a href="" class="btn-cart">
-          <span class="blind">장바구니</span>
-        </a>
-      </div>
-
-    </header>
-    <main id="container">
-      <div class="main-left">
-        <aside class="ad-banner common-frame">
-          <a href="">
-            <img src="assets/images/ad1.png" alt="어린이를 지키는 유니세프 팀 팔찌 지금 유니세프 팀 합류하고 팔찌받기">
-          </a>
-        </aside>
-        <section id="news" class="sc-news common-frame">
-          <h2 class="blind">뉴스</h2>
-          <div class="group-header component-tab">
-            <ul class="tab-list" role="tablist">
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="true">뉴스스탠드</a>
+            </h1>
+            <form action="" method="get" class="search-form">
+              <fieldset class="search-inner">
+                <legend class="blind">검색</legend>
+                <label for="search-input" class="blind">검색어 입력</label>
+                <input type="text" id="search-input" class="input-text" />
+                <button class="btn-keyboard" aria-pressed="false">
+                  <span class="blind">가상키보드</span>
+                </button>
+                <button class="btn-auto" aria-pressed="false">
+                  <span class="blind">자동완성</span>
+                </button>
+                <button class="btn-submit">
+                  <svg
+                    id="search-btn"
+                    viewBox="0 0 50 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="fill: #03c75a">
+                    <path
+                      d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z"></path>
+                  </svg>
+                  <span class="blind">전송</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <nav class="nav-area">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-mail"></i>
+                  <span class="name">메일</span>
+                </a>
               </li>
-              <li class="tab-item dot" role="presentation">
-                <a href="" role="tab" aria-selected="false">언론사편집</a>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-cafe"></i>
+                  <span class="name">카페</span>
+                </a>
               </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">엔터</a>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-blog"></i>
+                  <span class="name">블로그</span>
+                </a>
               </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">스포츠</a>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-shopping"></i>
+                  <span class="name">쇼핑</span>
+                </a>
               </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">경제</a>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-news"></i>
+                  <span class="name">뉴스</span>
+                </a>
               </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">쇼핑투데이</a>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-stock"></i>
+                  <span class="name">증권</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-real"></i>
+                  <span class="name">부동산</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-map"></i>
+                  <span class="name">지도</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-webtoon"></i>
+                  <span class="name">웹툰</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link">
+                  <i class="ico-chzzk"></i>
+                  <span class="name">치지직</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link" role="button" aria-expanded="false">
+                  <i class="ico-more"></i>
+                  <span class="blind">더보기 펼치기</span>
+                </a>
               </li>
             </ul>
-          </div>
+          </nav>
+        </div>
 
-          <div class="group-issue">
-            <div class="issue-area">
-              <a href="" class="btn-all" role="button">전체언론사</a>
-              <div class="issue-wrap">
-                <a href="" class="link-media">연합뉴스</a>
-                <a href="" class="link-issue">내년 최저임금 액수 협상 본격 개시…"대폭 인상" vs "동결" </a>
+        <div class="util-area left">
+          <button class="btn-menu" aria-expanded="false" aria-haspopup="menu">
+            <span class="blind">확장메뉴</span>
+          </button>
+          <a href="" class="btn-pay">
+            <span class="blind">네이버페이</span>
+          </a>
+        </div>
+
+        <div class="util-area right">
+          <button class="btn-talk" aria-expanded="false" aria-haspopup="menu">
+            <span class="blind">네이버톡</span>
+          </button>
+          <button class="btn-alert" aria-expanded="false" aria-haspopup="menu">
+            <span class="blind">알림혜택</span>
+          </button>
+          <a href="" class="btn-cart">
+            <span class="blind">장바구니</span>
+          </a>
+        </div>
+      </header>
+      <main id="container">
+        <div class="main-left">
+          <aside class="ad-banner common-frame">
+            <a href="">
+              <img
+                src="assets/images/ad1.png"
+                alt="어린이를 지키는 유니세프 팀 팔찌 지금 유니세프 팀 합류하고 팔찌받기" />
+            </a>
+          </aside>
+          <section id="news" class="sc-news common-frame">
+            <h2 class="blind">뉴스</h2>
+            <div class="group-header component-tab">
+              <ul class="tab-list" role="tablist">
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="true">뉴스스탠드</a>
+                </li>
+                <li class="tab-item dot" role="presentation">
+                  <a href="" role="tab" aria-selected="false">언론사편집</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">엔터</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">스포츠</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">경제</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">쇼핑투데이</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="group-issue">
+              <div class="issue-area">
+                <a href="" class="btn-all" role="button">전체언론사</a>
+                <div class="issue-wrap">
+                  <a href="" class="link-media">연합뉴스</a>
+                  <a href="" class="link-issue">
+                    내년 최저임금 액수 협상 본격 개시…"대폭 인상" vs "동결"
+                  </a>
+                </div>
+              </div>
+              <div class="news-area">
+                <a href="" class="link-news">뉴스스탠드</a>
+                <a href="" class="link-news">뉴스홈</a>
               </div>
             </div>
-            <div class="news-area">
-              <a href="" class="link-news">뉴스스탠드</a>
-              <a href="" class="link-news">뉴스홈 </a>
+
+            <div class="group-media">
+              <ul class="media-list">
+                <li class="media-item">
+                  <img src="assets/images/news.png" alt="데일리안" height="20" />
+                </li>
+                <li class="media-item">
+                  <img src="assets/images/news3.png" alt="오마이뉴스" height="20" />
+                </li>
+                <li class="media-item">
+                  <img src="assets/images/news2.png" alt="JTBC" height="20" />
+                </li>
+              </ul>
+
+              <i class="vt-line vt-line1"></i>
+              <i class="vt-line2"></i>
+              <i class="vt-line3"></i>
+              <i class="vt-line4"></i>
+              <i class="vt-line5"></i>
+
+              <i class="hr-line1"></i>
+              <i class="hr-line2"></i>
+              <i class="hr-line3"></i>
+              <i class="hr-line4"></i>
+              <i class="hr-line5"></i>
             </div>
-          </div>
 
-          <div class="group-media">
-            <ul class="media-list">
-              <li class="media-item">
-                <img src="assets/images/news.png" alt="데일리안" height="20">
-              </li>
-              <li class="media-item">
-                <img src="assets/images/news3.png" alt="오마이뉴스" height="20">
-              </li>
-              <li class="media-item">
-                <img src="assets/images/news2.png" alt="JTBC" height="20">
-              </li>
-            </ul>
+            <div class="group-control component-control">
+              <div class="control-area">
+                <button class="btn-prev">
+                  <span class="blind">이전 페이지</span>
+                </button>
+                <div class="page">
+                  <span class="text">
+                    <span class="point">언론사</span>
+                    더보기
+                  </span>
+                  <span class="fraction">
+                    <span class="current">
+                      1
+                      <span class="blind">페이지</span>
+                    </span>
+                    <span class="total">
+                      <span class="blind">전체</span>
+                      /1
+                    </span>
+                  </span>
+                </div>
+                <button class="btn-next">
+                  <span class="blind">다음 페이지</span>
+                </button>
+              </div>
+              <div class="view-area" role="radiogroup">
+                <button class="btn-list" role="radio" aria-checked="true">
+                  <span class="blind">리스트형</span>
+                </button>
+                <button class="btn-thumb" role="radio" aria-checked="false">
+                  <span class="blind">썸네일형</span>
+                </button>
+              </div>
+            </div>
+          </section>
 
-            <i class="vt-line vt-line1"></i>
-            <i class="vt-line2"></i>
-            <i class="vt-line3"></i>
-            <i class="vt-line4"></i>
-            <i class="vt-line5"></i>
-
-            <i class="hr-line1"></i>
-            <i class="hr-line2"></i>
-            <i class="hr-line3"></i>
-            <i class="hr-line4"></i>
-            <i class="hr-line5"></i>
-          </div>
-
-          <div class="group-control component-control">
-            <div class="control-area">
-              <button class="btn-prev">
-                <span class="blind">이전 페이지</span>
-              </button>
-              <div class="page">
-                <span class="text">
-                  <span class="point">언론사</span>
-                  더보기
-                </span>
-                <span class="fraction">
-                  <span class="current">1<span class="blind">페이지</span></span>
+          <section class="sc-shop common-frame">
+            <h2 class="blind">쇼핑</h2>
+            <div class="group-header component-tab">
+              <ul class="tab-list" role="tablist">
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="true">쇼핑</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">맨즈</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">원쁠딜</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">쇼핑라이브</a>
+                </li>
+              </ul>
+              <div class="pagination-area">
+                <div class="page">
+                  <span class="current">
+                    1
+                    <span class="blind">페이지</span>
+                  </span>
                   <span class="total">
                     <span class="blind">전체</span>
-                    /1
+                    /13
                   </span>
-                </span>
+                </div>
+                <button class="btn-prev">
+                  <span class="blind">이전 페이지</span>
+                </button>
+                <button class="btn-next">
+                  <span class="blind">다음 페이지</span>
+                </button>
               </div>
-              <button class="btn-next">
-                <span class="blind">다음 페이지</span>
-              </button>
             </div>
-            <div class="view-area" role="radiogroup">
-              <button class="btn-list" role="radio" aria-checked="true">
-                <span class="blind">리스트형</span>
-              </button>
-              <button class="btn-thumb" role="radio" aria-checked="false">
-                <span class="blind">썸네일형</span>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section class="sc-shop common-frame">
-          <h2 class="blind">쇼핑</h2>
-          <div class="group-header component-tab">
-            <ul class="tab-list" role="tablist">
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="true">쇼핑</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">맨즈</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">원쁠딜</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">쇼핑라이브</a>
-              </li>
-            </ul>
-            <div class="pagination-area">
-              <div class="page">
-                <span class="current">1<span class="blind">페이지</span></span>
-                <span class="total">
-                  <span class="blind">전체</span>
-                  /13
-                </span>
-              </div>
-              <button class="btn-prev">
-                <span class="blind">이전 페이지</span>
-              </button>
-              <button class="btn-next">
-                <span class="blind">다음 페이지</span>
-              </button>
-            </div>
-          </div>
             <div class="group-commerce">
               <div class="col-left">
                 <div class="mall-area">
                   <span class="blind">몰 바로가기</span>
-                    <ul class="mall-list">
-                      <li class="mall-item">
-                        <a href="">쿠팡</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">G마켓</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">옥션</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href=""><em>SSG닷컴</em></a>
-                      </li>
-                    </ul>
-                    <ul class="mall-list">
-                      <li class="mall-item">
-                        <a href=""><em>11번가</em></a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">올리브영</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">위메프</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">하프클럽</a>
-                      </li>
-                    </ul>
-                    <ul class="mall-list">
-                      <li class="mall-item">
-                        <a href=""><em>GS SHOP</em></a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">CJ온스타일</a>
-                      </li>
-                      <li class="mall-item">
-                        <a href="">패션플러스</a>
-                      </li>
-                    </ul>
+                  <ul class="mall-list">
+                    <li class="mall-item">
+                      <a href="">쿠팡</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">G마켓</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">옥션</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href=""><em>SSG닷컴</em></a>
+                    </li>
+                  </ul>
+                  <ul class="mall-list">
+                    <li class="mall-item">
+                      <a href=""><em>11번가</em></a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">올리브영</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">위메프</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">하프클럽</a>
+                    </li>
+                  </ul>
+                  <ul class="mall-list">
+                    <li class="mall-item">
+                      <a href=""><em>GS SHOP</em></a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">CJ온스타일</a>
+                    </li>
+                    <li class="mall-item">
+                      <a href="">패션플러스</a>
+                    </li>
+                  </ul>
                 </div>
                 <nav class="menu-area">
                   <span class="blind">쇼핑 퀵메뉴</span>
@@ -347,7 +366,9 @@
                 </nav>
                 <aside class="ad-banner">
                   <a href="">
-                    <div class="thumb"><img src="assets/images/ad3.jpg" alt width="248" height="146"></div>
+                    <div class="thumb">
+                      <img src="assets/images/ad3.jpg" alt width="248" height="146" />
+                    </div>
                     <span class="text">마사지의 신세계 풀리오 마사지기</span>
                   </a>
                 </aside>
@@ -357,7 +378,9 @@
                   <ul class="product-list">
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product01.jpg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product01.jpg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>이제 다리안아파</p>
                           <p>슬개골 걱정 끝!</p>
@@ -366,7 +389,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product02.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product02.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>이시영 PICK!</p>
                           <p>아이크림 1+1</p>
@@ -375,7 +400,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product03.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product03.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>진짜 벌써 47차?</p>
                           <p>이유있는 BEST</p>
@@ -384,16 +411,20 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product04.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product04.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>꾸민듯 안꾸민듯</p>
-                          <p>여름출근룩 완성</p>
+                          <p>가을출근룩 완성</p>
                         </div>
                       </a>
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product05.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product05.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>코디걱정NO~</p>
                           <p>셋업 2만원대!</p>
@@ -402,7 +433,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product06.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product06.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>30분만 타도</p>
                           <p>엄청나게 빠져요</p>
@@ -411,7 +444,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product07.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product07.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>목의결림이 싹~!</p>
                           <p>깊은잠베개 50%</p>
@@ -420,7 +455,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product08.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product08.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>1+1 39,000원</p>
                           <p>국민 플립플랍</p>
@@ -429,7 +466,9 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product09.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product09.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
                           <p>인생청바지</p>
                           <p>군살커버~인정!</p>
@@ -438,402 +477,418 @@
                     </li>
                     <li class="product-item">
                       <a href="">
-                        <div class="thumb"><img src="assets/images/product10.jpeg" alt width="98" height="126"></div>
+                        <div class="thumb">
+                          <img src="assets/images/product10.jpeg" alt width="98" height="126" />
+                        </div>
                         <div class="name">
-                          <p>여름내내~시원!</p>
+                          <p>가을내내~!</p>
                           <p>셔츠~18,800원?</p>
-                        </div> 
+                        </div>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          <div class="group-today">
-            <span class="title">오늘의 혜택</span>
-            <a href="" class="link">
-              <div class="today-mall"><img src="assets/images/today.png" alt="SSG닷컴" height="13"></div>
-              <span class="desc">SSG 쇼핑 페스티벌! <em>최대 12% 할인 쿠폰</em> + 오늘의 핫딜 특가</span>
-            </a>
-          </div>
-          <div class="group-control component-control">
-            <div class="control-area">
-              <button class="btn-prev">
-                <span class="blind">이전 페이지</span>
-              </button>
-              <div class="page">
-                <span class="text">
-                  <span class="point">쇼핑아이템</span>
-                  더보기
+            <div class="group-today">
+              <span class="title">오늘의 혜택</span>
+              <a href="" class="link">
+                <div class="today-mall">
+                  <img src="assets/images/today.png" alt="SSG닷컴" height="13" />
+                </div>
+                <span class="desc">
+                  SSG 쇼핑 페스티벌!
+                  <em>최대 12% 할인 쿠폰</em>
+                  + 오늘의 핫딜 특가
                 </span>
-                <span class="fraction">
-                  <span class="current">
-                    1
-                    <span class="blind">페이지</span>
-                  </span>
-                  <span class="total">
-                    <span class="blind">전체</span>
-                    /13
-                  </span>
-                </span>
-              </div>
-              <button class="btn-next">
-                <span class="blind">다음 페이지</span>
-              </button>
+              </a>
             </div>
-            <span class="tag">AD</span>
-          </div>
-        </section>
-
-        <section class="sc-feed common-frame">
-          <h2 class="blind">추천 관심사</h2>
-          <div class="group-header component-tab">
-            <ul class="tab-list" role="tablist">
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="true">추천・구독</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">자동차</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">웹툰</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">패션뷰티</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">레시피</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">리빙</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">책방</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">지식+</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">건강</a>
-              </li>
-              <li class="tab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">게임</a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="group-recommend">
-            <ul class="subtab-list" role="tablist">
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="true">인기</a>
-              </li>
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">동물</a>
-              </li>
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">여행</a>
-              </li>
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">연애결혼</a>
-              </li>
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">영화</a>
-              </li>
-              <li class="subtab-item" role="presentation">
-                <a href="" role="tab" aria-selected="false">육아</a>
-              </li>
-            </ul>
-            <div class="subscribe-area">
-              <a href="" class="link-subscribe">구독홈</a>
-            </div>
-          </div>
-          <div class="group-feed">
-            <ul class="feed-list">
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed01.jpg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">패션 커뮤서 입소문난 고민시 생로랑 가방 버킷백 요즘 가격은?</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile01.jpg" alt width="20" height="20">
-                      </span>
-                      <span class="name">꾸리</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <span class="badge badge-happybean">
-                      펀딩
+            <div class="group-control component-control">
+              <div class="control-area">
+                <button class="btn-prev">
+                  <span class="blind">이전 페이지</span>
+                </button>
+                <div class="page">
+                  <span class="text">
+                    <span class="point">쇼핑아이템</span>
+                    더보기
+                  </span>
+                  <span class="fraction">
+                    <span class="current">
+                      1
+                      <span class="blind">페이지</span>
                     </span>
-                    <img src="assets/images/feed02.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">아이폰16 출시 앞두고 나온 아이폰17 슬림 정보</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile02.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">육월</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <span class="badge badge-happybean">
-                      펀딩
+                    <span class="total">
+                      <span class="blind">전체</span>
+                      /13
                     </span>
-                    <img src="assets/images/feed03.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">우리 아이 건강한 식습관을 기르는 그림놀이책</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile03.png" alt width="20" height="20">
-                      </span>
-                      <span class="name">건강노리</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <span class="badge badge-influencer">
-                      패션
-                    </span>
-                    <img src="assets/images/feed04.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">입안 가득 한 쌈, 싱싱한 상추의 계절</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile04.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">사계절농장</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed05.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">자라 세일 하자마자 품절대란 5만원대 최화정 자라 자켓</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile05.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">꾸리의장롱</span>
-                      <span class="category">인플루언서</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed06.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">20기 정숙 남친 영호 30kg 감량 다이어트 비법 공개</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile06.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">잭</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed07.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">아빠가 딸에게 꼭 해줘야 할 6가지 말과 행동</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile07.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">대구공수니</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed08.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">남해 가볼만한곳 여행 코스 맛집 카페 기념품 총정리</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile08.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">둥지니</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed09.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">“나이 들어 보여”라는 말에 52세 유재석이 한 ‘이 말’</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile09.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">FORESTBOOKS</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed10.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">서울근교 의왕 가볼만한곳 왕송호수 핑크뮬리 코스모스</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile10.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">캠핑퍼스트(초보캠핑)</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <span class="badge badge-happybean">
-                      기부
-                    </span>
-                    <img src="assets/images/feed11.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">BMW X3 풀체인지 고개를 한 번쯤 갸우뚱 거리게 만드는 변화</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile11.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">흙맥</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="feed-item">
-                <a href="">
-                  <div class="thumb">
-                    <img src="assets/images/feed12.jpeg" alt height="120">
-                  </div>
-                  <div class="info">
-                    <strong class="title">캔버스 위에 꿈을 그리는 우리는 장애인 자립준비청년입니다</strong>
-                    <div class="source">
-                      <span class="profile">
-                        <img src="assets/images/profile12.jpeg" alt width="20" height="20">
-                      </span>
-                      <span class="name">대한사회복지회</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="shorts-area">
-              <div class="shorts-header">
-                <strong class="shorts-title">매일 찾는 짧은 즐거움</strong>
+                  </span>
+                </div>
+                <button class="btn-next">
+                  <span class="blind">다음 페이지</span>
+                </button>
               </div>
-              <ul class="shorts-list">
-                <li class="shorts-item">
+              <span class="tag">AD</span>
+            </div>
+          </section>
+
+          <section class="sc-feed common-frame">
+            <h2 class="blind">추천 관심사</h2>
+            <div class="group-header component-tab">
+              <ul class="tab-list" role="tablist">
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="true">추천・구독</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">자동차</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">웹툰</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">패션뷰티</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">레시피</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">리빙</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">책방</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">지식+</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">건강</a>
+                </li>
+                <li class="tab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">게임</a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-recommend">
+              <ul class="subtab-list" role="tablist">
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="true">인기</a>
+                </li>
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">동물</a>
+                </li>
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">여행</a>
+                </li>
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">연애결혼</a>
+                </li>
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">영화</a>
+                </li>
+                <li class="subtab-item" role="presentation">
+                  <a href="" role="tab" aria-selected="false">육아</a>
+                </li>
+              </ul>
+              <div class="subscribe-area">
+                <a href="" class="link-subscribe">구독홈</a>
+              </div>
+            </div>
+            <div class="group-feed">
+              <ul class="feed-list">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                      <img src="assets/images/shorts01.jpg" alt width="100%" height="165" >
+                      <img src="assets/images/feed01.jpg" alt height="120" />
                     </div>
-                    <strong class="title">길이 100m 이상의 천연 계곡 수영장⛱️ 길게 이어진 계곡은 다양한 수심이 있어서 당일 물놀이 즐기기 괜찮았던곳입니다. ❇️하천아래에서는 취사❌, 야영❌ ✅ 공용주차장 ❌ ✅ 화장실 ⭕️ 담에는 주변 캠핑장이나 펜션 1박 예약하고 물놀이 즐기러 가야겠네요. 위치는 영상젤끝에 나옵니다.🙏🙏 #계곡 #경남계곡추천 #여름 #물놀이 #여행 #travel #여행에미치다</strong>
-                    <span class="sub">카리봉</span>
+                    <div class="info">
+                      <strong class="title">
+                        패션 커뮤서 입소문난 고민시 생로랑 가방 버킷백 요즘 가격은?
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile01.jpg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">꾸리</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
-                <li class="shorts-item">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                        <img src="assets/images/shorts02.jpeg" alt width="100%" height="165">
+                      <span class="badge badge-happybean">펀딩</span>
+                      <img src="assets/images/feed02.jpeg" alt height="120" />
                     </div>
-                    <strong class="title">막간을 이용한 댄스 배틀! 그루브가 살아있는 도슨</strong>
-                    <span class="sub">스포라이트 SPOLIGHT</span>
+                    <div class="info">
+                      <strong class="title">
+                        온라인 랜선집들이 작은집 거실인테리어 비포애프터
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile02.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">육월</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
-                <li class="shorts-item">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                      <img src="assets/images/shorts03.jpeg" alt width="100%" height="165">
+                      <span class="badge badge-happybean">펀딩</span>
+                      <img src="assets/images/feed03.jpeg" alt height="120" />
                     </div>
-                    <strong class="title">Now I'm shaking, drinking all this coffee☕</strong>
-                    <span class="sub">BADVILLAIN</span>
+                    <div class="info">
+                      <strong class="title">우리 아이 건강한 식습관을 기르는 그림놀이책</strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile03.png" alt width="20" height="20" />
+                        </span>
+                        <span class="name">건강노리</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
-                <li class="shorts-item">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                      <img src="assets/images/shorts04.jpeg" alt width="100%" height="165">
+                      <span class="badge badge-influencer">패션</span>
+                      <img src="assets/images/feed04.jpeg" alt height="120" />
                     </div>
-                    <strong class="title">워터밤 서울 2024에 박재민 & 아이키 떴다‼️</strong>
-                    <span class="sub">에스팀TV</span>
+                    <div class="info">
+                      <strong class="title">입안 가득 한 쌈, 싱싱한 상추의 계절</strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile04.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">사계절농장</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
-                <li class="shorts-item">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                      <img src="assets/images/shorts05.jpeg" alt width="100%" height="165">
+                      <img src="assets/images/feed05.jpeg" alt height="120" />
                     </div>
-                    <strong class="title">살짝 치고 싶을땐 이렇게 잡고 쳐봐</strong>
-                    <span class="sub">치면 모이는 오드롱</span>
+                    <div class="info">
+                      <strong class="title">
+                        자라 세일 하자마자 품절대란 5만원대 최화정 자라 자켓
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile05.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">꾸리의장롱</span>
+                        <span class="category">인플루언서</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
-                <li class="shorts-item">
+                <li class="feed-item">
                   <a href="">
                     <div class="thumb">
-                      <img src="assets/images/shorts06.jpeg" alt width="100%" height="165">
+                      <img src="assets/images/feed06.jpeg" alt height="120" />
                     </div>
-                    <strong class="title">손흥민, 그는 축구선수인가 아이돌인가</strong>
-                    <span class="sub">서형욱의 뽈리TV</span>
+                    <div class="info">
+                      <strong class="title">
+                        20기 정숙 남친 영호 30kg 감량 다이어트 비법 공개
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile06.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">잭</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <img src="assets/images/feed07.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">아빠가 딸에게 꼭 해줘야 할 6가지 말과 행동</strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile07.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">대구공수니</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <img src="assets/images/feed08.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">
+                        남해 가볼만한곳 여행 코스 맛집 카페 기념품 총정리
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile08.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">둥지니</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <img src="assets/images/feed09.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">
+                        “나이 들어 보여”라는 말에 52세 유재석이 한 ‘이 말’
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile09.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">FORESTBOOKS</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <img src="assets/images/feed10.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">
+                        서울근교 의왕 가볼만한곳 왕송호수 핑크뮬리 코스모스
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile10.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">캠핑퍼스트(초보캠핑)</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <span class="badge badge-happybean">기부</span>
+                      <img src="assets/images/feed11.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">
+                        BMW X3 풀체인지 고개를 한 번쯤 갸우뚱 거리게 만드는 변화
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile11.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">흙맥</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="feed-item">
+                  <a href="">
+                    <div class="thumb">
+                      <img src="assets/images/feed12.jpeg" alt height="120" />
+                    </div>
+                    <div class="info">
+                      <strong class="title">
+                        캔버스 위에 꿈을 그리는 우리는 장애인 자립준비청년입니다
+                      </strong>
+                      <div class="source">
+                        <span class="profile">
+                          <img src="assets/images/profile12.jpeg" alt width="20" height="20" />
+                        </span>
+                        <span class="name">대한사회복지회</span>
+                      </div>
+                    </div>
                   </a>
                 </li>
               </ul>
+              <div class="shorts-area">
+                <div class="shorts-header">
+                  <strong class="shorts-title">매일 찾는 짧은 즐거움</strong>
+                </div>
+                <ul class="shorts-list">
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts01.jpg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">요즘 유행한다는 뽀뽀 방법</strong>
+                      <span class="sub">카리봉</span>
+                    </a>
+                  </li>
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts02.jpeg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">막간을 이용한 댄스 배틀! 그루브가 살아있는 도슨</strong>
+                      <span class="sub">스포라이트 SPOLIGHT</span>
+                    </a>
+                  </li>
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts03.jpeg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">Now I'm shaking, drinking all this coffee☕</strong>
+                      <span class="sub">BADVILLAIN</span>
+                    </a>
+                  </li>
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts04.jpeg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">인스타 미녀 여약사들의 비밀! 딱 이것만!</strong>
+                      <span class="sub">에스팀TV</span>
+                    </a>
+                  </li>
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts05.jpeg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">살짝 치고 싶을땐 이렇게 잡고 쳐봐</strong>
+                      <span class="sub">치면 모이는 오드롱</span>
+                    </a>
+                  </li>
+                  <li class="shorts-item">
+                    <a href="">
+                      <div class="thumb">
+                        <img src="assets/images/shorts06.jpeg" alt width="100%" height="165" />
+                      </div>
+                      <strong class="title">손흥민, 그는 축구선수인가 아이돌인가</strong>
+                      <span class="sub">서형욱의 뽈리TV</span>
+                    </a>
+                  </li>
+                </ul>
 
-              <button class="btn-next">
-                <span class="blind">다음 페이지</span>
-              </button>
-
+                <button class="btn-next">
+                  <span class="blind">다음 페이지</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="group-more">
-            <button class="btn-more">
-              펼쳐보기
-              <i class="ico-plus"></i>
-            </button>
-          </div>
-        </section>
-      </div>
+            <div class="group-more">
+              <button class="btn-more">
+                펼쳐보기
+                <i class="ico-plus"></i>
+              </button>
+            </div>
+          </section>
+        </div>
 
-      <div class="main-right">
-        <section class="sc-login common-frame">
-          <h2 class="blind">로그인</h2>
+        <div class="main-right">
+          <section class="sc-login common-frame">
+            <h2 class="blind">로그인</h2>
             <p class="login-msg">네이버를 더 안전하고 편리하게 이용하세요</p>
             <a href="" class="link-login">
               <span class="blind">NAVER</span>
@@ -844,457 +899,466 @@
               <a href="">비밀번호 찾기</a>
               <a href="">회원가입</a>
             </div>
-        </section>
-        <aside class="ad-banner common-frame">
-          <a href="">
-            <img src="assets/images/ad2.jpg" alt="Galaxy Unpacked July 10, 2024">
-          </a>
-        </aside>
-        <section class="sc-weather common-frame daily-board">
-          <div class="group-header">
-            <h2 class="header-title"><a href="">날씨</a></h2>
-            <a href="" class="link-forecast">예보 비교</a>
-            <div class="header-aside">
-              <span class="location">용인시 신봉동</span>
-            </div>
-          </div>
-          <div class="group-info">
-            <div class="col-left">
-              <a href="" class="link-weather">
-                <div class="weather-area">
-                  <div class="weather-icon">
-                    <i class="ico-rain"></i>
-                  </div>
-                  <div class="weather-text">
-                    <span class="temperature">23°</span>
-                    <span class="weather">비</span>
-                  </div>
-                </div>
-                <div class="temperature-area">
-                  <span class="temperature-row">
-                    <span class="blind">최저기온</span>
-                    23°
-                  </span>
-                  <span class="temperature-high">
-                    <span class="blind">최고기온</span>
-                    26°
-                  </span>
-                </div>
-              </a>
-              <a href="" class="link-dust">
-                <div class="dust-area">
-                  <span class="text">미세
-                    <span class="status type-good">좋음</span>
-                  </span>
-                  <span class="text">초미세
-                    <span class="status type-good">좋음</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="col-right">
-              <a href="" class="link-weather">
-                <ul class="weather-list">
-                  <li class="weather-item">
-                    <span class="time current">17시</span>
-                    <i class="ico-rain-s"><span class="blind">비</span></i>
-                    <span class="celsius">24°</span>
-                  </li>
-                  <li class="weather-item">
-                    <span class="time">19</span>
-                    <i class="ico-rain-s"><span class="blind">비</span></i>
-                    <span class="celsius">24°</span>
-                  </li>
-                  <li class="weather-item">
-                    <span class="time">21</span>
-                    <i class="ico-rain-s"><span class="blind">비</span></i>
-                    <span class="celsius">24°</span>
-                  </li>
-                  <li class="weather-item">
-                    <span class="time">23</span>
-                    <i class="ico-rain-s"><span class="blind">비</span></i>
-                    <span class="celsius">24°</span>
-                  </li>
-                  <li class="weather-item">
-                    <span class="time">1</span>
-                    <i class="ico-rain-s"><span class="blind">흐림</span></i>
-                    <span class="celsius">23°</span>
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="sc-stock common-frame daily-board">
-          <div class="group-header">
-            <h2 class="header-title"><a href="">증시</a></h2>
-            <button class="btn-info" aria-expanded="false" aria-pressed="false">
-              <span class="blind">정보 더보기</span>
-            </button>
-            <div class="header-aside">
-              <span class="time">07.19. 16:57</span>
-              <button class="btn-refresh">
-                <span class="blind">새로고침</span>
-              </button>
-            </div>
-          </div>
-          <div class="group-info">
-            <div class="col-left">
-              <a href="" class="link-stock">
-                <span class="name">유로스톡스50</span>
-                <span class="price">5,000.86</span>
-                <div class="status type-up">
-                  <i class="ico-status">
-                    <span class="blind">상승</span>
-                  </i>
-                  <span>21.47</span>
-                  <span>+0.43%</span>
-                </div>
-                <div class="graph">
-                  <img src="assets/images/graphh.png" alt width="180" height="72">
-                </div>
-              </a>
-            </div>
-            <div class="col-right">
-              <ul class="stock-list">
-                <li class="stock-item">
-                  <a href="">
-                    <span class="name">하이브</span>
-                    <div class="content-inner">
-                      <span class="status type-down">
-                        <i class="ico-status">
-                          <span class="blind">하락</span>
-                        </i>
-                        0.56%
-                      </span>
-                      <span class="price">196,300</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="stock-item">
-                  <a href="">
-                    <span class="name">삼성전자</span>
-                    <div class="content-inner">
-                      <span class="status type-up">
-                        <i class="ico-status">
-                          <span class="blind">상승</span>
-                        </i>
-                        0.34%
-                      </span>
-                      <span class="price">87,400</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="stock-item">
-                  <a href="">
-                    <span class="name">HLB</span>
-                    <div class="content-inner">
-                      <span class="status type-up">
-                        <i class="ico-status">
-                          <span class="blind">하락</span>
-                        </i>
-                        0.97%
-                      </span>
-                      <span class="price">92,200</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="stock-item">
-                  <a href="" class="link-more">인기종목 더보기</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <aside class="ad-banner common-frame">
-          <a href="">
-            <img src="assets/images/ad4.png" alt="초대규모 클립 크리에이터모집 총25억 초슈퍼급 펀딩">
-          </a>
-        </aside>
-        <section class="sc-widget common-frame">
-          <div class="group-header">
-            <h2 class="header-title">위젯 보드</h2>
-          </div>
-          <div class="inner">
-            <div class="group-calendar widget-frame">
-              <a href="" class="link-calendar">
-                <div class="title-area">
-                  캘린더
-                </div>
-                <div class="content-inner">
-                  <div class="date-area">
-                    <span class="date">7.19</span>
-                    <span class="day">금</span>
-                  </div>
-                  <span class="login-text">로그인하기</span>
-                </div>
-              </a>
-            </div>
-            <div class="group-memo widget-frame">
-              <a href="" class="link-memo">
-                <div class="title-area">
-                  메모
-                </div>
-                <ul class="memo-list">
-                  <li class="memo-item"></li>
-                  <li class="memo-item"></li>
-                  <li class="memo-item">
-                    <span class="login-text">로그인하기</span>
-                  </li>
-                </ul>
-              </a>
-            </div>
-            <div class="group-papago widget-frame">
-              <a href="" class="link-papago">
-                <div class="title-area">
-                  <i class="ico-papago-text"><span class="blind">papago</span></i>
-                </div>
-                <i class="ico-papago"></i>
-                <button class="btn-papago" role="link">번역하기</button>
-              </a>
-            </div>
-            <div class="group-dictionary widget-frame">
-              <div class="style-group">
-                <a href="" class="link-dic">
-                  <div class="title-area">
-                    영어사전
-                  </div>
-                </a>
-                <a href="" class="link-today">
-                  <div class="expression-area">
-                    We are just browsing.
-                  </div>
-                </a>
-                <a href="" class="link-search">
-                  <span class="blind">단어 검색하기</span>
-                </a>
-              </div>
-            </div>
-            <div class="group-vibe widget-frame">
-              <div class="title-area">
-                <div class="title">
-                  <i class="ico-vibe"><span class="blind">VIBE</span></i>
-                  사운드 산책🍃
-                </div>
-                <button class="btn-refresh">다른 추천 보기</button>
-              </div>
-              <div class="vibe-area">
-                <ul class="vibe-list">
-                  <li class="vibe-item">
-                    <a href="" class="link-vibe">
-                      <div class="thumb">
-                        <img src="assets/images/vibe02.png" alt width="108" height="162">
-                        <i class="ico-vibe-play"><span class="blind">재생</span></i>
-                      </div>
-                      <span class="neme">낙엽을 밟으며 걷는 길</span>
-                    </a>
-                  </li>
-                  <li class="vibe-item">
-                    <a href="" class="link-vibe">
-                      <div class="thumb">
-                        <img src="assets/images/vibe01.png" alt width="108" height="162">
-                        <i class="ico-vibe-play"><span class="blind">재생</span></i>
-                      </div>
-                      <span class="neme">봄날 오후 기분 좋은 산책길</span>
-                    </a>
-                  </li>
-                  <li class="vibe-item">
-                    <a href="" class="link-vibe">
-                      <div class="thumb">
-                        <img src="assets/images/vibe03.png" alt width="108" height="162">
-                        <i class="ico-vibe-play"><span class="blind">재생</span></i>
-                      </div>
-                      <span class="neme">핑 강을 따라 아침 산책을</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="group-link">
-            <a href="" class="link-mobile">
-              <span class="text"><em class="point">모바일 네이버 메인</em>열기</span>
+          </section>
+          <aside class="ad-banner common-frame">
+            <a href="">
+              <img src="assets/images/ad2.jpg" alt="해피빈 아이들의 새학기를 부탁해!" />
             </a>
-          </div>
-        </section>
-        <aside class="campaign-banner common-frame">
-          <a href="" class="link-banner">
-            <div class="banner-rolling">
-              <img src="assets/images/campaign1.png" alt width="42" height="42">
-              <div class="banner-desc">
-                <p class="point">클립 크리에이터 초대규모 모집 중</p>
-                <p>총 25억원 규모의 역사적 스케일</p>
+          </aside>
+          <section class="sc-weather common-frame daily-board">
+            <div class="group-header">
+              <h2 class="header-title"><a href="">날씨</a></h2>
+              <a href="" class="link-forecast">예보 비교</a>
+              <div class="header-aside">
+                <span class="location">용인시 신봉동</span>
               </div>
             </div>
-          </a>
+            <div class="group-info">
+              <div class="col-left">
+                <a href="" class="link-weather">
+                  <div class="weather-area">
+                    <div class="weather-icon">
+                      <i class="ico-rain"></i>
+                    </div>
+                    <div class="weather-text">
+                      <span class="temperature">17°</span>
+                      <span class="weather">비</span>
+                    </div>
+                  </div>
+                  <div class="temperature-area">
+                    <span class="temperature-row">
+                      <span class="blind">최저기온</span>
+                      13°
+                    </span>
+                    <span class="temperature-high">
+                      <span class="blind">최고기온</span>
+                      21°
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="link-dust">
+                  <div class="dust-area">
+                    <span class="text">
+                      미세
+                      <span class="status type-good">좋음</span>
+                    </span>
+                    <span class="text">
+                      초미세
+                      <span class="status type-good">좋음</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-right">
+                <a href="" class="link-weather">
+                  <ul class="weather-list">
+                    <li class="weather-item">
+                      <span class="time current">17시</span>
+                      <i class="ico-rain-s"><span class="blind">비</span></i>
+                      <span class="celsius">17°</span>
+                    </li>
+                    <li class="weather-item">
+                      <span class="time">19</span>
+                      <i class="ico-rain-s"><span class="blind">비</span></i>
+                      <span class="celsius">17°</span>
+                    </li>
+                    <li class="weather-item">
+                      <span class="time">21</span>
+                      <i class="ico-rain-s"><span class="blind">비</span></i>
+                      <span class="celsius">15°</span>
+                    </li>
+                    <li class="weather-item">
+                      <span class="time">23</span>
+                      <i class="ico-rain-s"><span class="blind">비</span></i>
+                      <span class="celsius">15°</span>
+                    </li>
+                    <li class="weather-item">
+                      <span class="time">1</span>
+                      <i class="ico-rain-s"><span class="blind">흐림</span></i>
+                      <span class="celsius">13°</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="sc-stock common-frame daily-board">
+            <div class="group-header">
+              <h2 class="header-title"><a href="">증시</a></h2>
+              <button class="btn-info" aria-expanded="false" aria-pressed="false">
+                <span class="blind">정보 더보기</span>
+              </button>
+              <div class="header-aside">
+                <span class="time">11.15. 17:27</span>
+                <button class="btn-refresh">
+                  <span class="blind">새로고침</span>
+                </button>
+              </div>
+            </div>
+            <div class="group-info">
+              <div class="col-left">
+                <a href="" class="link-stock">
+                  <span class="name">유로스톡스50</span>
+                  <span class="price">5,000.86</span>
+                  <div class="status type-up">
+                    <i class="ico-status">
+                      <span class="blind">상승</span>
+                    </i>
+                    <span>21.47</span>
+                    <span>+0.43%</span>
+                  </div>
+                  <div class="graph">
+                    <img src="assets/images/graphh.png" alt width="180" height="72" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-right">
+                <ul class="stock-list">
+                  <li class="stock-item">
+                    <a href="">
+                      <span class="name">하이브</span>
+                      <div class="content-inner">
+                        <span class="status type-down">
+                          <i class="ico-status">
+                            <span class="blind">하락</span>
+                          </i>
+                          0.56%
+                        </span>
+                        <span class="price">196,300</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="stock-item">
+                    <a href="">
+                      <span class="name">삼성전자</span>
+                      <div class="content-inner">
+                        <span class="status type-up">
+                          <i class="ico-status">
+                            <span class="blind">상승</span>
+                          </i>
+                          0.34%
+                        </span>
+                        <span class="price">87,400</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="stock-item">
+                    <a href="">
+                      <span class="name">HLB</span>
+                      <div class="content-inner">
+                        <span class="status type-up">
+                          <i class="ico-status">
+                            <span class="blind">하락</span>
+                          </i>
+                          0.97%
+                        </span>
+                        <span class="price">92,200</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="stock-item">
+                    <a href="" class="link-more">인기종목 더보기</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <aside class="ad-banner common-frame">
+            <a href="">
+              <img
+                src="assets/images/ad4.png"
+                alt="초대규모 클립 크리에이터모집 총25억 초슈퍼급 펀딩" />
+            </a>
+          </aside>
+          <section class="sc-widget common-frame">
+            <div class="group-header">
+              <h2 class="header-title">위젯 보드</h2>
+            </div>
+            <div class="inner">
+              <div class="group-calendar widget-frame">
+                <a href="" class="link-calendar">
+                  <div class="title-area">캘린더</div>
+                  <div class="content-inner">
+                    <div class="date-area">
+                      <span class="date">11.15</span>
+                      <span class="day">금</span>
+                    </div>
+                    <span class="login-text">로그인하기</span>
+                  </div>
+                </a>
+              </div>
+              <div class="group-memo widget-frame">
+                <a href="" class="link-memo">
+                  <div class="title-area">메모</div>
+                  <ul class="memo-list">
+                    <li class="memo-item"></li>
+                    <li class="memo-item"></li>
+                    <li class="memo-item">
+                      <span class="login-text">로그인하기</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="group-papago widget-frame">
+                <a href="" class="link-papago">
+                  <div class="title-area">
+                    <i class="ico-papago-text"><span class="blind">papago</span></i>
+                  </div>
+                  <i class="ico-papago"></i>
+                  <button class="btn-papago" role="link">번역하기</button>
+                </a>
+              </div>
+              <div class="group-dictionary widget-frame">
+                <div class="style-group">
+                  <a href="" class="link-dic">
+                    <div class="title-area">영어사전</div>
+                  </a>
+                  <a href="" class="link-today">
+                    <div class="expression-area">We are just browsing.</div>
+                  </a>
+                  <a href="" class="link-search">
+                    <span class="blind">단어 검색하기</span>
+                  </a>
+                </div>
+              </div>
+              <div class="group-vibe widget-frame">
+                <div class="title-area">
+                  <div class="title">
+                    <i class="ico-vibe"><span class="blind">VIBE</span></i>
+                    사운드 산책🍃
+                  </div>
+                  <button class="btn-refresh">다른 추천 보기</button>
+                </div>
+                <div class="vibe-area">
+                  <ul class="vibe-list">
+                    <li class="vibe-item">
+                      <a href="" class="link-vibe">
+                        <div class="thumb">
+                          <img src="assets/images/vibe02.png" alt width="108" height="162" />
+                          <i class="ico-vibe-play"><span class="blind">재생</span></i>
+                        </div>
+                        <span class="neme">낙엽을 밟으며 걷는 길</span>
+                      </a>
+                    </li>
+                    <li class="vibe-item">
+                      <a href="" class="link-vibe">
+                        <div class="thumb">
+                          <img src="assets/images/vibe01.png" alt width="108" height="162" />
+                          <i class="ico-vibe-play"><span class="blind">재생</span></i>
+                        </div>
+                        <span class="neme">봄날 오후 기분 좋은 산책길</span>
+                      </a>
+                    </li>
+                    <li class="vibe-item">
+                      <a href="" class="link-vibe">
+                        <div class="thumb">
+                          <img src="assets/images/vibe03.png" alt width="108" height="162" />
+                          <i class="ico-vibe-play"><span class="blind">재생</span></i>
+                        </div>
+                        <span class="neme">핑 강을 따라 아침 산책을</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="group-link">
+              <a href="" class="link-mobile">
+                <span class="text">
+                  <em class="point">모바일 네이버 메인</em>
+                  열기
+                </span>
+              </a>
+            </div>
+          </section>
+          <aside class="campaign-banner common-frame">
+            <a href="" class="link-banner">
+              <div class="banner-rolling">
+                <img src="assets/images/campaign1.png" alt width="42" height="42" />
+                <div class="banner-desc">
+                  <p class="point">클립 크리에이터 초대규모 모집 중</p>
+                  <p>총 25억원 규모의 역사적 스케일</p>
+                </div>
+              </div>
+            </a>
             <div class="banner-indicator">
               <span class="indicator-dot active"></span>
               <span class="indicator-dot"></span>
             </div>
-        </aside>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="inner">
-        <div class="group-banner">
-          <ul class="ad-list">
-            <li class="ad-item">
-              <a href="">
-                <div class="thumb">
-                  <img src="assets/images/ad5.jpg" alt="사은품 증정" width="160" height="100">
-                  <i class="ico-ad"></i>
-                </div>
-                <div class="info">
-                  <em class="subtitle">KANU</em>
-                  <strong class="title">카누 브랜드스토어</strong>
-                  <p class="desc1">커피머신도 역시 카누!</p>
-                  <p class="desc2">여름 한정판 호환캡슐 출시!</p>
-                </div>
-              </a>
-            </li>
-            <li class="ad-item">
-              <a href="">
-                <div class="thumb">
-                  <img src="assets/images/ad6.png" alt width="160" height="100">
-                  <i class="ico-ad"></i>
-                </div>
-                <div class="info">
-                  <em class="subtitle">네이버 커넥트재단</em>
-                  <strong class="title">고등학생을 위한 파이썬</strong>
-                  <p class="desc1">취약계층 우대 무료교육</p>
-                  <p class="desc2">7월 12일까지 모집</p>
-                </div>
-              </a>
-            </li>
-            <li class="ad-item">
-              <a href="">
-                <div class="thumb">
-                  <img src="assets/images/ad7.png" alt="7월 28일 일요일까지" width="160" height="100">
-                  <i class="ico-ad"></i>
-                </div>
-                <div class="info">
-                  <em class="subtitle">네이버 커넥트재단</em>
-                  <strong class="title">인공지능 스마트팜</strong>
-                  <p class="desc1">방울토마토 선별하기 대작전</p>
-                  <p class="desc2">온라인 코딩파티에서 만나요!</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+          </aside>
         </div>
-        <div class="group-notice">
-          <div class="notice-area">
-            <h3 class="title"><a href="">공지사항</a></h3>
+      </main>
+      <footer id="footer">
+        <div class="inner">
+          <div class="group-banner">
+            <ul class="ad-list">
+              <li class="ad-item">
+                <a href="">
+                  <div class="thumb">
+                    <img src="assets/images/ad5.jpg" alt="사은품 증정" width="160" height="100" />
+                    <i class="ico-ad"></i>
+                  </div>
+                  <div class="info">
+                    <em class="subtitle">KANU</em>
+                    <strong class="title">카누 브랜드스토어</strong>
+                    <p class="desc1">커피머신도 역시 카누!</p>
+                    <p class="desc2">가을 한정판 호환캡슐 출시!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="ad-item">
+                <a href="">
+                  <div class="thumb">
+                    <img src="assets/images/ad6.png" alt width="160" height="100" />
+                    <i class="ico-ad"></i>
+                  </div>
+                  <div class="info">
+                    <em class="subtitle">네이버 커넥트재단</em>
+                    <strong class="title">고등학생을 위한 파이썬</strong>
+                    <p class="desc1">취약계층 우대 무료교육</p>
+                    <p class="desc2">11월 23일까지 모집</p>
+                  </div>
+                </a>
+              </li>
+              <li class="ad-item">
+                <a href="">
+                  <div class="thumb">
+                    <img
+                      src="assets/images/ad7.png"
+                      alt="11월 23일 일요일까지"
+                      width="160"
+                      height="100" />
+                    <i class="ico-ad"></i>
+                  </div>
+                  <div class="info">
+                    <em class="subtitle">네이버 커넥트재단</em>
+                    <strong class="title">인공지능 스마트팜</strong>
+                    <p class="desc1">방울토마토 선별하기 대작전</p>
+                    <p class="desc2">온라인 코딩파티에서 만나요!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="aside-area">
-            <a href="" class="link-all">서비스 전체보기</a>
-          </div>
-        </div>
-        <div class="group-aside">
-          <div class="col-left">
-            <div class="partners-area">
-              <h3 class="title">Partners</h3>
-              <ul class="partners-list">
-                <li class="partners-item">
-                  <a href="">프로젝트 꽃</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 비즈니스</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 비즈니스 스쿨</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 광고</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">스토어 개설</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">지역업체 등록</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">엑스퍼트 등록</a>
-                </li>
-              </ul>
+          <div class="group-notice">
+            <div class="notice-area">
+              <h3 class="title"><a href="">공지사항</a></h3>
             </div>
-            <div class="partners-area">
-              <h3 class="title">Developers</h3>
-              <ul class="partners-list">
-                <li class="partners-item">
-                  <a href="">네이버 개발자 센터</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">오픈 API</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">오픈소스</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 D2</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 D2SF</a>
-                </li>
-                <li class="partners-item">
-                  <a href="">네이버 랩스</a>
-                </li>
-              </ul>
+            <div class="aside-area">
+              <a href="" class="link-all">서비스 전체보기</a>
             </div>
           </div>
-          <div class="col-right">
-            <div class="service-area">
-              <div class="info">
-                <em>웨일 브라우저</em>
-                <a href="">이용안내</a>
+          <div class="group-aside">
+            <div class="col-left">
+              <div class="partners-area">
+                <h3 class="title">Partners</h3>
+                <ul class="partners-list">
+                  <li class="partners-item">
+                    <a href="">프로젝트 꽃</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 비즈니스</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 비즈니스 스쿨</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 광고</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">스토어 개설</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">지역업체 등록</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">엑스퍼트 등록</a>
+                  </li>
+                </ul>
               </div>
-              <a href="">
-                <img src="assets/images/logo-whale.png" alt="웨일 브라우저 로고" width="48" height="48">
-              </a>
-            </div>
-            <div class="service-area">
-              <div class="info">
-                <em>기업 사이트</em>
-                <a href="">바로가기</a>
+              <div class="partners-area">
+                <h3 class="title">Developers</h3>
+                <ul class="partners-list">
+                  <li class="partners-item">
+                    <a href="">네이버 개발자 센터</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">오픈 API</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">오픈소스</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 D2</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 D2SF</a>
+                  </li>
+                  <li class="partners-item">
+                    <a href="">네이버 랩스</a>
+                  </li>
+                </ul>
               </div>
-              <a href="">
-                <img src="assets/images/logo-corp.png" alt="네이버 로고" width="48" height="48">
-              </a>
+            </div>
+            <div class="col-right">
+              <div class="service-area">
+                <div class="info">
+                  <em>웨일 브라우저</em>
+                  <a href="">이용안내</a>
+                </div>
+                <a href="">
+                  <img
+                    src="assets/images/logo-whale.png"
+                    alt="웨일 브라우저 로고"
+                    width="48"
+                    height="48" />
+                </a>
+              </div>
+              <div class="service-area">
+                <div class="info">
+                  <em>기업 사이트</em>
+                  <a href="">바로가기</a>
+                </div>
+                <a href="">
+                  <img src="assets/images/logo-corp.png" alt="네이버 로고" width="48" height="48" />
+                </a>
+              </div>
             </div>
           </div>
+          <div class="group-corp">
+            <h3 class="blind">네이버 정책 및 약관</h3>
+            <ul class="corp-list">
+              <li class="corp-item">
+                <a href="">회사소개</a>
+              </li>
+              <li class="corp-item">
+                <a href="">인재채용</a>
+              </li>
+              <li class="corp-item">
+                <a href="">제휴제안</a>
+              </li>
+              <li class="corp-item">
+                <a href="">이용약관</a>
+              </li>
+              <li class="corp-item">
+                <a href=""><em>개인정보처리방침</em></a>
+              </li>
+              <li class="corp-item">
+                <a href="">청소년보호정책</a>
+              </li>
+              <li class="corp-item">
+                <a href="">네이버 정책</a>
+              </li>
+              <li class="corp-item">
+                <a href="">고객센터</a>
+              </li>
+            </ul>
+            <address class="addr">
+              <a href=""><em>ⓒ NAVER Corp.</em></a>
+            </address>
+          </div>
         </div>
-        <div class="group-corp">
-          <h3 class="blind">네이버 정책 및 약관</h3>
-          <ul class="corp-list">
-            <li class="corp-item">
-              <a href="">회사소개</a>
-            </li>
-            <li class="corp-item">
-              <a href="">인재채용</a>
-            </li>
-            <li class="corp-item">
-              <a href="">제휴제안</a>
-            </li>
-            <li class="corp-item">
-              <a href="">이용약관</a>
-            </li>
-            <li class="corp-item">
-              <a href=""><em>개인정보처리방침</em></a>
-            </li>
-            <li class="corp-item">
-              <a href="">청소년보호정책</a>
-            </li>
-            <li class="corp-item">
-              <a href="">네이버 정책</a>
-            </li>
-            <li class="corp-item">
-              <a href="">고객센터</a>
-            </li>
-          </ul>
-          <address class="addr"><a href=""><em>ⓒ NAVER Corp.</em></a></address>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
