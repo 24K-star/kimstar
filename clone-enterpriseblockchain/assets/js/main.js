@@ -195,11 +195,12 @@ ScrollTrigger.create({
   trigger: '.sc-use',
   start: 'top 7%',
   end: 'bottom center',
-  // markers: true, 
+  // markers: true,
   toggleClass: { // 트리거 영역 클래스 토글
     targets: '#header',
     className: 'dark' // 헤더 요소에 'dark' 클래스 토글
   },
+
 });
 
 // 바디 컬러 전환 (sc-feature영역 동안) + 헤더 컬러 전환(sc-feature영역 이후 끝까지 유지)
@@ -281,6 +282,7 @@ gsap.to('.sc-feature .group-core .content-inner3 .desc', {
 });
 
 // 가로스크롤 카드1
+const cardItem = '.sc-feature .group-core .content-inner4 .flex-card .card-item';
 const animaCard1 = gsap.timeline({
   scrollTrigger: {
     trigger: '.sc-feature .group-core .content-inner4 .sticky-wrapper',
@@ -290,9 +292,6 @@ const animaCard1 = gsap.timeline({
     // markers: true,
   }
 });
-
-const cardItem = '.sc-feature .group-core .content-inner4 .flex-card .card-item';
-
 animaCard1.to('.sc-feature .group-core .content-inner4 .horizontal', {
   x: () => {
     // headline 요소의 너비만큼 왼쪽으로 이동
