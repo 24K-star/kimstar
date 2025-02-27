@@ -101,9 +101,9 @@ scaleImages.forEach(image => {
   observer.observe(image);
 });
 
-//gsap motionPath
+// gsap motionPath
 
-//resize이벤트 debounce
+// debounce
 let debounceTimeout;
 function debounce(func, delay) {
   clearTimeout(debounceTimeout);  // 기존 타이머 취소
@@ -111,17 +111,19 @@ function debounce(func, delay) {
 }
 
 function updatePath() {
-  gsap.to(".orbit .shape", {
-    duration: 10,
-    repeat: -1,
-    motionPath: {
-      path: ".orbit svg path",
-      align: ".orbit svg path",
-      alignOrigin: [0.5, 0.5], // 경로의 중심에 맞추기
-      autoRotate: true // 경로를 따라 회전
-    },
-    ease: "none",
-  });
+  setTimeout(() => {
+    gsap.to(".orbit .shape", {
+      duration: 10,
+      repeat: -1,
+      motionPath: {
+        path: ".orbit svg path",
+        align: ".orbit svg path",
+        alignOrigin: [0.5, 0.5], // 경로의 중심에 맞추기
+        autoRotate: true // 경로를 따라 회전
+      },
+      ease: "none",
+    });
+  }, 1000); // 1000ms 지연
 }
 
 //intro motionPath
@@ -142,19 +144,6 @@ window.addEventListener("resize", () => {
 });
 
 updatePath();
-
-gsap.to(".orbit .shape", {
-  duration: 10,
-  repeat: -1,
-  motionPath: {
-    path: ".orbit svg path",
-    align: ".orbit svg path",
-    alignOrigin: [0.5, 0.5], // 경로의 중심에 맞추기
-    autoRotate: true // 경로를 따라 회전
-  },
-  ease: "none",
-});
-
 
 //반응형
 const mm = gsap.matchMedia();
