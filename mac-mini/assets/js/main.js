@@ -378,7 +378,7 @@ const projectSlide = new Swiper('.sc-detail .swiper', {
   },
   on: { // 슬라이드 이벤트 핸들러
     init: function () { // Swiper가 초기화될 때 실행되는 콜백
-      updateInfo(this.realIndex); // this.realIndex: 현재 활성 슬라이드의 인덱스
+      // updateInfo(this.realIndex); // this.realIndex: 현재 활성 슬라이드의 인덱스
     },
     slideChangeTransitionStart: function () { // 슬라이드 전환이 시작될 때 실행되는 콜백
       updateInfo(this.realIndex);
