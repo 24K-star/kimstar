@@ -27,15 +27,14 @@ $(window).on('scroll', function () {
 // 상단으로 이동 버튼 제어
 let lastScroll = 0;
 $(window).scroll(function () {
+  const btnFix = $('.fix-btn'); // 상단으로 이동 버튼
+  const isAbsolute = btnFix.hasClass('absolute'); // 버튼이 absolute 상태인지 확인
   const curr = $(this).scrollTop(); // 현재 스크롤 위치
   const viewHeight = window.innerHeight; // 뷰포트 높이
 
-  const btnFix = $('.fix-btn'); // 상단으로 이동 버튼
-  const isStop = btnFix.hasClass('stop'); // 버튼이 고정된 상태인지 확인
-
-  if (isStop) { // 버튼이 고정된 상태인 경우
+  if (isAbsolute) { // 버튼이 absolute 상태인 경우
     btnFix.addClass('show'); // 버튼 표시
-  } else if (curr < viewHeight * 8 || curr > lastScroll) { // 스크롤 위치가 뷰포트 높이의 8배보다 작거나, 이전 스크롤 위치보다 큰 경우 (스크롤 방향이 아래일 때)
+  } else if (curr < viewHeight * 8 || curr > lastScroll) { // 스크롤 위치가 800vh 작거나, 이전 스크롤 위치보다 큰 경우 (스크롤 방향이 아래일 때)
     btnFix.removeClass('show'); // 버튼 숨김
   } else { // 그 외의 경우 (스크롤 방향이 위일 때)
     btnFix.addClass('show'); // 버튼 표시
@@ -43,17 +42,17 @@ $(window).scroll(function () {
   lastScroll = curr; // 이전 스크롤 위치 저장
 });
 
-// 상단으로 이동 버튼 고정 (absolute로 변환)
+// 상단으로 이동 버튼 absolute로 변환
 ScrollTrigger.create({
   trigger: '.sc-ground',
   start: 'bottom bottom',
   end: 'bottom bottom',
   // markers: true,
   onEnter: () => { // 트리거 영역에 진입했을 때 실행
-    $('.fix-btn').addClass('stop'); // 버튼 고정 (absolute 포지션으로 변경)
+    $('.fix-btn').addClass('absolute'); // absolute 포지션으로 변경
   },
   onLeaveBack: () => { // 트리거 영역을 위로 벗어났을 때 실행
-    $('.fix-btn').removeClass('stop'); // 버튼 고정 해제 (fixed 포지션으로 복귀)
+    $('.fix-btn').removeClass('absolute'); // fixed 포지션으로 복귀
   },
 });
 
@@ -200,7 +199,6 @@ ScrollTrigger.create({
     targets: '#header',
     className: 'dark' // 헤더 요소에 'dark' 클래스 토글
   },
-
 });
 
 // 바디 컬러 전환 (sc-feature영역 동안) + 헤더 컬러 전환(sc-feature영역 이후 끝까지 유지)
@@ -437,11 +435,11 @@ animaCard4.to('.sc-feature .group-second .content-inner3 .desc', {
 
 
 
-// 비전영역 스크롤 표시 영역 활성화 (토글) 및 동적 업데이트
-const animaVision = gsap.timeline({
+// 비전영역 하단 텍스트 표시 및 진행50% 이상일 경우 텍스트 업데이트
+const visionTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: '.sc-vision .content-inner3',
-    scrub: 0,
+    scrub: true,
     start: 'top top',
     end: 'bottom bottom',
     // markers: true,
@@ -484,7 +482,7 @@ const animaVision = gsap.timeline({
 });
 
 // 비전영역 가로스크롤
-animaVision.to('.sc-vision .content-inner3 .horizontal', {
+visionTimeline.to('.sc-vision .content-inner3 .horizontal', {
   xPercent: -100, // 요소크기만큼 왼쪽으로 이동
   x: () => {
     return window.innerWidth; // 현재 브라우저 너비만큼 오른쪽으로 이동

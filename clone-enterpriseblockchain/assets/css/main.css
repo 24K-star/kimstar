@@ -965,18 +965,6 @@ strong.headline {
   animation-delay: 0.7s;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .sc-vision .content-inner3 .scroll-area .name {
   display: flex;
   align-items: center;
@@ -1209,9 +1197,21 @@ strong.headline {
   opacity: 1;
   visibility: visible;
 }
-.fix-btn.stop {
+.fix-btn.absolute {
   position: absolute;
   bottom: 100px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes marquee {
