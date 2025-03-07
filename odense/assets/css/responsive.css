@@ -232,7 +232,7 @@
     margin-top: 90px;
   }
 
-  .sc-recruit .headline {
+  .sc-all .headline {
     font-size: 40px;
   }
 
@@ -385,10 +385,10 @@
     align-items: flex-start;
   }
 
-  .sc-recruit {
+  .sc-all {
     padding: 120px 0;
   }
-  .sc-recruit .headline {
+  .sc-all .headline {
     font-size: 24px;
   }
 

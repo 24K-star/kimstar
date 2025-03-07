@@ -76,11 +76,9 @@
 }
 .header-inner.dark {
   background-color: var(--primary-color-bg);
-  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 .header-inner.white {
   background-color: transparent;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .header-inner.dark .link-odense {
   filter: invert();

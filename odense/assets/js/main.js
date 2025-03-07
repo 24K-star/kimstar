@@ -60,10 +60,11 @@ function addEvent(eventListeners, element, type, listener) {
 const labels = ['NU-FRAME', 'Legodt', 'NORD', 'SISSONNE', 'LAGOA'];
 const mainSlide = new Swiper('.sc-visual .swiper', {
   loop: true,
-  parallax: true,
+  parallax: true, // 슬라이더에 시차(parallax) 효과를 활성화
   speed: 1500,
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
   },
   allowTouchMove: false,
   pagination: {
@@ -76,6 +77,7 @@ const mainSlide = new Swiper('.sc-visual .swiper', {
     }
   },
 });
+
 
 // 헤더 색상 전환 애니메이션 (비주얼 섹션)
 let headerHeight
@@ -99,6 +101,7 @@ animateHeader
     'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', // 상단0% 하단100% 상태 (사각형)  
   }, {
     'clip-path': 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)', // 상단0% 하단0% 상태 (형태없음)
+    immediateRender: false
   }, '<');
 
 // 헤더 색상 전환 애니메이션 (푸터)
@@ -122,6 +125,7 @@ animateHeader2
     'clip-path': 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)', // 상단100% 하단100% 상태 (형태없음)
   }, {
     'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', // 상단0% 하단100% 상태 (사각형) 
+    immediateRender: false
   }, '<')
   .to('.header-inner.white .link-odense', {
     opacity: 0,
@@ -611,7 +615,7 @@ mm.add('(min-width: 1025px)', () => {
   projectAnimate.timeScale(1.2);
 
   // 철학 섹션 애니메이션
-  const princtAnimate = gsap.timeline({
+  const princTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: '.sc-principle',
       start: '24% top',
@@ -622,7 +626,7 @@ mm.add('(min-width: 1025px)', () => {
     },
   });
   // 타임라인1 (1,6,7 테두리on, 텍스트on)
-  princtAnimate
+  princTimeline
     .to('.sc-principle .prin-list .prin-item:nth-child(1)', { // 첫번째 요소 테두리 색상 변경
       borderColor: 'rgb(142, 123, 109)',
       duration: 1,
@@ -870,7 +874,7 @@ mm.add('(max-width: 1024px)', () => {
 
 
   // 철학섹션 애니메이션
-  const princtAnimate = gsap.timeline({
+  const princTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: '.sc-principle',
       start: 'top top',
@@ -882,7 +886,7 @@ mm.add('(max-width: 1024px)', () => {
   });
 
   // 타임라인1 (1,6,7 테두리on, 텍스트on)
-  princtAnimate
+  princTimeline
     .to('.sc-principle .prin-list .prin-item:nth-child(1)', { // 첫번째 요소 테두리 색상 변경
       borderColor: 'rgb(142, 123, 109)',
       duration: 1,
