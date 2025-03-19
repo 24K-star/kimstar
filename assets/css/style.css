@@ -710,6 +710,9 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+.loader.none {
+  display: none;
+}
 
 .fixed {
   position: fixed;

@@ -32,9 +32,13 @@ function addEvent(eventListeners, element, type, listener) {
 //loader 애니메이션
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
-  setTimeout(() => {
-    loader.classList.add("hide");
-  }, 100);
+  if ($(window).scrollTop() === 0) {
+    setTimeout(() => {
+      loader.classList.add("hide");
+    }, 100);
+  } else {
+    loader.classList.add("none");
+  }
 })
 
 //size출력 함수
