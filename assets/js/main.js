@@ -29,6 +29,14 @@ function addEvent(eventListeners, element, type, listener) {
   eventListeners.push({ element, type, listener });
 }
 
+//loader 애니메이션
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+    loader.classList.add("hide");
+  }, 100);
+})
+
 //size출력 함수
 function updateSize(container) {
   const widthText = container.querySelector(":scope >.number .width");
@@ -123,7 +131,7 @@ function updatePath() {
       },
       ease: "none",
     });
-  }, 1000); // 1000ms 지연
+  }, 100); // 1000ms 지연
 }
 
 //intro motionPath
@@ -281,12 +289,11 @@ mm.add("(min-width: 601px)", () => {
   addEvent(eventListeners, window, "resize", sizeInit);
   sizeInit();
 
-
   // ** GSAP 애니메이션 **
 
   //페이지 로드 애니메이션
   addEvent(eventListeners, window, "load", () => {
-    if ($(window).scrollTop() < 1) {
+    if ($(window).scrollTop() === 0) {
       const gtlLoad = gsap.timeline({});
       gtlLoad.from(".sc-intro .rotator", {
         yPercent: 100,
