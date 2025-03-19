@@ -144,6 +144,7 @@
 
 #skipNav {
   position: absolute;
+  z-index: 20;
 }
 #skipNav a {
   position: absolute;
