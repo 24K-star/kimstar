@@ -23,23 +23,18 @@ function initializeLenis() {
   }
 }
 
+// debounce
+let debounceTimeout;
+function debounce(func, delay) {
+  clearTimeout(debounceTimeout);  // 기존 타이머 취소
+  debounceTimeout = setTimeout(func, delay);  // delay 후 함수를 실행
+}
+
 //eventListener 관리용 배열 (반응형) 
 function addEvent(eventListeners, element, type, listener) {
   element.addEventListener(type, listener);
   eventListeners.push({ element, type, listener });
 }
-
-//loader 애니메이션
-document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loader");
-  if ($(window).scrollTop() === 0) {
-    setTimeout(() => {
-      loader.classList.add("hide");
-    }, 100);
-  } else {
-    loader.classList.add("none");
-  }
-})
 
 //size출력 함수
 function updateSize(container) {
@@ -113,49 +108,97 @@ scaleImages.forEach(image => {
   observer.observe(image);
 });
 
-// gsap motionPath
+// 초기 애니메이션
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
 
-// debounce
-let debounceTimeout;
-function debounce(func, delay) {
-  clearTimeout(debounceTimeout);  // 기존 타이머 취소
-  debounceTimeout = setTimeout(func, delay);  // delay 후 함수를 실행
-}
+  if (window.innerWidth > 600 && window.scrollY === 0) {
+    // 브라우저 크기가 600px 이상이고 스크롤이 0일 때
+    setTimeout(() => {
+      loader.classList.add("hide");
 
-function updatePath() {
-  setTimeout(() => {
-    gsap.to(".orbit .shape", {
-      duration: 10,
-      repeat: -1,
-      motionPath: {
-        path: ".orbit svg path",
-        align: ".orbit svg path",
-        alignOrigin: [0.5, 0.5], // 경로의 중심에 맞추기
-        autoRotate: true // 경로를 따라 회전
-      },
-      ease: "none",
-    });
-  }, 100); // 1000ms 지연
-}
+      // 로딩 화면이 사라지는 트랜지션이 완료된 후 애니메이션 시작
+      const gtlLoad = gsap.timeline({});
+      gtlLoad.from(".sc-intro .rotator", {
+        yPercent: 100,
+        scale: 0.8,
+        rotate: 15,
+        duration: 0.8,
+        ease: "circ.out",
+      })
 
-//intro motionPath
+        .from(".sc-intro .headline .split-char", {
+          yPercent: 100,
+          rotate: -3,
+          stagger: 0.06,
+          ease: "power2.out",
+        })
+        .from(".sc-intro .headline .item", {
+          "--scalex-first": 0,
+          duration: 0.4,
+          ease: "power1.out",
+          delay: 0.9,
+        }, "<")
+        .from(".sc-intro .headline .item", {
+          "--scalex-second": 0,
+          duration: 0.4,
+          ease: "power1.out",
+          delay: 0.2,
+        }, "<")
+        .from(".sc-intro .headline .item", {
+          "--scale-value": 0,
+          duration: 0.4,
+          ease: "power1.out",
+          delay: 0.2,
+        }, "<")
+        .from(".sc-intro .gradient .video-container", {
+          scale: 0,
+          duration: 0.6,
+          ease: "power1.out",
+          delay: -0.2,
+        }, "<")
+        .from(".sc-intro .gradient .orbit", {
+          scale: 0,
+          rotate: -15,
+          duration: 0.6,
+          ease: "power1.out",
+          delay: 0.2,
+        }, "<")
+    }, 300);
+  } else {
+    loader.classList.add("none");
+  }
+})
+
+// motionPath 설정
+const motionPathConfig = {
+  duration: 10,
+  repeat: -1,
+  motionPath: {
+    path: ".orbit svg path",
+    align: ".orbit svg path",
+    alignOrigin: [0.5, 0.5],
+    autoRotate: true
+  },
+  ease: "none"
+};
+
+// 창크기 변경시 motionPath 업데이트
 window.addEventListener("resize", () => {
   // 창 크기 변경 시 opacity를 0으로 변경
   gsap.to(".orbit .shape", {
     opacity: 0,
     duration: 0.1
   });
-
   debounce(function () {
     gsap.to(".orbit .shape", {
       opacity: 1,
       duration: 0.1
     });
-    updatePath();  // 경로 업데이트
+    gsap.to(".orbit .shape", motionPathConfig);  // 경로 업데이트
   }, 400);
 });
 
-updatePath();
 
 //반응형
 const mm = gsap.matchMedia();
@@ -295,57 +338,10 @@ mm.add("(min-width: 601px)", () => {
 
   // ** GSAP 애니메이션 **
 
-  //페이지 로드 애니메이션
-  addEvent(eventListeners, window, "load", () => {
-    if ($(window).scrollTop() === 0) {
-      const gtlLoad = gsap.timeline({});
-      gtlLoad.from(".sc-intro .rotator", {
-        yPercent: 100,
-        scale: 0.8,
-        rotate: 15,
-        duration: 0.8,
-        ease: "circ.out",
-      })
-
-        .from(".sc-intro .headline .split-char", {
-          yPercent: 100,
-          rotate: -3,
-          stagger: 0.06,
-          ease: "power2.out",
-        })
-        .from(".sc-intro .headline .item", {
-          "--scalex-first": 0,
-          duration: 0.4,
-          ease: "power1.out",
-          delay: 0.9,
-        }, "<")
-        .from(".sc-intro .headline .item", {
-          "--scalex-second": 0,
-          duration: 0.4,
-          ease: "power1.out",
-          delay: 0.2,
-        }, "<")
-        .from(".sc-intro .headline .item", {
-          "--scale-value": 0,
-          duration: 0.4,
-          ease: "power1.out",
-          delay: 0.2,
-        }, "<")
-        .from(".sc-intro .gradient .video-container", {
-          scale: 0,
-          duration: 0.6,
-          ease: "power1.out",
-          delay: -0.2,
-        }, "<")
-        .from(".sc-intro .gradient .orbit", {
-          scale: 0,
-          rotate: -15,
-          duration: 0.6,
-          ease: "power1.out",
-          delay: 0.2,
-        }, "<")
-    }
-  });
+  // 초기 실행시 motionPath
+  setTimeout(() => {
+    gsap.to(".orbit .shape", motionPathConfig);
+  }, 1000); // 지연
 
   //intro
   const gsttIntro = gsap.timeline({
@@ -584,6 +580,15 @@ mm.add("(min-width: 601px)", () => {
 
 mm.add("(max-width: 600px)", () => {
   // 600px 이하일 때만 애니메이션을 실행
+
+  // 초기 실행 motionPath
+  gsap.to(".orbit .shape", motionPathConfig);
+
+  // orbit 위치 설정
+  gsap.set(".sc-intro .gradient .orbit", {
+    xPercent: -50,
+    yPercent: -50,
+  });
 
   const sideSlide = new Swiper(".group-side .swiper", {
     slidesPerView: 1.1,
