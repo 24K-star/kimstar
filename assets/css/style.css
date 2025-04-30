@@ -151,25 +151,6 @@
   }
 }
 
-.link-type1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-  position: relative;
-  padding: 14px 20px 8px 20px;
-  background: var(--primary-color);
-  color: #fff;
-}
-@media (max-width: 1440px) {
-  .link-type1 {
-    padding: 10px 16px 6px 16px;
-  }
-}
-
 .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +196,45 @@
           transform: translateY(0);
 }
 
+.link-type1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 14px 20px 8px 20px;
+  background: var(--primary-color);
+  color: #fff;
+}
+@media (max-width: 1440px) {
+  .link-type1 {
+    padding: 10px 16px 6px 16px;
+  }
+}
+
 .link-type2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 14px 20px 8px 20px;
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+}
+@media (max-width: 1440px) {
+  .link-type2 {
+    padding: 10px 16px 6px 16px;
+  }
+}
+
+.link-type3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,22 +254,22 @@
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 @media (max-width: 1440px) {
-  .link-type2 {
+  .link-type3 {
     padding: 14px 26px;
     font-size: 18px;
   }
 }
 @media (max-width: 600px) {
-  .link-type2 {
+  .link-type3 {
     gap: 8px;
     padding: 12px 20px;
     font-size: 16px;
   }
 }
-.link-type2 .text {
+.link-type3 .text {
   margin-bottom: -4px;
 }
-.link-type2::after {
+.link-type3::after {
   width: 14px;
   height: 14px;
   background: url(../images/ic-arrow-s.svg) no-repeat;
@@ -258,17 +277,17 @@
   content: "";
 }
 @media (max-width: 600px) {
-  .link-type2::after {
+  .link-type3::after {
     width: 12px;
     height: 12px;
   }
 }
-.link-type2:hover {
+.link-type3:hover {
   -webkit-transform: rotate(8deg) scale(0.9);
           transform: rotate(8deg) scale(0.9);
 }
 @media (max-width: 1024px) {
-  .link-type2:hover {
+  .link-type3:hover {
     -webkit-transform: rotate(0) scale(1);
             transform: rotate(0) scale(1);
   }
@@ -517,7 +536,7 @@ body {
 .footer .sticky-wrapper {
   position: relative;
   height: 140vh;
-  margin-top: -100vh;
+  margin-top: -100dvh;
 }
 @media (max-width: 600px) {
   .footer .sticky-wrapper {
@@ -528,7 +547,7 @@ body {
 .footer .sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100dvh;
 }
 @media (max-width: 600px) {
   .footer .sticky {
@@ -828,7 +847,7 @@ video {
   .sc-intro {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
   }
 }
 .sc-intro.hidden {
@@ -845,7 +864,7 @@ video {
 .sc-intro .sticky-wrapper .sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100dvh;
 }
 @media (max-width: 600px) {
   .sc-intro .sticky-wrapper .sticky {
@@ -1209,7 +1228,7 @@ video {
 }
 @media (max-width: 600px) {
   .sc-project {
-    padding-top: 100vh;
+    padding-top: 100dvh;
   }
 }
 .sc-project .group-main > .rotator {
@@ -1234,7 +1253,7 @@ video {
   top: 99%;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--background-color);
   content: "";
 }
@@ -1249,7 +1268,7 @@ video {
 .sc-project .group-main .content-area .sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100dvh;
 }
 @media (max-width: 600px) {
   .sc-project .group-main .content-area .sticky {
@@ -1422,6 +1441,10 @@ video {
   }
 }
 .sc-project .group-main .content-area .main-item .info .link-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
   margin-left: auto;
   font-size: 20px;
   letter-spacing: -0.02em;
@@ -1533,7 +1556,7 @@ video {
 }
 @media (max-width: 600px) {
   .sc-project .group-main .content-area .main-item .content .img-container {
-    height: 100vh;
+    height: 100dvh;
   }
   .sc-project .group-main .content-area .main-item .content .img-container::after {
     position: absolute;
@@ -1556,7 +1579,7 @@ video {
 .sc-project .group-side .sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   pointer-events: none;
 }
