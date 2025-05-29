@@ -334,13 +334,13 @@ body {
 .sc-perfor .title {
   padding-bottom: 30px;
 }
-.sc-perfor .fig-list {
+.sc-perfor .fig-area {
   display: flex;
   align-items: center;
   gap: 7vw;
 }
 
-.sc-perfor .fig-item .figure-wrap {
+.sc-perfor .figure-wrap {
   text-transform: uppercase;
   font-size: 20px;
   line-height: 0.6;
@@ -348,7 +348,7 @@ body {
   letter-spacing: -0.02em;
   align-items: flex-end;
 }
-.sc-perfor .fig-item .figure {
+.sc-perfor .figure {
   font-size: max(100px, 7.5vw);
   line-height: 0.8em;
   font-weight: 600;
